@@ -1,0 +1,3 @@
+[submodule "basgrospoing/kirby"]
+	path = basgrospoing/kirby
+	url = https://github.com/getkirby/kirby
