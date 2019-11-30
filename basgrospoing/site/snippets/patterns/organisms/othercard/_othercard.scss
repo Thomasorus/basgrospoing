@@ -1,0 +1,27 @@
+.card--other {
+    height: 522px;
+    .card__img {
+        height: 430px;
+        h1 {
+            top: 25%;
+            font-size: 10rem;
+        }
+    }
+    .card__title {
+        bottom: 75px;
+    }
+    .card__text {
+        top: 460px;
+    }
+    .white-bg::after {
+        height: 80%;
+    }
+
+    a:hover {
+        .card__title {
+            opacity: 0;
+            transition:0.25s;
+        }
+    }
+    
+}

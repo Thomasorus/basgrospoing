@@ -1,0 +1,64 @@
+.chronohead {
+    height: 106px;
+    margin: 0 0 60px 0;
+    margin: 0 var(--bgp-gap, 0.7%);
+
+    @supports (display: grid) {
+        display: grid;
+        grid-gap: 6px var(--bgp-gap, 0.7%);
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-rows: 1fr;
+    }
+}
+
+.chronohead__title {
+    text-align: center;
+    height: 100%;
+    position: relative;
+
+    h2 {
+        font-size: 3.1rem;
+        color: var(--bgp-text, #000000);
+        line-height: 4;
+        position: relative;
+        z-index: 2;
+    }
+
+    @supports (display: grid) {
+        .chronohead__star {
+            background-image: url('assets/images/star-yellow.svg');
+            background-size: auto 100%;
+            background-repeat: no-repeat;
+            background-position: 50%;
+            height: 120px;
+            width: 120px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+            z-index: 1;
+        }
+    }
+
+}
+
+.chronohead__bar {
+    content: "";
+    height: 1px;
+    background: var(--bgp-text, #000000);
+    ;
+    align-self: center;
+}
+
+
+
+@media (max-width: 710px) {
+
+    .chronohead__title h2 {
+        padding-top: 24px;
+        line-height: 1;
+    }
+
+}

@@ -1,0 +1,22 @@
+
+.article-share {
+    max-width: var(--article-width, 690px);
+    text-align: center;
+    margin: 30px auto 30px auto;
+    span {
+        font-family: 'FuturaStd-ExtraBold', var(--font-family-sans-serif,-apple-system, BlinkMacSystemFont, "Segoe UI","Roboto", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol");
+        text-transform: uppercase;
+        letter-spacing: -2px;
+        font-size: 1.6rem;
+    }
+    a {
+        text-decoration: none;
+        margin:0;
+        padding:0;
+    }
+
+    img {
+        height:15px; 
+        margin:0 0 0 10px;
+    }
+}

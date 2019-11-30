@@ -1,0 +1,65 @@
+
+.article__footer {
+    max-width: var(--article-width, 690px);
+    position: relative;
+    
+    margin: 0 auto 100px auto;
+    padding: 0 10px 0 10px;
+    
+   
+}
+
+.article__KO {
+    position: absolute;
+    font-family: 'FuturaStd-ExtraBoldOblique', var(--font-family-sans-serif,-apple-system, BlinkMacSystemFont, "Segoe UI","Roboto", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol");
+    color: var(--bgp-very-light-grey, #d4d4d4);
+    font-size: 12rem;
+    letter-spacing: -35px;
+    z-index: -1;
+    top: -105px;
+    width:90%;
+    text-align: center;
+    span {
+        font-size: 25rem;
+    }
+    span:first-child {
+         padding-right: 30px;
+    }
+}
+
+.article__author {
+    display:flex;
+    flex-flow: column nowrap;
+    justify-content: flex-end;
+    align-items: flex-end;
+
+    p {
+        text-align: right;
+        max-width: 70%;
+    }
+
+}
+
+
+.article__kofi {
+    background: var(--bgp-very-light-grey, #d4d4d4);
+    padding: 10px;
+    svg {
+        max-width: 140px;
+    }
+}
+
+.article__kofi-author {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 3fr 1fr;
+    grid-gap: 0px 20px;
+
+    align-items: center;
+    p {
+        color: var(--bgp-white);
+        margin:0;
+    }
+    max-width: var(--article-width, 690px);
+    margin:auto;
+}

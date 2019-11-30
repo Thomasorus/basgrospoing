@@ -1,0 +1,109 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 900;
+    font-family: 'FuturaStd-ExtraBold', var(--font-family-sans-serif,-apple-system, BlinkMacSystemFont, "Segoe UI","Roboto", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol");
+    text-transform: uppercase;
+    letter-spacing: -2px;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    color: var(--bgp-text, #000000);
+    // hyphens: auto;
+}
+
+
+
+.underline-l--green {
+    display: inline;
+    box-shadow: 0 -10px 0 var(--bgp-green, #1FD316) inset;
+    padding-bottom: 8px;
+}
+
+.underline-l--pink {
+    display: inline;
+    box-shadow: 0 -10px 0 var(--bgp-pink, #FF458C) inset;
+    padding-bottom: 8px;
+}
+
+.underline-m--green {
+    display: inline;
+    box-shadow: 0 -6px 0 var(--bgp-green, #1FD316) inset;
+    padding-bottom: 6px;
+}
+
+.underline-m--pink {
+    display: inline;
+    box-shadow: 0 -6px 0 var(--bgp-pink, #FF458C) inset;
+    padding-bottom: 6px;
+}
+
+.underline-s--green {
+    display: inline;
+    box-shadow: 0 -3px 0 var(--bgp-green, #1FD316) inset;
+    padding-bottom: 3px;
+}
+
+.underline-s--pink {
+    display: inline;
+    box-shadow: 0 -3px 0 var(--bgp-pink, #FF458C) inset;
+    padding-bottom: 3px;
+}
+
+.underline-m--white {
+    display: inline;
+    box-shadow: 0 -6px 0 var(--bgp-white, #FFFFFF) inset;
+    padding-bottom: 6px;
+}
+
+
+h1 {
+    font-size: 8.2rem;
+    line-height: 1.40;
+}
+
+h2 {
+    font-size: 3.7rem;
+    line-height: 1.50;
+}
+
+h3 {
+    font-size: 2.5rem;
+    line-height: 1.53;
+}
+
+h4 {
+    font-size: 1.9rem;
+    line-height: 1.23;
+}
+
+h5 {
+    font-size: 1.6rem;
+}
+
+h6 {
+    font-size: 1.4rem;
+}
+
+
+.heading-giant {
+    font-size: 18rem;
+    font-weight: 900;
+    font-family: 'FuturaStd-ExtraBoldOblique', var(--font-family-sans-serif,-apple-system, BlinkMacSystemFont, "Segoe UI","Roboto", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol");
+    text-shadow: 6px 6px 0px var(--bgp-pink, #FF458C);
+    padding: 0;
+    letter-spacing: -7px;
+    transform: rotate(-5deg);
+    text-align: center;
+    display:inline-block;
+   
+}
+
+
+@media (max-width: 940px) {
+    .heading-giant {
+      font-size: 18vw;
+    }
+  }

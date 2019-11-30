@@ -1,0 +1,14 @@
+title: Feed
+
+files: false
+pages: false
+
+
+options: 
+  template: false
+  status: false
+
+
+
+  
+icon: rss

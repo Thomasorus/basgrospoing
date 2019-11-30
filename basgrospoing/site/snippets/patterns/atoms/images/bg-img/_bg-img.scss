@@ -1,0 +1,39 @@
+ .bg-img {
+   position: absolute;
+   top: 0;
+   left: 0;
+   bottom: 0;
+   right: 0;
+   width: 100%;
+   height: 100%;
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+   transform-origin: 50% 100%;
+ }
+
+
+ .bg-img--round {
+   border-radius: 100%;
+   height: 87%;
+   width: 87%;
+   top: 10px;
+   left: 10px;
+ }
+
+
+ .bg-lazy {
+   height: 100%;
+
+   >span {
+     position: absolute !important;
+     height: 100% !important;
+   }
+   img,
+   picture {
+     object-fit: cover;
+     object-position: center center;
+     height: 100%;
+     width: 100%;
+   }
+ }

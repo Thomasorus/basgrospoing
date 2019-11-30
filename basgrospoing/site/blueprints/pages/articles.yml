@@ -1,0 +1,31 @@
+title: articles
+icon: 📜
+options:
+  changeStatus: false
+  changeSlug: false
+  changeTemplate: false
+  changeTitle: false
+  delete: false
+  duplicate: false
+
+columns:
+  left:
+    width: 1/2
+    sections:
+      drafts:
+        extends: sections/articles
+        headline: Brouillons
+        status: draft
+
+      unlisted:
+        extends: sections/articles
+        headline: Privés
+        status: unlisted
+
+  right:
+    width: 1/2
+    sections:
+      listed:
+        extends: sections/articles
+        headline: Publiés
+        status: listed

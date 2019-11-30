@@ -1,8 +1,9 @@
 # System files
 # ------------
-
+._*
 Icon
 .DS_Store
+._.DS_Store
 
 # Dev folders
 # ---------------

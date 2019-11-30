@@ -1,0 +1,9 @@
+type: group
+fields:
+  seotitle:
+    label: SEO Title
+    type: text
+    value: lol
+  seodescription:
+    label: SEO Description
+    type: text

@@ -1,0 +1,49 @@
+/* autoprefixer grid: autoplace */
+// Main file has all the stylistic classes
+@import "./partials/_fonts";
+@import "./../../basgrospoing/site/snippets/patterns/atoms/global/animations/_animations";
+@import "./../../basgrospoing/site/snippets/patterns/atoms/images/bg-img/_bg-img";
+@import "./../../basgrospoing/site/snippets/patterns/molecules/article-footer/_article-footer";
+@import "./../../basgrospoing/site/snippets/patterns/molecules/patreon/_patreon";
+@import "./../../basgrospoing/site/snippets/patterns/organisms/fighterround/_fighterround";
+@import "./../../basgrospoing/site/snippets/patterns/atoms/images/whitebg/_whitebg";
+@import "./../../basgrospoing/site/snippets/patterns/atoms/images/greenbg/_greenbg";
+@import "./../../basgrospoing/site/snippets/patterns/atoms/images/pinkbg/_pinkbg";
+@import "./../../basgrospoing/site/snippets/patterns/atoms/images/blackbg/_blackbg";
+@import "./../../basgrospoing/site/snippets/patterns/molecules/card/_card";
+@import "./../../basgrospoing/site/snippets/patterns/organisms/podcastcard/_podcastcard";
+@import "./../../basgrospoing/site/snippets/patterns/organisms/articlecard/_articlecard";
+@import "./../../basgrospoing/site/snippets/patterns/molecules/roundcard/_roundcard";
+@import "./../../basgrospoing/site/snippets/patterns/organisms/othercard/_othercard";
+@import "./../../basgrospoing/site/snippets/patterns/organisms/punchlinecard/_punchlinecard";
+@import "./../../basgrospoing/site/snippets/patterns/organisms/herofull/_herofull";
+@import "./../../basgrospoing/site/snippets/patterns/organisms/podcastschrono/_podcastschrono";
+@import "./../../basgrospoing/site/snippets/patterns/organisms/articleschrono/_articleschrono";
+@import "./../../basgrospoing/site/snippets/patterns/templates/article/_article";
+@import "./../../basgrospoing/site/snippets/patterns/templates/opinion/_opinion";
+@import "./../../basgrospoing/site/snippets/patterns/templates/magazine/_magazine";
+@import "./../../basgrospoing/site/snippets/patterns/templates/podcast/_podcast";
+
+.invert span {
+  border-bottom: 3px solid white;
+}
+
+div.cover {
+  position: fixed;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+}
+
+img.cover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  min-width: 50%;
+  min-height: 50%;
+  overflow-x: hidden;
+}

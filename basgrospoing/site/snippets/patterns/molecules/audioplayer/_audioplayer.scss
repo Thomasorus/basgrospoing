@@ -1,0 +1,187 @@
+.sr-only {
+    border: 0 !important;
+    clip: rect(1px, 1px, 1px, 1px) !important;
+    clip-path: inset(50%) !important;
+    height: 1px !important;
+    overflow: hidden !important;
+    padding: 0 !important;
+    position: absolute !important;
+    width: 1px !important;
+    white-space: nowrap !important;
+}
+
+
+.audioplayer {
+    @supports (display: grid) {
+        display: grid;
+        grid-template-columns: 1fr 1fr 3fr;
+        grid-template-rows: 34px auto;
+        grid-template-areas:
+            "play progress progress"
+            "play speed volume";
+    }
+
+    border:6px solid var(--bgp-green, #1FD316);
+    padding:10px;
+}
+
+.button:focus {
+    outline: none;
+}
+
+.playbutton {
+    grid-area: play;
+    border: 0;
+    width: 100%;
+    height: 100px;
+    background: var(--bgp-background, #FFFFFF);
+    color: var(--bgp-text, #000000);
+    font-size: 1.8rem;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-top: 10px;
+    border-right: var(--bgp-background, #FFFFFF);
+
+    p {
+        margin: 0;
+        padding: 0;
+    }
+
+    &:focus {
+        outline: 1px red;
+    }
+}
+
+
+
+.play-icon {
+    border: 0;
+    background: transparent;
+    box-sizing: border-box;
+    width: 0;
+    height: 25px;
+    border-color: transparent transparent transparent var(--bgp-text, #000000);
+    transition: 100ms all ease;
+    cursor: pointer;
+    border-style: solid;
+    border-width: 17px 0 17px 25px;
+
+    &.paused {
+        border-style: double;
+        border-width: 0px 0 0px 35px;
+    }
+
+    &:hover {
+        border-color: transparent transparent transparent var(--bgp-pink, #FF458C);
+    }
+}
+
+#changeSpeed {
+    grid-area: speed;
+    background: var(--bgp-background, #FFFFFF);
+    color: var(--bgp-text, #000000);
+    border: 0;
+    padding: 20px 10px;
+    height: auto;
+}
+
+.volume {
+    grid-area: volume;
+    width: 120px;
+    text-align: center;
+    display: flex;
+    flex-direction: row wrap;
+    justify-content: space-around;
+    padding-right: 0;
+    align-items: flex-end;
+    background: var(--bgp-background, #FFFFFF);
+    width: 100%;
+    height: 100%;
+    border-top: 10px solid var(--bgp-background, #FFFFFF);
+
+}
+
+
+
+
+.volume input~label {
+    background: var(--bgp-green, #1FD316);
+    display: flex;
+    flex: 1 0 auto;
+    margin: 0 5px;
+    width: 10px;
+    max-height: 100%;
+
+    &:hover {
+        background: var(--bgp-pink, #FF458C);
+        cursor: pointer;
+    }
+}
+
+
+@for $i from 1 to 100 {
+    $a: $i * 5%;
+
+    .volume label:nth-child(#{$i + 1}) {
+        height: $a;
+    }
+}
+
+
+@media (max-width: 440px) {
+    .volume input~label {
+        margin: 0;
+        width: 5px;
+    }
+}
+
+
+.volume input:checked~label {
+    background: #808080;
+}
+
+.volume input:checked+label {
+    background: var(--bgp-green, #1FD316);
+}
+
+progress {
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+progress[value] {
+    grid-area: progress;
+    height: 34px;
+    width: 100%;
+    background: var(--bgp-black, #000000);
+}
+
+progress[value]::-webkit-progress-bar,
+progress[value]::-moz-progress-bar {
+    width: 100%;
+    cursor: crosshair;
+    background-color: var(--bgp-green, #1FD316);
+    border: 0;
+
+}
+
+progress[value]::-webkit-progress-value {
+    background-color: var(--bgp-pink, #FF458C);
+    border: 0;
+}
+
+
+progress[value]::-webkit-progress-value {
+    background-color: var(--bgp-pink, #FF458C);
+    border: 0;
+}
+
+.progress__time {
+    background: var(--bgp-green, #1FD316);
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+    min-width: 20px;
+    height: 100%;
+    transition: width 0.1s;
+}

@@ -1,0 +1,17 @@
+type: group
+icon: twitter
+fields:
+  twitterauthor:
+    label: Compte twitter de l'auteur
+    type: text
+    width: 1/2
+  socialimage:
+    label: Image pour Twitter et Facebook
+    type: files
+    width: 1/2
+    multiple: false
+    query: page.images
+  socialdescription:
+    label: Description pour l'embed twitter et facebook
+    type: textarea
+    help: Maximum 120 caractères

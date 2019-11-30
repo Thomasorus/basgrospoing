@@ -1,0 +1,55 @@
+title: Opinion
+
+tabs:
+  # content tab
+  content:
+    label: Rédaction
+    icon: text
+    preset: page
+    pages: false
+    fields:
+      isTranslated:
+        label: Traduction faite ?
+        type: toggle
+        width: 1/4
+        when:
+          currentLang: en
+      currentLang:
+        label: Current lang
+        type: hidden
+      introtext:
+        label: Texte d'introduction
+        type: textarea
+      text:
+        label: Contenu de l'article
+        type: textarea
+
+  # images tab
+  images:
+    label: Images
+    icon: image
+    preset: page
+    pages: false
+    fields:
+      images: fields/images-opinion
+
+  # seo tab
+  seo:
+    label: Seo
+    icon: globe
+    preset: page
+    pages: false
+    fields:
+      seo: fields/seo
+
+  # meta tabs
+  metas: fields/metadonnees
+
+  # social tab
+  social:
+    label: Réseaux sociaux
+    icon: twitter
+    preset: page
+    pages: false
+    fields:
+      social: fields/socialnetworks

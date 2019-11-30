@@ -1,0 +1,11 @@
+title: Podcaster Audiofile
+type: fields
+fields:
+  episodeTitle: 
+    label: Episode Title
+    type: text
+    width: 1/2
+  duration:
+    label: Duration
+    type: text
+    width: 1/2

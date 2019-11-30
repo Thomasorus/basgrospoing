@@ -1,0 +1,54 @@
+
+.donate-banner {
+    background: var(--bgp-yellow, #EFD61D);
+}
+
+.donate-banner__content {
+    max-width: 690px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px 10px;
+    text-align: center;
+    h2,
+    h4 {
+        display: block;
+        margin: 0 auto;
+    }
+    p {
+        padding: 10px 0 0 0;
+        text-align: right;
+    }
+}
+
+.donate-banner__cols {
+    @supports (display: grid) {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-gap: 0px 40px;
+    margin-top: 20px;
+    }
+}
+
+.donate-text {
+    padding-right: 20px;
+}
+
+.donate-form {
+    height: 100%;
+    padding: 20px;
+    }
+
+.donate-banner__button {
+    width: 100%;
+    height: auto;
+    background: transparent;
+    border: none;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-content: center;
+    cursor: pointer;
+    text-align: center;
+   
+}

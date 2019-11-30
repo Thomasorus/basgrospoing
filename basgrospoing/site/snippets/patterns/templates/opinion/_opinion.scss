@@ -1,0 +1,59 @@
+.opinion__titles {
+    max-width: var(--article-width, 690px);
+    margin: 0 auto;
+    text-align: center;
+    color: var(--bgp-background, #FFFFFF);
+    padding: 110px 40px 0 40px;
+    img {
+        max-width: 100%;
+        min-height: 480px;
+    }
+    h1 {
+        font-size: 6rem;
+        line-height: 1.1;
+        margin-bottom: 20px;
+        margin-top: 20px;
+        color:var(--bgp-text, #000000);
+        
+    }
+    i {
+        font-family: 'BauerBodoniStd-Italic', var(--font-family-sans-serif,-apple-system, BlinkMacSystemFont, "Segoe UI","Roboto", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol");
+        padding-top: 25px;
+        padding-bottom: 15px;
+        font-size: 1.9rem;
+        color:var(--bgp-text, #000000);
+    }
+    span {
+        font-family: 'FuturaStd-ExtraBoldOblique', var(--font-family-sans-serif,-apple-system, BlinkMacSystemFont, "Segoe UI","Roboto", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol");
+        background-color: var(--bgp-text, #000000);
+        font-size: 1.4rem;
+        letter-spacing: 0px;
+        padding: 5px 25px;
+        height: 30px;
+        width: auto;
+        margin-bottom: 20px;
+    }
+
+    .opinion__date {
+        p {
+            color:var(--bgp-text, #000000);
+            font-style: italic;
+        }   
+    }
+    
+}
+
+.opinion__head {
+    height: auto;
+
+}
+
+@media (max-width: 500px) {
+
+    .opinion__titles {
+      h1 {
+        font-size: 3.7rem;
+      }
+    }
+  }
+  

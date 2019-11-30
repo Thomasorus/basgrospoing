@@ -1,0 +1,26 @@
+type: group
+fields:
+  coverimage:
+    label: Image prenant toute la largeur pour le début de l'article
+    type: files
+    help: Hauteur minimum 474 pixels, longueur idéalement 1900 pixels
+    multiple: false
+    query: page.images
+  chronoimage:
+    label: Image ronde pour le listing par date
+    type: files
+    help: 146 x 146 pixels minimum et format carré obligatoire
+    multiple: false
+    query: page.images
+  archiveimage:
+    label: Image rectangulaire pour les archives
+    type: files
+    help: 313 x 300 pixels minimum
+    multiple: false
+    query: page.images
+  magazineimage:
+    label: Image pour l'article magazine montré en home
+    type: files
+    help: Horizontale, 640 x 430 minimum
+    multiple: false
+    query: page.images

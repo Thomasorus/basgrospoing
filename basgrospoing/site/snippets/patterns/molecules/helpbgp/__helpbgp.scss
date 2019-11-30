@@ -1,0 +1,44 @@
+.helpbgp {
+    position:fixed;
+    right:-205px;
+    top:45%;
+    right: -205px;
+    background:var(--bgp-green, #1FD316);
+    border-radius: 10px 0 0 10px;
+    z-index: 10;
+    a {
+        text-decoration: none;
+    }
+}
+
+.helpbgp__img {
+    display:inline-block;
+    padding:10px;
+        vertical-align: middle;
+
+    > img {
+        width:40px;
+        height:auto;
+        animation: breathing 3s ease-out infinite normal;
+    }
+}
+
+.helpbgp__msg {
+    display:inline-block;
+    color:var(--bgp-black, #000000);
+    vertical-align: middle;
+    padding:15px 0 0 0;
+    width: 200px;
+}
+
+.helpbgp:hover {
+        transition: all 0.5s ease-out;
+        right:0;
+}
+
+
+@media (max-width: 1050px) {
+    .helpbgp {
+      display: none;
+    }
+  }

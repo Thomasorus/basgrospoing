@@ -1,0 +1,31 @@
+.timer {
+
+    text-align: center;
+
+    a {
+        display: block;
+        font-family: 'FuturaStd-ExtraBold', var(--font-family-sans-serif,-apple-system, BlinkMacSystemFont, "Segoe UI","Roboto", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol");
+        margin: 10px;
+        color: var(--bgp-white, #FFFFFF);
+
+    }
+
+    p {
+        font-family: 'FuturaStd-ExtraBold', var(--font-family-sans-serif,-apple-system, BlinkMacSystemFont, "Segoe UI","Roboto", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol");
+        color: var(--bgp-light-grey, #706F6F);
+        font-size: 1.1rem;
+        margin: 0;
+        padding: 0;
+    }
+
+}
+
+#timer {
+    font-family: 'FuturaStd-ExtraBold', var(--font-family-sans-serif,-apple-system, BlinkMacSystemFont, "Segoe UI","Roboto", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol");
+    font-size: 4rem;
+}
+
+.timer__continue {
+    font-size: 3rem;
+    text-decoration: none;
+}

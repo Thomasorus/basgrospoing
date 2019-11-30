@@ -1,0 +1,123 @@
+p, li {
+    font-size: 2.1rem;
+    line-height: 1.5;
+    font-family: "FuturaStd-Light", var(--font-family-sans-serif,-apple-system, BlinkMacSystemFont, "Segoe UI","Roboto", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol");
+    margin-bottom: 20px;
+    font-kerning: normal;
+}
+
+
+p a {
+    transition: all 0.2s ease;
+    color: var(--bgp-text, #000000);
+    font-family: "FuturaStd-Medium", var(--font-family-sans-serif,-apple-system, BlinkMacSystemFont, "Segoe UI","Roboto", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol");
+    padding:2px;
+    transition:0.4s;
+    text-decoration: underline;
+}
+
+a {
+    text-decoration: none;
+}
+
+p a.link-pink:hover {
+    color: var(--bgp-white, #FFFFFF);
+    background-color:var(--bgp-pink, #FF458C);
+    animation: blinker 0.4s linear infinite;
+}
+
+p a.link-green:hover {
+    color: var(--bgp-white, #FFFFFF);
+    background-color:var(--bgp-green, #1FD316);
+    animation: blinker 0.4s linear infinite;
+}
+
+p a.link-yellow:hover {
+    color: var(--bgp-black, #000000);
+    background-color:var(--bgp-yellow, #EFD61D);
+    animation: blinker 0.4s linear infinite;
+}
+
+p a.link-white:hover {
+    color: var(--bgp-black, #000000);
+    background-color:var(--bgp-white, #FFFFFF);
+    animation: blinker 0.4s linear infinite;
+}
+
+strong {
+    font-family: "FuturaStd-Medium", var(--font-family-sans-serif,-apple-system, BlinkMacSystemFont, "Segoe UI","Roboto", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol");
+}
+
+em {
+    font-family: "FuturaStd-LightOblique", var(--font-family-sans-serif,-apple-system, BlinkMacSystemFont, "Segoe UI","Roboto", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol");
+}
+
+b {
+    font-family: "FuturaStd-Medium", var(--font-family-sans-serif,-apple-system, BlinkMacSystemFont, "Segoe UI","Roboto", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol");
+}
+
+i {
+    font-family: "FuturaStd-LightOblique", var(--font-family-sans-serif,-apple-system, BlinkMacSystemFont, "Segoe UI","Roboto", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol");
+}
+
+su{
+    font-size: 1.2rem;
+    vertical-align: top;
+}
+
+small {
+    font-size: 1.4rem;
+}
+
+abbr {
+    font-size: inherit;
+}
+
+kbd {
+        font-family: monospace;
+}
+
+q::before {
+    content: '"';
+}
+
+q::after {
+    content: '"';
+}
+
+cite {
+    font-family: "FuturaStd-LightOblique", var(--font-family-sans-serif,-apple-system, BlinkMacSystemFont, "Segoe UI","Roboto", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol");
+}
+
+dfn {
+    font-family: "FuturaStd-LightOblique", var(--font-family-sans-serif,-apple-system, BlinkMacSystemFont, "Segoe UI","Roboto", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol");
+}
+
+mark {
+    background-color: var(--bgp-pink, #FF458C);
+    color: var(--bgp-white, #FFFFFF);
+}
+
+code {
+    font-family: monospace;
+}
+
+sam{
+    font-family: monospace;
+}
+
+var {
+    font-family: "FuturaStd-LightOblique", var(--font-family-sans-serif,-apple-system, BlinkMacSystemFont, "Segoe UI","Roboto", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol");
+}
+
+ul {
+    margin-left: 40px;
+    margin-bottom: 40px;
+}
+
+li {
+    list-style: initial;
+    margin-bottom: 10px;
+}
+
+

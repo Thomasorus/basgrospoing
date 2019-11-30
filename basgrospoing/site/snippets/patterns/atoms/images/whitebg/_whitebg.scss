@@ -1,0 +1,32 @@
+ .white-bg::after {
+        display: block;
+        position: absolute;
+        background-image: linear-gradient(to bottom, transparent 0%, var(--bgp-background, #FFFFFF) 100%);
+        margin-top: -150px;
+        height: 30%;
+        width: 100%;
+        content: '';
+        bottom: 0;
+}
+
+ .white-bg--tall::after {
+        display: block;
+        position: absolute;
+        background-image: linear-gradient(to bottom, transparent 0%, var(--bgp-background, #FFFFFF) 100%);
+        margin-top: -150px;
+        height: 80%;
+        width: 100%;
+        content: '';
+        bottom: 0;
+}
+
+@mixin white-bg {
+        display: block;
+        position: absolute;
+        background-image: linear-gradient(to bottom, transparent 0%, var(--bgp-background, #FFFFFF) 100%);
+        margin-top: -150px;
+        height: 30%;
+        width: 100%;
+        content: '';
+        bottom: -1px;
+}

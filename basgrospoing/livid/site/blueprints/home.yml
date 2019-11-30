@@ -1,0 +1,30 @@
+title: Home
+
+files: false
+pages: false
+
+
+options: 
+  template: false
+  status: false
+
+
+fields:
+  title:
+    label: Title
+    type:  title
+    
+  text:
+    label: Text
+    type:  textarea
+  perpage:
+    label: Nombre de posts par page
+    type: number
+    min: 1
+    max: 20
+    default: 5
+    width: 1/4
+
+  seo:
+    type: seo
+icon: home

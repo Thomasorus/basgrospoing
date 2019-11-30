@@ -1,0 +1,54 @@
+.card--punchline {
+    grid-area: punchline;
+    height: 522px;
+    a {
+        text-decoration: none;
+    }
+    a:hover h2 {
+        transform: rotate(-5deg) scale(1.1);
+        transition: 0.4s;
+    }
+    .card_star {
+        max-width: 100%;
+        text-align: center;
+        height: 117px;
+        margin-bottom: 15px;
+        img {
+            height: 100%;
+            max-width: 124px;
+        }
+        h2 {
+            margin-top: -85px;
+            font-family: 'FuturaStd-ExtraBoldOblique', var(--font-family-sans-serif,-apple-system, BlinkMacSystemFont, "Segoe UI","Roboto", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol");
+            transform: rotate(-5deg) scale(1);
+            transition: 0.4s;
+        }
+    }
+    i {
+        font-size: 3rem;
+        padding-top: 0;
+        margin: 0;
+        line-height: 1.36;
+    }
+    i:before,
+    i:after {
+        content: '"';
+    }
+    .card__text {
+        position: relative;
+        max-height: 200px;
+        top: 0;
+    }
+    h4 {
+        text-align: right;
+        padding-top: 20px;
+    }
+}
+
+@media (max-width: 710px) {
+   
+  
+    .card--punchline {
+      display: none;
+    }
+}

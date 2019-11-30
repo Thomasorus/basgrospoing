@@ -1,0 +1,17 @@
+type: group
+fields:
+  chronoimageOld:
+    label: Image ronde pour le listing par date
+    type: hidden
+    help: 146 x 146 pixels minimum et format carré obligatoire
+    readonly: true
+  podcastimageOld:
+    label: Image verticale pour les podcasts sur l'accueil
+    type: hidden
+    help: Verticale uniquement, minimum 313 x 430 pixels
+    readonly: true
+  podcastposterOld:
+    label: Image verticale pour l'interieur de la page
+    type: hidden
+    help: Verticale uniquement, grande
+    readonly: true

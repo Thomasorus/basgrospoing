@@ -1,0 +1,19 @@
+ .green-bg::after {
+        display: none;
+        position: absolute;
+        background-color: var(--bgp-green-alpha, rgba(31, 211, 22, 0.7));
+        height: 100%;
+        width: 100%;
+        content: '';
+        bottom: 0;
+}
+
+@mixin green-bg {
+        display: block;
+        position: absolute;
+        background-color: var(--bgp-green-alpha, rgba(31, 211, 22, 0.7));
+        min-height: 100%;
+        min-width: 100%;
+        margin-top: 0;
+        content: '';
+}

@@ -1,0 +1,78 @@
+type: group
+fields:
+  podcastLink:
+    label: Nom du fichier mp3
+    type: text
+    width: 4/5
+    type: hidden
+  isOldPodcast:
+    label: Ancien site ?
+    type: checkbox
+    text: Oui
+    readonly: true
+    width: 1/5  
+    type:  hidden
+  duration:
+    label: Durée (old podcast)
+    type: text
+    type:  hidden
+    readonly: true
+  podseason:
+    label: Season number
+    type:  number
+    width: 1/4
+    help: Added by Apple in iOS 11. Enter your current season number. Leave blank if you do not have seasons
+  podepisode:
+    label: Episode number
+    type:  number
+    width: 1/4
+    help: Added by Apple in iOS 11. Enter your episodes number. 
+  episodeType:
+    label: iTunes episode type
+    type: select
+    default: full
+    options:
+      full: full
+      trailer: trailer
+      bonus: bonus
+    help: Added by Apple in iOS 11. Choose Full for a regular episode, trailer if this is a trailer for an episode, or bonus for bonus material like a making of.
+    width: 1/4
+  podtitle:
+    label: iTunes Title
+    type: text
+    help: This is (currently) an iTunes-Only. Do not add episode or season numbers. Use the corresponding fields for that.
+    width: 1/2
+  podsubtitle:
+    label: Subtitle
+    type:  text
+    width: 1/2
+  poddescr:
+    label: Podcast summary
+    type: textarea
+    help: A short summary of your episode.
+  chapters:
+    label: Chapters
+    type: structure
+    fields: 
+      timestamp:
+        label: Timestamp
+        type: text
+      title: 
+        label: Title
+        type: text
+      url:
+        label: URL
+        type: text
+    help: Some player support chapters. Enter a timestamp, title and url, so your listeners can jump to specific parts of your episode.
+  downloads:
+    label: Downloads
+    type: structure
+    readonly: true
+    fields: 
+      timestamp:
+        label: Year and month
+        type: text
+      downloaded:
+        label: Downloads
+        type: text
+files: true
