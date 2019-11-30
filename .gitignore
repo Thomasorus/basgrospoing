@@ -1,0 +1,70 @@
+# System files
+# ------------
+
+Icon
+.DS_Store
+
+# Dev folders
+# ---------------
+/node_modules
+/node-modules/*
+/.vscode
+
+# Temporary files
+# ---------------
+
+/basgrospoing/media/*
+/basgrospoing/livid/media/*
+!/basgrospoing/media/index.html
+!/basgrospoing/livid/media/index.html
+
+# Content files
+# ---------------
+/basgrospoing/content
+/basgrospoing/content/*
+/basgrospoing/old-content
+/basgrospoing/old-content/*
+/basgrospoing/livid/content
+/basgrospoing/livid/content/*
+
+
+# Content files
+# ---------------
+/basgrospoing/files
+/basgrospoing/files/*
+
+# Kirby master
+# /basgrospoing/kirby
+# /basgrospoing/kirby/*
+
+
+# -------------SECURITY-------------
+# NEVER publish these files via Git!
+# -------------SECURITY-------------
+
+# Cache Files
+# ---------------
+
+.cache
+/site/cache/*
+!/site/cache/index.html
+!/basgrospoing/site/cache/index.html
+!/basgrospoing/livid/site/cache/index.html
+
+# Accounts
+# ---------------
+
+/basgrospoing/site/accounts/*
+!/basgrospoing/site/accounts/index.html
+/basgrospoing/livid/site/accounts/*
+!/basgrospoing/livid/site/accounts/index.html
+
+# Sessions
+# ---------------
+
+/basgrospoing/site/sessions/*
+!/basgrospoing/site/sessions/index.html
+
+# License
+# ---------------
+/basgrospoing/site/config/.license
