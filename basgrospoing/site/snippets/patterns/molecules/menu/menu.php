@@ -5,7 +5,7 @@
     <img src="/assets/images/logo-pink.svg" alt="logo" id="logo">
     </a>
   </li>
-  <?php foreach($pages->visible() as $item): ?>
+  <?php foreach($pages->listed() as $item): ?>
   <li class="menu__item<?= r($item->isOpen(), ' is-active') ?>">
     <a href="<?= $item->url() ?>"><?= $item->title()->html() ?></a>
   </li>

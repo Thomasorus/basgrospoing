@@ -1,6 +1,6 @@
 <?php $podcast = page('podcasts')
                 ->children()
-                ->visible()
+                ->listed()
                 ->sortBy('date', 'desc')
                 ->limit(1);
 

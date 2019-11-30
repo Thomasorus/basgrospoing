@@ -6,7 +6,7 @@ return function($kirby, $site, $pages, $page) {
     $lastRound = page('rounds')
       ->children()
       ->sortBy('limitDate', 'desc')
-      ->visible()
+      ->listed()
       ->limit(1);
 
     $lastArticle = page('articles')
@@ -14,7 +14,7 @@ return function($kirby, $site, $pages, $page) {
       ->sortBy(function ($page) {
         return $page->date()->toDate();
       }, 'desc')
-      ->visible()
+      ->listed()
       ->first();
 
     $lastPodcast = page('podcasts')
@@ -22,7 +22,7 @@ return function($kirby, $site, $pages, $page) {
       ->sortBy(function ($page) {
         return $page->date()->toDate();
       }, 'desc')
-      ->visible()
+      ->listed()
       ->first();
       
     $round = $lastRound->first();
@@ -33,7 +33,7 @@ return function($kirby, $site, $pages, $page) {
 
     $podcastsChrono = page('podcasts')
       ->children()
-      ->visible()
+      ->listed()
       ->sortBy(function ($page) {
         return $page->date()->toDate();
       }, 'desc')
@@ -42,7 +42,7 @@ return function($kirby, $site, $pages, $page) {
 
     $articleschrono = page('articles')
       ->children()
-      ->visible()
+      ->listed()
       ->sortBy(function ($page) {
         return $page->date()->toDate();
       }, 'desc')
@@ -51,7 +51,7 @@ return function($kirby, $site, $pages, $page) {
 
     $heromag = page('articles')
       ->children()
-      ->visible()
+      ->listed()
       ->filterBy('famille', '==', 'magazine')
       ->sortBy(function ($page) {
         return $page->date()->toDate();
@@ -61,7 +61,7 @@ return function($kirby, $site, $pages, $page) {
     if($lastArticle == $heromag) {
       $heromag = page('articles')
       ->children()
-      ->visible()
+      ->listed()
       ->filterBy('famille', '==', 'magazine')
       ->sortBy(function ($page) {
         return $page->date()->toDate();
@@ -72,7 +72,7 @@ return function($kirby, $site, $pages, $page) {
 
     $historique = page('podcasts')
       ->children()
-      ->visible()
+      ->listed()
       ->filterBy('date', '<=', $roundDateStart)
       ->filterBy('date', '>=', $roundDateEnd)
       ->filterBy('category', '==', "Le podcast");
@@ -80,14 +80,14 @@ return function($kirby, $site, $pages, $page) {
 
     $magazines = page('articles')
       ->children()
-      ->visible()
+      ->listed()
       ->filterBy('date', '<=', $roundDateStart)
       ->filterBy('date', '>=', $roundDateEnd)
       ->filterBy('famille', '==', 'magazine');
     
     $others1 = page('articles')
       ->children()
-      ->visible()
+      ->listed()
       ->filterBy('date', '<=', $roundDateStart)
       ->filterBy('date', '>=', $roundDateEnd)
       ->filterBy('famille', '!=', 'magazine')
@@ -98,7 +98,7 @@ return function($kirby, $site, $pages, $page) {
              		
 		 $others2 = page('podcasts')
           ->children()
-          ->visible()
+          ->listed()
           ->filterBy('date', '<=', $roundDateStart)
           ->filterBy('date', '>=', $roundDateEnd)
           ->filterBy('famille', '!=', 'magazine')
@@ -114,7 +114,7 @@ return function($kirby, $site, $pages, $page) {
     
       $englishMain = page('articles')
       ->children()
-      ->visible()
+      ->listed()
       ->sortBy(function ($page) {
         return $page->date()->toDate();
       }, 'desc')
@@ -124,7 +124,7 @@ return function($kirby, $site, $pages, $page) {
 
       $englishSecond = page('articles')
       ->children()
-      ->visible()
+      ->listed()
       ->sortBy(function ($page) {
         return $page->date()->toDate();
       }, 'desc')

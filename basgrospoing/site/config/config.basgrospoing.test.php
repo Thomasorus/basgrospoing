@@ -52,7 +52,7 @@ return [
 
             $feed = $feedContent
                 ->children()
-                ->visible()
+                ->listed()
                 ->filter(function ($page) use($language) {
                     return $page->translation($language->code())->exists(); 
                 })

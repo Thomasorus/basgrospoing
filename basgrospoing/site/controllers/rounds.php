@@ -7,7 +7,7 @@ return function($site, $pages, $page, $kirby) {
       if($lang == "fr") {
       $Rounds = page('rounds')
         ->children()
-        ->visible()
+        ->listed()
         ->sortBy('date', 'desc', 'time', 'asc');
       } else {
         $Rounds = [];

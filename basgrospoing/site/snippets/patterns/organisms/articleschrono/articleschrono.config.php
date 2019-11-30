@@ -1,5 +1,5 @@
  <?php
-$articlechrono = page('articles')->children()->visible()->sortBy('date', 'desc')->first();
+$articlechrono = page('articles')->children()->listed()->sortBy('date', 'desc')->first();
 
 return [
     'defaults' => [

@@ -2,7 +2,7 @@
 
 echo $site->find('articles', 'podcasts')
   ->children()
-  ->visible()
+  ->listed()
   ->filter(function($child) {
     return $child->content(site()->language()->code())->exists();
   })

@@ -10,7 +10,7 @@
 </div>
 <div class="fighters">
 
-<?php foreach($page->children()->visible() as $fighter){
+<?php foreach($page->children()->listed() as $fighter){
 pattern('organisms/fighterround', ["fighter" => $fighter]);
 
 }

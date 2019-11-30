@@ -15,14 +15,14 @@ return function($site, $pages, $page, $kirby) {
       if($lang == "fr") {
         $articles = page('articles')
         ->children()
-        ->visible()
+        ->listed()
         ->filterBy('Currentlang', 'fr')
         ->sortBy('date', 'desc', 'time', 'asc')
         ->paginate(($perpage >= 1)? $perpage : 12);
       } else if($lang == "en") {
         $articles = page('articles')
         ->children()
-        ->visible()
+        ->listed()
         ->filterBy('Currentlang', 'en')
         ->filterBy('isTranslated', 'true')
         ->sortBy('date', 'desc', 'time', 'asc')

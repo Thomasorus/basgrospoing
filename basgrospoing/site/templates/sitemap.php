@@ -12,7 +12,7 @@ echo '<?xml version="1.0" encoding="utf-8"?>';
 
 ?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <?php foreach($pages->index()->visible() as $p): ?>
+  <?php foreach($pages->index()->listed() as $p): ?>
   <?php if(in_array($p->uri(), $ignore)) continue ?>
   <?php if(in_array($p->template(), $templateignore)) continue ?>
   <url>

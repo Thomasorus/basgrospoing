@@ -12,7 +12,7 @@ return function($site, $pages, $page) {
      
         $categories = page('podcasts')
         ->children()
-        ->visible()
+        ->listed()
         ->sortBy('date', 'desc')
         ->pluck('Category', ',', true);
         
@@ -26,7 +26,7 @@ return function($site, $pages, $page) {
 
          $allPodcasts = page('podcasts')
          ->children()
-         ->visible()
+         ->listed()
          ->sortBy('date', 'desc');
  
          if($category = param('cat')) {

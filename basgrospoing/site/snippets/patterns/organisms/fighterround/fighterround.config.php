@@ -1,7 +1,7 @@
 <?php 
 $fighter = page('fighters')
           ->children()
-          ->visible()
+          ->listed()
            ->first();
           
 return [

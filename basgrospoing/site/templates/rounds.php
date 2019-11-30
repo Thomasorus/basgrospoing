@@ -10,21 +10,21 @@
 
         $historique = page('podcasts')
         ->children()
-        ->visible()
+        ->listed()
         ->filterBy('date', '<=', $roundDateStart)
         ->filterBy('date', '>=', $roundDateEnd)
         ->filterBy('category', '==', "Le podcast");
 
         $magazines = page('articles')
         ->children()
-        ->visible()
+        ->listed()
         ->filterBy('date', '<=', $roundDateStart)
         ->filterBy('date', '>=', $roundDateEnd)
         ->filterBy('famille', '==', 'magazine');
       
         $others1 = page('articles')
           ->children()
-          ->visible()
+          ->listed()
           ->filterBy('date', '<=', $roundDateStart)
           ->filterBy('date', '>=', $roundDateEnd)
           ->filterBy('famille', '!=', 'magazine')
@@ -33,7 +33,7 @@
              		
 		 $others2 = page('podcasts')
           ->children()
-          ->visible()
+          ->listed()
           ->filterBy('date', '<=', $roundDateStart)
           ->filterBy('date', '>=', $roundDateEnd)
           ->filterBy('famille', '!=', 'magazine')

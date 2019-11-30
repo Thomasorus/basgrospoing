@@ -2,8 +2,8 @@
 
 <main>
 <section>
-<?php $podcasts = $pages->find('/podcasts')->children()->visible()->filterBy('author', $page->name())->sortBy('date', 'desc');
-$articles = $pages->find('/articles')->children()->visible()->filterBy('author', $page->name())->sortBy('date', 'desc');
+<?php $podcasts = $pages->find('/podcasts')->children()->listed()->filterBy('author', $page->name())->sortBy('date', 'desc');
+$articles = $pages->find('/articles')->children()->listed()->filterBy('author', $page->name())->sortBy('date', 'desc');
 ?>
 
 

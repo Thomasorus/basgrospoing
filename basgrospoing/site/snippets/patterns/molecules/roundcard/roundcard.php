@@ -1,5 +1,5 @@
  <?php
-         $articleschrono = page('articles')->children()->visible()->sortBy('date', 'desc')->limit(4);
+         $articleschrono = page('articles')->children()->listed()->sortBy('date', 'desc')->limit(4);
 
         foreach($articleschrono as $articleChrono): ?>
 

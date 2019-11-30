@@ -77,7 +77,7 @@
 				}
 			}
 		?>
-		<?php $episodes = $page->parent()->children()->visible()->flip()->filter(function ($child) {
+		<?php $episodes = $page->parent()->children()->listed()->flip()->filter(function ($child) {
 			return $child->date()->toDate() <= time();
 		  });
 		?>
