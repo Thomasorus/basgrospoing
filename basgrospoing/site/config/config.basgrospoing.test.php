@@ -38,6 +38,7 @@ return [
                     'snippet'     => 'feed/rss'
                 ]
             ];
+            
             site()->visit(page(), $language->code());
             
             $frContent = page(['articles', 'podcasts']);
