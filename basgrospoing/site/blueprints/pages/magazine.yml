@@ -1,4 +1,9 @@
-title: Opinion
+title: Article
+options:
+  changeTemplate:
+    - article
+    - opinion
+    - magazine
 
 tabs:
   # content tab
@@ -23,6 +28,15 @@ tabs:
       text:
         label: Contenu de l'article
         type: editor
+        allowed: 
+          - h2
+          - h3
+          - paragraph
+          - image
+          - largeimage
+          - video
+          - kirbytext
+          - blockquote
 
   # images tab
   images:
@@ -31,7 +45,7 @@ tabs:
     preset: page
     pages: false
     fields:
-      images: fields/images-opinion
+      images: fields/images-magazine
 
   # seo tab
   seo:

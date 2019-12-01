@@ -27,7 +27,7 @@ tabs:
         type: textarea
       text:
         label: Contenu de l'article
-        type: textarea
+        type: editor
 
   # images tab
   images:
