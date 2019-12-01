@@ -4,3 +4,6 @@
 [submodule "basgrospoing/site/plugins/editor"]
 	path = basgrospoing/site/plugins/editor
 	url = https://github.com/getkirby/editor.git
+[submodule "basgrospoing/site/plugins/kirby3-feed"]
+	path = basgrospoing/site/plugins/kirby3-feed
+	url = https://github.com/bnomei/kirby3-feed.git
