@@ -1,5 +1,5 @@
 <div class="magazine-container">
 	<div class="magazine__text">
-    <p><?= $content->kirbytext() ?></p>
+    <?= $content->kirbytext() ?>
 	</div>
 </div>
