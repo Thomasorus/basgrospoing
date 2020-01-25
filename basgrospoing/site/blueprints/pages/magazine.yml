@@ -24,7 +24,7 @@ tabs:
         type: hidden
       introtext:
         label: Texte d'introduction
-        type: textarea
+        type: text
       text:
         label: Contenu de l'article
         type: editor
@@ -37,6 +37,7 @@ tabs:
           - video
           - kirbytext
           - blockquote
+
 
   # images tab
   images:
