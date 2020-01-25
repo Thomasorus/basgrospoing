@@ -1,17 +1,18 @@
-<?php if ($block->isNotEmpty()): ?>
-  <figure<?= attr(['class' => $attrs->css()->value()], ' ') ?>>
-    <?php if ($attrs->link()->isNotEmpty()): ?>
-    <a href="<?= $attrs->link()->toUrl() ?>">
-      <img src="<?= $src ?>" alt="<?= $attrs->alt() ?>">
-    </a>
-    <?php else: ?>
-    <img src="<?= $src ?>" alt="<?= $attrs->alt() ?>">
-    <?php endif ?>
-
-    <?php if ($attrs->caption()->isNotEmpty()): ?>
-    <figcaption class="magazine__sub-image-citation">
-      <?= $attrs->caption() ?>
-    </figcaption>
-    <?php endif ?>
-  </figure>
-<?php endif ?>
+<div class="magazine-container">
+<figure<?= attr(['class' => $attrs->css()->value()], ' ') ?>>
+  <?php if ($attrs->link()->isNotEmpty()): ?>
+  <a href="<?= $attrs->link()->toUrl() ?>">
+    <img srcset="<?= $attrs->id()->toFile()->srcset([300, 600, 800]) ?>" />
+  </a>
+  <?php else: ?>
+    <img srcset="<?= $attrs->id()->toFile()->srcset([300, 600, 800]) ?>" />
+  <?php endif ?>
+  <?php if ($attrs->caption()->isNotEmpty()): ?>
+  <figcaption class="magazine__sub-image-citation">
+    <small>
+    <?= $attrs->caption() ?>
+    </small>
+  </figcaption>
+  <?php endif ?>
+</figure>
+</div>
