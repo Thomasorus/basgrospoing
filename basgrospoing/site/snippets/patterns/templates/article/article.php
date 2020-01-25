@@ -1,19 +1,22 @@
         <article>
             <div class="article__head white-bg">
-                <picture>
-                    <source
-                        srcset="<?php echo $page->coverimage()->toFile()->thumb(['width' => 1920, 'height' => 1080, 'quality' => 80, 'filename' => '{safeName}-{width}x{height}-{options}.jpg'])->url() ?> 1920w"
-                        media="(min-width: 1000px)" />
-                    <source
-                        srcset="<?php echo $page->coverimage()->toFile()->thumb(['width' => 1000, 'height' => 1000, 'quality' => 60, 'crop' => true, 'filename' => '{safeName}-{width}x{height}-{options}.jpg'])->url()?> 999w"
-                        media="(min-width: 549px)" />
-                    <source
-                        srcset="<?php echo $page->coverimage()->toFile()->thumb(['width' => 549, 'height' => 976, 'quality' => 50, 'crop' => true, 'filename' => '{safeName}-{width}x{height}-{options}.jpg'])->url()?> 550w" />
-
-                    <img srcset="<?php echo $page->coverimage()->toFile()->thumb(['width' => 1920, 'quality' => 80, 'filename' => '{safeName}-{width}x{height}-{options}.jpg'])->url();?>"
-                        alt="" sizes="1280px" />
-
-                </picture>
+              <img aria-hidden="true" srcset="<?= $page->coverimage()->toFile()->srcset([
+                    '550w' => [
+                        'width' => 549,
+                        'height' => 976,
+                        'crop' => 'center'
+                    ],
+                    '999w' => [
+                        'width' => 1000,
+                        'height' => 1000,
+                        'crop' => 'center'
+                    ],
+                    '1920w' => [
+                        'width' => 1920,
+                        'height' => 1080,
+                        'crop' => 'center'
+                    ]
+                ]) ?>" />
                 <div class="article__titles">
                     <span><?php  echo $article->category(); ?></span>
                     <h1><?php  echo $article->title(); ?></h1>
