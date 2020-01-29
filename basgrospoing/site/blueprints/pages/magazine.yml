@@ -28,16 +28,18 @@ tabs:
       text:
         label: Contenu de l'article
         type: editor
-        allowed: 
+        allowed:
           - h2
-          - h3
           - paragraph
           - image
           - largeimage
           - video
-          - kirbytext
           - blockquote
-
+          - imageleft
+          - imageright
+          - fullimage
+          - colsplitstart
+          - colsplitend
 
   # images tab
   images:
