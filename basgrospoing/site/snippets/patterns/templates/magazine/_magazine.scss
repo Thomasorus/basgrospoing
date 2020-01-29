@@ -1,375 +1,424 @@
 .magazine__head {
-    height: 580px;
-    position: relative;
-    overflow: hidden;
+  height: 580px;
+  position: relative;
+  overflow: hidden;
 
-    picture,
-    img {
-        width: 100%;
-    }
+  picture,
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 }
 
 .magazine__titles {
-    width: 100%;
-    text-align: center;
-    position: relative;
-    bottom: 40px;
-    padding: 0 20px;
-    margin-top: -100px;
+  width: 100%;
+  text-align: center;
+  position: relative;
+  bottom: 40px;
+  padding: 0 20px;
+  margin-top: -100px;
 
-    img {
-        max-width: 100%;
-        min-height: 580px;
-    }
+  img {
+    max-width: 100%;
+    min-height: 580px;
+  }
 
-    h1 {
-        box-shadow: 0 -10px 0 #FF458C inset;
-        padding-bottom: 10px;
-        word-wrap: normal;
-    }
+  h1 {
+    box-shadow: 0 -10px 0 #ff458c inset;
+    padding-bottom: 10px;
+    word-wrap: normal;
+  }
 }
 
 .magazine__content {
-    margin: 0;
-    position: relative;
-    max-width: 100%;
+  margin: 0;
+  position: relative;
+  max-width: 100%;
 
-    .magazine__sub-image-citation {
-        line-height: 1.2;
+  .magazine__sub-image-citation {
+    line-height: 1.2;
+  }
+
+  >em {
+    max-width: var(--article-width, 690px);
+    margin: 0 auto;
+    font-family: "BauerBodoniStd-Italic";
+    font-size: 2.4rem;
+    line-height: 1.2;
+    text-align: center;
+    margin-bottom: 40px;
+    display: block;
+    padding: 0 20px;
+    color: var(--bgp-text, #000000);
+
+    a {
+      text-decoration: underline;
     }
+  }
 
-    
+  p {
+    line-height: 1.5em;
+    color: var(--bgp-text, #000000);
+  }
 
-    >em {
-        max-width: var(--article-width, 690px);
-        margin: 0 auto;
-        font-family: 'BauerBodoniStd-Italic';
-        font-size: 2.4rem;
-        line-height: 1.2;
-        text-align: center;
-        margin-bottom: 40px;
-        display: block;
-        padding: 0 20px;
-        color: var(--bgp-text, #000000);
+  p em {
+    font-family: "FuturaStd-LightOblique", sans-serif;
+    color: var(--bgp-text, #000000);
+  }
 
-        a {
-            
-    text-decoration: underline;
-        }
-    }
+  figure {
+    margin-bottom: 40px;
+  }
 
-    p {
-        line-height: 1.5em;
-        color: var(--bgp-text, #000000);
-    }
-
-    p em {
-        font-family: "FuturaStd-LightOblique", sans-serif;
-        color: var(--bgp-text, #000000);
-    }
-
-    figure {
-        margin-bottom: 40px;
-    }
-
-    img {
-        max-width: 100%;
-    }
+  img {
+    width: 100%;
+  }
 }
 
 .magazine-container {
-    max-width: var(--article-width-large, 790px);
-    margin: 20px auto 0 auto;
-    z-index: 6;
-    padding-left: 10px;
-    padding-right: 10px;
-
+  max-width: var(--article-width-large, 790px);
+  margin: 20px auto 0 auto;
+  z-index: 6;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .magazine-container--large {
-    margin: 20px auto;
-    position: relative;
-
+  margin: 20px auto;
+  position: relative;
 }
 
-
 .magazine__text {
-    max-width: var(--article-width, 690px);
-    margin: auto;
+  max-width: var(--article-width, 690px);
+  margin: auto;
 }
 
 .magazine__sub-image-citation {
-    margin-bottom: 0;
-    line-height: 1.2;
-    small {
-        color: var(--bgp-light-grey, #706F6F);
-        font-family: "FuturaStd-LightOblique", var(--font-family-sans-serif,-apple-system, BlinkMacSystemFont, "Segoe UI","Roboto", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol");
-        font-size: 1.4rem;
-        line-height: 1.2;
-        padding-top: 10px;
-        color: var(--bgp-text, #000000);
-    }
-}
+  margin-bottom: 0;
+  line-height: 1.2;
 
+  small {
+    color: var(--bgp-light-grey, #706f6f);
+    font-family: "FuturaStd-LightOblique",
+      var(--font-family-sans-serif,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        "Roboto",
+        "Helvetica Neue",
+        Arial,
+        sans-serif,
+        "Apple Color Emoji",
+        "Segoe UI Emoji",
+        "Segoe UI Symbol"
+      );
+    font-size: 1.4rem;
+    line-height: 1.2;
+    padding-top: 10px;
+    color: var(--bgp-text, #000000);
+  }
+}
 
 .magazine__full-img {
-    height: auto;
-    width: 100%;
-    margin-top: 20px;
-    margin-bottom: 80px;
-    position: relative;
-    z-index: 6;
-    overflow: hidden;
+  height: auto;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 60px;
+  position: relative;
+  z-index: 6;
+  overflow: hidden;
 
+  figure {
+    width: 100%;
+    margin: 0;
+  }
 }
 
-
 .magazine__citation {
-    font-size: 5rem;
-    font-family: 'FuturaStd-ExtraBoldOblique', var(--font-family-sans-serif,-apple-system, BlinkMacSystemFont, "Segoe UI","Roboto", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol");
-    text-shadow: 4px 4px 0px var(--bgp-green, #1FD316);
-    padding: 0;
-    letter-spacing: -4px;
-    transform: rotate(-5deg);
-    text-align: center;
-    max-width: var(--article-width-large, 790px);
-    margin: 40px auto 80px auto;
-    width: 90%;
+  font-size: 5rem;
+  font-family: "FuturaStd-ExtraBoldOblique",
+    var(--font-family-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      "Segoe UI",
+      "Roboto",
+      "Helvetica Neue",
+      Arial,
+      sans-serif,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol"
+    );
+  text-shadow: 4px 4px 0px var(--bgp-green, #1fd316);
+  padding: 0;
+  letter-spacing: -4px;
+  transform: rotate(-5deg);
+  text-align: center;
+  max-width: var(--article-width-large, 790px);
+  margin: 40px auto 80px auto;
+  width: 90%;
 }
 
 .magazine__citation-star {
-    background-image: url("assets/images/star-yellow.svg");
-    background-repeat: no-repeat;
-    position: absolute;
-    background-size: 250px;
-    width: 300px;
-    height: 300px;
-    z-index: -1;
-    top: -60px;
-    left: -30px;
+  background-image: url("assets/images/star-yellow.svg");
+  background-repeat: no-repeat;
+  position: absolute;
+  background-size: 250px;
+  width: 300px;
+  height: 300px;
+  z-index: -1;
+  top: -60px;
+  left: -30px;
 }
 
 .magazine__tweet {
-    font-size: 2.5rem;
-    font-family: 'FuturaStd-ExtraBoldOblique', var(--font-family-sans-serif,-apple-system, BlinkMacSystemFont, "Segoe UI","Roboto", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol");
-    padding: 0;
-    line-height:1.2;
-    letter-spacing: -1px;
-    max-width: var(--article-width, 790px);
-    margin: 80px auto 60px auto;
-    width: 90%;
-    color: var(--bgp-text, black);
+  font-size: 2.5rem;
+  font-family: "FuturaStd-ExtraBoldOblique",
+    var(--font-family-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      "Segoe UI",
+      "Roboto",
+      "Helvetica Neue",
+      Arial,
+      sans-serif,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol"
+    );
+  padding: 0;
+  line-height: 1.2;
+  letter-spacing: -1px;
+  max-width: var(--article-width, 790px);
+  margin: 80px auto 60px auto;
+  width: 90%;
+  color: var(--bgp-text, black);
 }
 
 .magazine__tweet-meta {
-    margin-top:10px;
-    font-size: 1.8rem;
-    a {
-        color: var(--bgp-text, black);
-        text-decoration: underline;
+  margin-top: 10px;
+  font-size: 1.8rem;
 
-    }
+  a {
+    color: var(--bgp-text, black);
+    text-decoration: underline;
+  }
 }
 
 .magazine__tweet-context {
-    font-family: "FuturaStd-LightOblique", var(--font-family-sans-serif,-apple-system, BlinkMacSystemFont, "Segoe UI","Roboto", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol");
-    color: var(--bgp-text, black);
-    letter-spacing: 0;
-    font-size: 1.6rem;
+  font-family: "FuturaStd-LightOblique",
+    var(--font-family-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      "Segoe UI",
+      "Roboto",
+      "Helvetica Neue",
+      Arial,
+      sans-serif,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol"
+    );
+  color: var(--bgp-text, black);
+  letter-spacing: 0;
+  font-size: 1.6rem;
 }
 
 .magazine__tweet-icon {
-    color:var(--bgp-yellow);
-    position: absolute;
-    width: 100px;
-    height: 100px;
-    z-index: -1;
-    top: -30px;
-    left: 10px;
+  color: var(--bgp-yellow);
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  z-index: -1;
+  top: -30px;
+  left: 10px;
 }
-
-
-
-
 
 .magazine__full-img__citation {
-    position: relative;
+  position: relative;
 
-    .magazine__citation {
-        position: absolute;
-        bottom: 25px;
-        left: 0;
-        right: 0;
-        z-index: 9;
-        text-shadow: 4px 4px 0px var(--bgp-pink, #FF458C);
-        margin: 0 auto 0 auto;
+  .magazine__citation {
+    position: absolute;
+    bottom: 25px;
+    left: 0;
+    right: 0;
+    z-index: 9;
+    text-shadow: 4px 4px 0px var(--bgp-pink, #ff458c);
+    margin: 0 auto 0 auto;
+  }
 
-    }
-
-    .magazine__citation:after {
-        content: "";
-        position: absolute;
-        height: 65vh;
-        top: 40px;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        margin: auto;
-        background-image: url("assets/images/star-white.svg");
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: bottom;
-        z-index: -1;
-        overflow: hidden;
-
-    }
+  .magazine__citation:after {
+    content: "";
+    position: absolute;
+    height: 65vh;
+    top: 40px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-image: url("assets/images/star-white.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    z-index: -1;
+    overflow: hidden;
+  }
 }
 
-
 .magazine__date {
-    max-width: var(--article-width, 690px);
-    margin: auto;
+  max-width: var(--article-width, 690px);
+  margin: auto;
 
-    p {
-        color: var(--bgp-text, #000000);
-        font-style: italic;
-        text-align: center;
-    }
+  p {
+    color: var(--bgp-text, #000000);
+    font-style: italic;
+    text-align: center;
+  }
 }
 
 .article__credits {
-    text-align: center;
-    max-width: var(--article-width, 690px);
-    margin: auto;
-
+  text-align: center;
+  max-width: var(--article-width, 690px);
+  margin: auto;
 }
 
-
-
-
 .magazine__splitted {
-    display: flex;
+  display: flex;
 
-    .col-img {
-        width: 60%;
+  .col-img {
+    width: 60%;
+  }
 
-    }
+  .col-img--right {
+    margin: 0 0 0 20px;
+  }
 
-    .col-img--right {
-        margin: 0 0 0 20px;
-    }
+  .col-img--left {
+    margin: 0 20px 0 0;
+  }
 
-    .col-img--left {
-        margin: 0 20px 0 0;
-    }
+  .col-text {
+    width: 40%;
+  }
 
-    .col-text {
-        width: 40%;
-    }
+  .first {
+    order: 1;
+  }
 
-    .first {
-        order: 1;
-    }
-
-    .last {
-        order: 2;
-    }
+  .last {
+    order: 2;
+  }
 }
 
 .magazine-container--large.margin-left {
-    left: 50px;
+  left: 50px;
 }
 
 .magazine-container--large.margin-right {
-    right: 50px;
+  right: 50px;
+}
+
+.magazine__imageleft {
+  float: left;
+  max-width: 50%;
+  position: relative;
+  margin-right: 20px;
+  margin-bottom: 20px !important;
+
+}
+
+.magazine__imageright {
+  float: right;
+  max-width: 50%;
+  position: relative;
+  margin-left: 20px;
+  margin-bottom: 20px !important;
 }
 
 @media (max-width: 895px) {
+  .magazine-container--large.margin-left {
+    left: 0;
+  }
 
-    .magazine-container--large.margin-left {
-        left: 0;
+  .magazine-container--large.margin-right {
+    right: 0;
+  }
+
+  .magazine-container--large {
+    max-width: var(--article-width, 690px);
+    margin: auto;
+  }
+
+  .magazine__titles {
+    padding: 0;
+
+    h1 {
+      font-size: 4.5rem;
+      color: var(--bgp-text, #000000);
     }
-
-    .magazine-container--large.margin-right {
-        right: 0;
-    }
-
-    .magazine-container--large {
-        max-width: var(--article-width, 690px);
-        margin: auto;
-    }
-
-    .magazine__titles {
-        padding: 0;
-
-        h1 {
-            font-size: 4.5rem;
-            color: var(--bgp-text, #000000);
-        }
-    }
+  }
 }
-
 
 @media (max-width: 710px) {
-
-  
-    .magazine-container--large {
-      max-width: var(--article-width, 690px);
-      margin: 20px auto 0;
-      z-index: 6;
-      padding-left: 10px;
-      padding-right: 10px;
-    }
-  
-    .magazine__citation {
-      font-size: 4rem;
-    }
-  
-  
+  .magazine-container--large {
+    max-width: var(--article-width, 690px);
+    margin: 20px auto 0;
+    z-index: 6;
+    padding-left: 10px;
+    padding-right: 10px;
   }
-  
 
+  .magazine__citation {
+    font-size: 4rem;
+  }
+}
 
 @media (max-width: 570px) {
-    .magazine__splitted {
-        display: block;
+  .magazine__splitted {
+    display: block;
 
-        .col-img {
-            width: 100%;
-            margin: 0;
-            padding-bottom: 20px;
+    .col-img {
+      width: 100%;
+      margin: 0;
+      padding-bottom: 20px;
 
-            padding-left: 40px;
-            padding-right: 40px;
-
-        }
-
-        .col-text {
-            width: 100%;
-        }
+      padding-left: 40px;
+      padding-right: 40px;
     }
-}
 
+    .col-text {
+      width: 100%;
+    }
+  }
+
+  .magazine__imageleft,
+  .magazine__imageright {
+    max-width: 100%;
+    width: 100%;
+    margin: 0;
+    padding-bottom: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
 
 @media (max-width: 500px) {
-    .magazine__head {
-        height: 480px
-    }
+  .magazine__head {
+    height: 480px;
+  }
 
-    .magazine__titles {
-        h1 {
-            font-size: 3.7rem;
-        }
+  .magazine__titles {
+    h1 {
+      font-size: 3.7rem;
     }
-
+  }
 }
 
-
 @media (max-width: 414px) {
-    .magazine__titles {
-        h1 {
-            font-size: 3.5rem;
-        }
+  .magazine__titles {
+    h1 {
+      font-size: 3.5rem;
     }
-
+  }
 }
