@@ -1,0 +1,17 @@
+.k-editor-colsplitstart-block {
+    background: #ddd;
+    width: 100%;
+    text-align: center;
+    font-style: italic;
+}
+
+
+.k-editor-colsplitstart-block:before {
+    content: "Ci-dessous, utiliser 'Image à gauche' ou 'Image à droite' suivi de 'texte'.";
+    width: 100%;
+}
+
+.k-editor-colsplitstart-block:after {
+    content: "Penser à fermer ce block avec 'Colonne divisée en 2 : fin' une fois le texte ajouté.";
+    width: 100%;
+}
