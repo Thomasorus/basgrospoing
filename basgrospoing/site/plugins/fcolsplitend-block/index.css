@@ -1,0 +1,12 @@
+.k-editor-colsplitend-block {
+    background: #ddd;
+    width: 100%;
+    text-align: center;
+    font-style: italic;
+}
+
+
+.k-editor-colsplitend-block:before {
+    content: "Fin du block de séparation";
+    width: 100%;
+}
