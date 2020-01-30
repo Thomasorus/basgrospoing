@@ -1,10 +1,15 @@
+<?php $fighter = page('fighters')
+      ->children()
+      ->listed()
+      ->filterBy('name', '==', $page->author())
+      ->first();
+    ?>
 <div class="magazine-container"></div>
 <div class="article__footer">
   <div class="article__KO">
     <span>K</span>.<span>O</span>.
   </div>
   <div class="article__author">
-    <?php $fighter = $pages->find('fighters/' . $page->author()) ?>
     <?php if($fighter != null): ?>
     <h4>
       <?php echo $fighter->name() ?>
@@ -28,11 +33,11 @@
   </div>
   <?php endif ?>
 </div>
-<?php if($fighter->kofi() && !$fighter->membre()->bool() && !$fighter->isFrench()->bool() && $site->language()->code() == "en"): ?>
+ <?php if($fighter->kofi() && $fighter->membre() == "false" && $fighter->isFrench() == "false"  && $kirby->language() == "en"): ?>
 <div class="article__kofi">
   <div class="article__kofi-author">
     <p>
-      <?= l::get('kofi') ?>
+      <?= t('kofi') ?>
     </p>
     <a href="<?= $fighter->kofi(); ?>">
       <svg id="Calque_1" data-name="Calque 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1057.09 391.19">

@@ -1,0 +1,60 @@
+title: Fighter
+
+tabs:
+  description:
+    fields:
+      name:
+        label: Nom
+        type:  text
+      bio:
+        label: Biographie
+        type: textarea
+      shortbio:
+        label: Bio courte
+        type: text
+      website:
+        label: Site
+        type: text
+      twitter:
+        label: Compte twitter
+        type: text
+      photo:
+        label: Photo
+        type: files
+        multiple: false
+        query: page.images 
+      kofi:
+        label: Has a Ko-fi page?
+        type: url
+      isFrench: 
+        label: French ?
+        type: toggle
+        default: false
+      membre:
+        label: Membre BGP ?
+        type: toggle
+        default: false
+      retired:
+        label: Retraité ?
+        type: toggle
+        default: false
+
+
+    
+   # seo tab
+  seo:
+    label: Seo
+    icon: globe
+    preset: page
+    pages: false
+    fields:
+      seo: fields/seo
+
+   # social tab
+  social:
+    label: Réseaux sociaux
+    icon: twitter
+    preset: page
+    pages: false
+    fields:
+      social: fields/socialnetworks

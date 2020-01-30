@@ -21,7 +21,7 @@ columns:
         columns: 4
         options: query
         query:
-          fetch: site.children.find("fighters").children.published
+          fetch: site.children.find("fighters").children
           value: "{{ page.name }}"
         width: 1/3
       canonical:
