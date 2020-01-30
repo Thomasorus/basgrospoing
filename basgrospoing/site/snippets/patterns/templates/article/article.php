@@ -64,8 +64,8 @@
                         </g>
                     </svg>
                 </div>
-                <?= $page->text()->blocks() ?>
-                <?php snippet('pattern/molecules/article-footer/article-footer'); ?>
+                <?= $page->text()->kirbytext() ?>
+                <?php snippet('patterns/molecules/article-footer/article-footer'); ?>
             </div>
 
         </article>
