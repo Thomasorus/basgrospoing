@@ -22,7 +22,7 @@ tabs:
         type: textarea
       text:
         label: Contenu de l'article
-        type: editor
+        type: textarea
 
   # images tab
   images:
