@@ -8,5 +8,5 @@
 	path = basgrospoing/site/plugins/kirby3-feed
 	url = https://github.com/bnomei/kirby3-feed.git
 [submodule "basgrospoing/site/plugins/kirby-embed"]
-	path = basgrospoing/site/plugins/kirby-embed
+	path = basgrospoing/site/plugins/embed
 	url = https://github.com/sylvainjule/kirby-embed.git
