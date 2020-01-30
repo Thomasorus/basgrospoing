@@ -4,7 +4,7 @@ type: group
 columns:
   left:
     width: 2/3
-    fields: 
+    fields:
       date:
         icon: calendar
         label: Date initiale de publication
@@ -20,14 +20,14 @@ columns:
         type: select
         columns: 4
         options: query
-        query: 
-          fetch: site.children("fighters").children.published
-          value: "{{ page.Title }}"
+        query:
+          fetch: site.children.find("fighters").children.published
+          value: "{{ page.name }}"
         width: 1/3
       canonical:
         label: Url Canonique (remplir uniquemet si republication depuis un  autre site)
         type: url
-        
+
   right:
     width: 1/3
     fields:
@@ -41,4 +41,3 @@ columns:
         type: tags
         width: 1/2
         help: Les tags indiquent le sujet de l'article qu'on va lire, par exemple les jeux, les personnes, les consoles...
-      
