@@ -27,3 +27,6 @@ else if(url::host() == "livid.basgrospoing.test") {
     echo $kirby->render();
 }
 
+else {
+     echo (new Kirby)->render(); 
+}
