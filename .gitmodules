@@ -10,3 +10,6 @@
 [submodule "basgrospoing/site/plugins/kirby-embed"]
 	path = basgrospoing/site/plugins/embed
 	url = https://github.com/sylvainjule/kirby-embed.git
+[submodule "basgrospoing/site/plugins/kirby-builder"]
+	path = basgrospoing/site/plugins/kirby-builder
+	url = https://github.com/TimOetting/kirby-builder.git
