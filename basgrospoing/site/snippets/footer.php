@@ -73,13 +73,6 @@
 
 
 
-
-<?= css('/assets/plugins/embed/css/embed.css') ?>
-
-<script async src="/assets/plugins/embed/js/embed.js"></script>
-
-
-
 <script>
 //Footer countdown
 document.addEventListener("DOMContentLoaded", function () {
