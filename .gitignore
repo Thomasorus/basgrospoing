@@ -21,13 +21,13 @@ Icon
 
 # Content files
 # ---------------
-/basgrospoing/content
-/basgrospoing/content/*
+
 /basgrospoing/old-content
 /basgrospoing/old-content/*
 /basgrospoing/livid/content
 /basgrospoing/livid/content/*
-
+/basgrospoing/content_original
+/basgrospoing/content_original/*
 
 # Content files
 # ---------------
