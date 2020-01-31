@@ -11,5 +11,5 @@
 	path = basgrospoing/site/plugins/kirby-builder
 	url = https://github.com/TimOetting/kirby-builder.git
 [submodule "basgrospoing/content"]
-	path = basgrospoing
+	path = basgrospoing/content
 	url = git@gitlab.com:Thomasorus/bgp-content-v3.git
