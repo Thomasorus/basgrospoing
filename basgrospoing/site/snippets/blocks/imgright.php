@@ -1,7 +1,7 @@
 <div class="magazine-container">
 	<figure class="magazine__imageright">
 		<?php if ($data->imageright()->isNotEmpty()): ?>
-			<img srcset="<?=$data->imageright()->toFile()->srcset([400, 700]); ?>"/> 
+			<img srcset="<?=$data->imageright()->toFile()->srcset([350, 540]); ?>"/> 
 		<?php endif ?>
 		<?php if ($data->figcaption()->isNotEmpty()): ?>
 			<figcaption class="magazine__sub-image-citation">
