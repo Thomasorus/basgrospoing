@@ -13,3 +13,6 @@
 [submodule "basgrospoing/content"]
 	path = basgrospoing/content
 	url = git@gitlab.com:Thomasorus/bgp-content-v3.git
+[submodule "basgrospoing/site/plugins/meta-tags"]
+	path = basgrospoing/site/plugins/meta-tags
+	url = https://github.com/pedroborges/kirby-meta-tags.git
