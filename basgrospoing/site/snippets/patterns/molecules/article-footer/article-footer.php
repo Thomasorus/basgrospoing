@@ -4,7 +4,6 @@
       ->filterBy('name', '==', $page->author())
       ->first();
     ?>
-<div class="magazine-container"></div>
 <div class="article__footer">
   <div class="article__KO">
     <span>K</span>.<span>O</span>.
