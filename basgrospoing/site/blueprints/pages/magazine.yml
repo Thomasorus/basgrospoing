@@ -26,21 +26,121 @@ tabs:
         label: Texte d'introduction
         type: text
       text:
-        label: Contenu de l'article
-        type: editor
-        allowed:
-          - h2
-          - paragraph
-          - image
-          - largeimage
-          - video
-          - blockquote
-          - imageleft
-          - imageright
-          - fullimage
-          - colsplitstart
-          - colsplitend
-          - tweet
+        label: Page Builder
+        type: builder
+        fieldsets:
+          bodytext:
+            name: Texte
+            fields:
+              text:
+                label: text
+                type: textarea
+          imglarge:
+            name: Image large
+            preview:
+              snippet: blocks/imglarge
+              css: /assets/css/main.css
+            fields:
+              imagelarge:
+                label: Image
+                type: files
+                multiple: false
+                query: page.images
+              figcaption:
+                label: Texte sous l'image (optionnel)
+                type: text
+          fullimage:
+            name: Image pleine largeur
+            preview:
+              snippet: blocks/fullimage
+              css: /assets/css/main.css
+            fields:
+              fullimage:
+                label: Image en pleine longueur
+                type: files
+                multiple: false
+                query: page.images
+              citation:
+                label: Citation superposée à l'image
+                type: text
+          imgleft:
+            name: Image alignée à gauche, texte à droite
+            preview:
+              snippet: blocks/imgleft
+              css: /assets/css/main.css
+            fields:
+              imageleft:
+                label: Image gauche
+                type: files
+                multiple: false
+                query: page.images
+              figcaption:
+                label: Texte sous l'image (optionnel)
+                type: text
+              textcol:
+                label: Texte à droite
+                type: textarea
+          imgright:
+            name: Image alignée à droite, texte à gauche
+            preview:
+              snippet: blocks/imgright
+              css: /assets/css/main.css
+            fields:
+              imageright:
+                label: Image à droite
+                type: files
+                multiple: false
+                query: page.images
+              figcaption:
+                label: Texte sous l'image (optionnel)
+                type: text
+              textcol:
+                label: Texte à gauche
+                type: textarea
+          embed:
+            name: Youtube, Vimeo, etc...
+            preview:
+              snippet: blocks/embed
+              css: /assets/css/main.css
+            fields:
+              embed:
+                label: Embed
+                type: embed
+          citation:
+            name: Citation
+            preview:
+              snippet: blocks/citation
+              css: /assets/css/main.css
+            fields:
+              text:
+                label: text
+                type: textarea
+          tweet: # This is a field set. It contains a group of kirby fields. The user can select from these sets to build the content.
+            name: Tweet # The name option is used as a label for the buttons to add new fieldsets. It is also used as a label in the header of the fieldset, if the label option is not set explicitly (see next line).
+            label: Tweet by {{author}} # Optional. The label option can be used to override the header text of the fieldset. The 'mustache' syntax can be used to include the value of any field of the fieldset.
+            preview: # Optional. If defined, a preview of the fieldset can be rendered by the specified snippet from within the snippets folder.
+              snippet: blocks/tweet
+              css: /assets/css/main.css
+            defaultView: preview # Optional. If the value "preview" is set, the block will show the preview when the page is loaded in the panel. If the value is a tab name, the respective tab is preselected when the page is loaded. Newly created blocks ignore this value and have the edit mode or the first tab preselected.
+            fields:
+              text:
+                label: Tweet text
+                type: text
+              date:
+                label: Tweet date
+                type: date
+              author:
+                label: Tweet author
+                type: text
+              authorId:
+                label: Tweet author ID (don't include the @)
+                type: text
+              link:
+                label: Tweet Link
+                type: url
+              context:
+                label: Tweet context (if needed)
+                type: text
 
   # images tab
   images:
