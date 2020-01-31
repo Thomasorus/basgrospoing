@@ -7,19 +7,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#1FD316">
   <title>
-
-  <?php if(!$page->seotitle()->isEmpty()) {
-      echo $page->seotitle();
-  }
-  else {
-    echo $page->Title();
-  } ?>
-
+    <?php if($page->seotitle()->isnotEmpty()) {
+        echo $page->seotitle();
+    }
+    else {
+      echo $page->Title();
+    } ?>
   </title>
   <meta name="description" content="
-    <?php if(!$page->seodescription()->isEmpty()) {
+    <?php if($page->seodescription()->isnotEmpty()) {
         echo $page->seodescription();
-    }else if(!$page->introtext()->isEmpty()){
+    }else if($page->introtext()->isnotEmpty()){
       echo $page->introtext()->excerpt($chars = 240, $strip = true, $rep = '…');
     } else {
       echo $page->text()->excerpt($chars = 240, $strip = true, $rep = '…');
@@ -29,24 +27,25 @@
     ?>">
   <?php echo $page->metaTags() ?>
 
+
+
+
+
+
+
+
+
+<!-- COUPURE -->
   <link rel="manifest" href="/assets/pwa/manifest.json">
-
-
   <link rel="preload" href="/assets/css/base.css?v=1.0.12" as="style">
   <link rel="preload" href="/assets/css/main.css?v=1.0.12" as="style">
-
-
   <link rel="stylesheet" href="/assets/css/base.css?v=1.0.12">
   <link rel="stylesheet" href="/assets/css/main.css?v=1.0.12">
-
-<!-- 
-
   <link rel=“preload” href="/assets/fonts/FuturaStd-ExtraBoldOblique.woff2" as=“font” type="font/woff2" crossorigin="anonymous">
   <link rel=“preload” href="/assets/fonts/FuturaStd-ExtraBold.woff2" as=“font” type="font/woff2" crossorigin="anonymous">
   <link rel=“preload” href="/assets/fonts/BauerBodoniStd-Italic.woff2" as=“font” type="font/woff2" crossorigin="anonymous">
   <link rel=“preload” href="/assets/fonts/FuturaStd-LightOblique.woff2" as=“font” crossorigin="anonymous">
   <link rel=“preload” href="/assets/fonts/FuturaStd-Light.woff2" as=“font” type="font/woff2" crossorigin="anonymous">
- -->
 
 
 
