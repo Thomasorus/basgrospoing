@@ -3,31 +3,31 @@
         <div class="footer__container">
             <div class="footer-list">
                 <ul>
-                    <?php if($site->language()->code() != "en"): ?>
+                    <?php if($kirby->language() != "en"): ?>
 
                     <li>
-                        <a href="https://basgrospoing.fr/<?php echo $site->language()->code(); ?>/rounds">
+                        <a href="https://basgrospoing.fr/<?php echo $kirby->language(); ?>/rounds">
                             Rounds
                         </a>
                     </li>
                     <?php endif ?>
 
                     <li>
-                        <a href="https://basgrospoing.fr/<?php echo $site->language()->code(); ?>/articles">Articles</a>
+                        <a href="https://basgrospoing.fr/<?php echo $kirby->language(); ?>/articles">Articles</a>
                     </li>
-                    <?php if($site->language()->code() != "en"): ?>
+                    <?php if($kirby->language() != "en"): ?>
                     <li>
-                        <a href="https://basgrospoing.fr/<?php echo $site->language()->code(); ?>/podcasts">Podcasts</a>
+                        <a href="https://basgrospoing.fr/<?php echo $kirby->language(); ?>/podcasts">Podcasts</a>
                     </li>
                     <?php endif ?>
 
                     <li>
-                        <a href="https://basgrospoing.fr/<?php echo $site->language()->code(); ?>/feed">
+                        <a href="https://basgrospoing.fr/<?php echo $kirby->language(); ?>/feed">
                             <?php echo t('rss site') ?></a>
                     </li>
                     <?php if($site->language()->code() != "en"): ?>
                     <li>
-                        <a href="https://basgrospoing.fr/<?php echo $site->language()->code(); ?>/podcasts/feed">
+                        <a href="https://basgrospoing.fr/<?php echo $kirby->language(); ?>/podcasts/feed">
                             <?php echo t('rss podcasts') ?></a>
                     </li>
                     <?php endif ?>
@@ -37,29 +37,32 @@
             <div class="footer-list">
                 <ul>
                     <li>
-                        <a href="https://basgrospoing.fr/<?php echo $site->language()->code(); ?>/sponsors">
+                        <a href="https://basgrospoing.fr/<?php echo $kirby->language(); ?>/sponsors">
                             Sponsors
                         </a>
                     </li>
                     <li>
-                        <a href="https://basgrospoing.fr/<?php echo $site->language()->code(); ?>/contact">
+                        <a href="https://basgrospoing.fr/<?php echo $kirby->language(); ?>/contact">
                             Contact
                         </a>
                     </li>
                     <li>
-                        <a href="https://basgrospoing.fr/<?php echo $site->language()->code(); ?>/mentions-legales">
+                        <a href="https://basgrospoing.fr/<?php echo $kirby->language(); ?>/mentions-legales">
                             <?php echo t('legal') ?></a>
                     </li>
 
                 </ul>
             </div>
-            <?php snippet('molecules/footersocial') ?>
-            <?php snippet('molecules/footertimer') ?>
+            
+            <?php snippet('patterns/molecules/footersocial/footersocial') ?>
+            <?php snippet('patterns/molecules/footertimer/footertimer') ?>
         </div>
     </div>
 </footer>
 
-<?php if(site()->language()->code() == "fr") { snippet('molecules/helpbgp'); } ?>
+<?php if($kirby->language() == "fr") { 
+        snippet('patterns/molecules/helpbgp/helpbgp');
+    } ?>
 
 <div class="theme-switcher" onclick="toggleDarkLight()" title="Toggle dark/light mode">
     <span>
@@ -72,6 +75,7 @@
 
 
 <?= css('/assets/plugins/embed/css/embed.css') ?>
+
 <script async src="/assets/plugins/embed/js/embed.js"></script>
 
 

@@ -31,5 +31,5 @@
 
     </form>
     <?php endif ?>
-    <p><?= l::get('help') ?></p>
+    <p><?= t('help') ?></p>
 </div>
