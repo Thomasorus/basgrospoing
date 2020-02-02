@@ -11,7 +11,7 @@
   <div class="article__author">
     <?php if($fighter != null): ?>
     <h4>
-      <?php echo $fighter->name() ?>
+      <?php echo $fighter->title() ?>
     </h4>
     <p><small>
         <?= $fighter->shortbio(); ?></small></p>
