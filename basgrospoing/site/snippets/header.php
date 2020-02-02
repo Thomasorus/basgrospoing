@@ -6,6 +6,7 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#1FD316">
+  <link rel="alternate" type="application/rss" title="Latest articles" href="<?= site()->url() ?>/feed"/>
   <title>
     <?php if($page->seotitle()->isnotEmpty()) {
         echo $page->seotitle();
