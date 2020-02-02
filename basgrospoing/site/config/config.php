@@ -4,6 +4,17 @@ return [
     'languages' => true,
     'languages.detect' => true,
     'debug' => true,
+    'cache' => [
+    'pages' => [
+      'active' => false
+    ]
+    ],
+    'thumbs' => [
+        'driver' => 'gd',
+        'autoOrient' => true,
+        'quality' => '80',
+        'interlace' => true
+    ],
     'hooks' => [
         //This hook creates a currentLang invisible field in each page
         //In the blueprint, it's used to create a true/false translated field
@@ -36,7 +47,7 @@ return [
                     'datefield'   => 'date',
                     'textfield'   => 'text',
                     'snippet'     => 'feed/rss'
-                ]
+                ],
             ];
             
             site()->visit(page(), $language->code());
