@@ -25,58 +25,72 @@ return [
            }
         },
       ],
-    'routes' => [
-      [
-        'pattern' => 'feed' ,
-        'method' => 'GET',
-        'language' => '*',
-        'action'  => function ($language) {
-            $options = [
-                'en' => [
-                    'title'       => 'Latest articles',
-                    'description' => 'Read the latest news about our company',
-                    'link'        => '/en/feed',
-                    'datefield'   => 'date',
-                    'textfield'   => 'text',
-                    'snippet'     => 'feed/rss'
-                ],
-                'fr' => [
-                    'title'       => 'Dernier articles',
-                    'description' => 'Nos dernières publications',
-                    'link'        => '/fr/feed',
-                    'datefield'   => 'date',
-                    'textfield'   => 'text',
-                    'snippet'     => 'feed/rss'
-                ],
-            ];
+    // 'routes' => [
+    //   [
+    //     'pattern' => 'feed' ,
+    //     'method' => 'GET',
+    //     'language' => '*',
+    //     'action'  => function ($language) {
+    //         $options = [
+    //             'en' => [
+    //                 'url' => site()->url(),
+    //                 'feedurl' => site()->url() . '/feed/',
+    //                 'title' => 'Latest articles',
+    //                 'description' => 'Read the latest news about our company',
+    //                 'link' => site()->url(),
+    //                 'urlfield' => 'url',
+    //                 'titlefield' => 'title',
+    //                 'datefield' => 'date',
+    //                 'textfield' => 'text',
+    //                 'modified' => time(),
+    //                 'snippet' => 'feed/rss', // 'feed/json'
+    //                 'mime' => null,
+    //                 'sort' => true,
+    //             ],
+    //             'fr' => [
+    //                  'url' => site()->url(),
+    //                 'feedurl' => site()->url() . 'fr/feed/',
+    //                 'title' => 'Derniers articles',
+    //                 'description' => 'Nos dernières publications',
+    //                 'link' => site()->url(),
+    //                 'urlfield' => 'url',
+    //                 'titlefield' => 'title',
+    //                 'datefield' => 'date',
+    //                 'textfield' => 'text',
+    //                 'modified' => time(),
+    //                 'snippet' => 'feed/rss', // 'feed/json'
+    //                 'mime' => null,
+    //                 'sort' => true,
+    //             ],
+    //         ];
             
-            site()->visit(page(), $language->code());
+    //         site()->visit(page(), $language->code());
             
-            $frContent = page(['articles', 'podcasts']);
-            $enContent = page('articles');
-            $feedContent;
+    //         $frContent = page(['articles', 'podcasts']);
+    //         $enContent = page('articles');
+    //         $feedContent;
 
-            if($language == "fr") {
-              $feedContent = $frContent;
-            } else {
-              $feedContent = $enContent;
-            }
+    //         if($language == "fr") {
+    //           $feedContent = $frContent;
+    //         } else {
+    //           $feedContent = $enContent;
+    //         }
 
-            $feed = $feedContent
-                ->children()
-                ->listed()
-                ->filter(function ($page) use($language) {
-                    return $page->translation($language->code())->exists(); 
-                })  
-                ->sortBy(function ($page) {
-                  return $page->date()->toDate();
-                  }, 'desc')
-                ->feed($options[$language->code()]);
+    //         $feed = $feedContent
+    //             ->children()
+    //             ->listed()
+    //             ->filter(function ($page) use($language) {
+    //                 return $page->translation($language->code())->exists(); 
+    //             })  
+    //             ->sortBy(function ($page) {
+    //               return $page->date()->toDate();
+    //               }, 'desc')
+    //             ->feed($options[$language->code()]);
             
-            return $feed;
-        }
-      ]
-    ],
+    //         return $feed;
+    //     }
+    //   ]
+    // ],
     'pedroborges.meta-tags.default' => function ($page, $site) {
       return [
           'link' => [
