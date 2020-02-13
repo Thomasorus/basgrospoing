@@ -18,3 +18,9 @@ fields:
     help: 313 x 300 pixels minimum
     multiple: false
     query: page.images
+  magazineimage:
+    label: Image pour l'article magazine montré en home
+    type: files
+    help: Horizontale, 640 x 430 minimum
+    multiple: false
+    query: page.images
