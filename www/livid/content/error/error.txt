@@ -1,0 +1,9 @@
+Title: Error
+
+----
+
+Intro: The page has not been found.
+
+----
+
+Text: Page could not be found. Go back to (link: / text: homepage)?

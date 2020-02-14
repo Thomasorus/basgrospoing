@@ -1,0 +1,17 @@
+Title: Home
+
+----
+
+Text: We offer a part of the production of fighting games artists, professionals and amateurs, that make imaging fighting game an integral part of its essence...
+
+----
+
+Perpage: 10
+
+----
+
+seotitle: "Fighting games arts"
+
+----
+
+seodescription: We offer a part of the production of fighting games artists, professionals and amateurs, that make imaging fighting game an integral part of its essence..."
