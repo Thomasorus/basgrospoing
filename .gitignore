@@ -47,8 +47,8 @@ Icon
 # ---------------
 
 .cache
-basgrospoing/site/cache/
-basgrospoing/site/cache/*
+/www/site/cache/
+/www/site/cache/*
 !/www/site/cache/index.html
 !/www/livid/site/cache/index.html
 
