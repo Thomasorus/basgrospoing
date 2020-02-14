@@ -9,6 +9,10 @@ git clone repo folder
 cd folder
 git submodule init
 git submodule update --recursive --remote
+git lfs fetch
+git lfs checkout
+chgrp -R www-data .
+chown -R www-data .
 ```
 
 ## Quickly run
