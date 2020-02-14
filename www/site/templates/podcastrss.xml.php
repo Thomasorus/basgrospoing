@@ -55,28 +55,16 @@
 			<itunes:email><?php echo Xml::encode($page->itunesEmail()); ?></itunes:email>
 		</itunes:owner>
 
-		<?php if($page->Itunesimage()->isNotEmpty()): ?>
-		<itunes:image href="<?php echo $page->Itunesimage()->url(); ?>"/>
-		<?php endif; ?>
+		<itunes:image href="https://basgrospoing.fr/itunes.jpg"/>
 
 		<itunes:subtitle><?php echo Xml::encode($page->itunesSubtitle()); ?></itunes:subtitle>
 		<itunes:keywords><?php echo Xml::encode($page->itunesKeywords()); ?></itunes:keywords>
 		<itunes:block><?php echo ($page->itunesBlock()->isTrue()) ? 'yes' : 'no'; ?></itunes:block>
 		<itunes:explicit><?php echo ($page->itunesExplicit()->isTrue()) ? 'yes' : 'no'; ?></itunes:explicit>
 		<itunes:type><?php echo Xml::encode($page->itunesType()); ?></itunes:type>
-		<?php
-			foreach ($page->itunesCategories()->itunes() as $key => $mainCategory) {
-				if(is_array($mainCategory)) {
-					echo '<itunes:category text="'.$key.'">';
-					foreach ($mainCategory as $subCategory) {
-						echo '<itunes:category text="'.$subCategory.'"/>';
-					}
-					echo '</itunes:category>';
-				} else {
-					echo '<itunes:category text="'.$mainCategory.'"/>';
-				}
-			}
-		?>
+		<itunes:category text="Leisure">
+			<itunes:category text="Video Games"/>
+		</itunes:category>
 		<?php $episodes = $page->parent()->children()->listed()->flip()->filter(function ($child) {
 			return $child->date()->toDate() <= time();
 		  });
