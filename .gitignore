@@ -22,12 +22,12 @@ Icon
 # Content files
 # ---------------
 
-/www/old-content
-/www/old-content/*
-/www/livid/content
-/www/livid/content/*
-/www/content_original
-/www/content_original/*
+# /www/old-content
+# /www/old-content/*
+# /www/livid/content
+# /www/livid/content/*
+# /www/content_original
+# /www/content_original/*
 
 # Content files
 # ---------------
