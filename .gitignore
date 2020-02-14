@@ -14,29 +14,29 @@ Icon
 # Temporary files
 # ---------------
 
-/basgrospoing/media/*
-/basgrospoing/livid/media/*
-!/basgrospoing/media/index.html
-!/basgrospoing/livid/media/index.html
+/www/media/*
+/www/livid/media/*
+!/www/media/index.html
+!/www/livid/media/index.html
 
 # Content files
 # ---------------
 
-/basgrospoing/old-content
-/basgrospoing/old-content/*
-/basgrospoing/livid/content
-/basgrospoing/livid/content/*
-/basgrospoing/content_original
-/basgrospoing/content_original/*
+/www/old-content
+/www/old-content/*
+/www/livid/content
+/www/livid/content/*
+/www/content_original
+/www/content_original/*
 
 # Content files
 # ---------------
-# /basgrospoing/files
-# /basgrospoing/files/*
+# /www/files
+# /www/files/*
 
 # Kirby master
-# /basgrospoing/kirby
-# /basgrospoing/kirby/*
+# /www/kirby
+# /www/kirby/*
 
 
 # -------------SECURITY-------------
@@ -49,23 +49,23 @@ Icon
 .cache
 basgrospoing/site/cache/
 basgrospoing/site/cache/*
-!/basgrospoing/site/cache/index.html
-!/basgrospoing/livid/site/cache/index.html
+!/www/site/cache/index.html
+!/www/livid/site/cache/index.html
 
 # Accounts
 # ---------------
 
-/basgrospoing/site/accounts/*
-!/basgrospoing/site/accounts/index.html
-/basgrospoing/livid/site/accounts/*
-!/basgrospoing/livid/site/accounts/index.html
+/www/site/accounts/*
+!/www/site/accounts/index.html
+/www/livid/site/accounts/*
+!/www/livid/site/accounts/index.html
 
 # Sessions
 # ---------------
 
-/basgrospoing/site/sessions/*
-!/basgrospoing/site/sessions/index.html
+/www/site/sessions/*
+!/www/site/sessions/index.html
 
 # License
 # ---------------
-/basgrospoing/site/config/.license
+/www/site/config/.license
