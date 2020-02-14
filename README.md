@@ -1,5 +1,7 @@
 # BGP V3
 
+Bas Gros Poing uses Kirby CMS.
+
 ## How to install
 
 ```
