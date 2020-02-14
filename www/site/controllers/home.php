@@ -119,7 +119,7 @@ return function($kirby, $site, $pages, $page) {
         return $page->date()->toDate();
       }, 'desc')
       ->filterBy('isTranslated', 'true')
-      ->filterBy('currentLang', 'en')
+      ->filterBy('Currentlang', 'en')
       ->first();
 
       $englishSecond = page('articles')
@@ -128,8 +128,8 @@ return function($kirby, $site, $pages, $page) {
       ->sortBy(function ($page) {
         return $page->date()->toDate();
       }, 'desc')
-      // ->filterBy('currentLang', 'en')
-      // ->filterBy('isTranslated', 'true')
+      ->filterBy('isTranslated', 'true')
+      ->filterBy('Currentlang', 'en')
       ->slice(1)
       ->first();
       
