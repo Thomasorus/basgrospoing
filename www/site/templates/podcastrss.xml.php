@@ -56,7 +56,7 @@
 		</itunes:owner>
 
 		<?php if($page->Itunesimage()->isNotEmpty()): ?>
-		<itunes:image href="<?php echo Xml::encode($page->Itunesimage()->url()); ?>"/>
+		<itunes:image href="<?php echo $page->Itunesimage()->url(); ?>"/>
 		<?php endif; ?>
 
 		<itunes:subtitle><?php echo Xml::encode($page->itunesSubtitle()); ?></itunes:subtitle>
