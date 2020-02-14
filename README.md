@@ -11,6 +11,10 @@ git submodule init
 git submodule update --recursive --remote
 ```
 
+## Quickly run
+
+`php -S localhost:8000 kirby/router.php`
+
 ## Compile SASS for BGP
 
 Utiliser Parcel
