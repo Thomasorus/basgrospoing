@@ -55,8 +55,8 @@
 			<itunes:email><?php echo Xml::encode($page->itunesEmail()); ?></itunes:email>
 		</itunes:owner>
 
-		<?php if($page->itunesImage()->exists()): ?>
-		<itunes:image href="<?php echo Xml::encode($page->image($page->itunesImage())); ?>"/>
+		<?php if($page->Itunesimage()->exists()): ?>
+		<itunes:image href="<?php echo Xml::encode($page->image($page->Itunesimage())); ?>"/>
 		<?php endif; ?>
 
 		<itunes:subtitle><?php echo Xml::encode($page->itunesSubtitle()); ?></itunes:subtitle>
