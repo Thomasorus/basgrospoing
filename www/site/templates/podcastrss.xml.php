@@ -124,7 +124,7 @@
 							));
 						}
 						$podtrac = "https://dts.podtrac.com/redirect.mp3/";
-						$audioUrl = $podtrac . $episode->url().'/download/'.$audio->filename();
+						$audioUrl = $podtrac . $episode->url().'/'.$audio->filename();
 					?>
 					
 					<enclosure url="<?php echo $audioUrl ?>" length="<?php echo $audio->size() ?>" type="<?php echo $audio->mime() ?>"/>
