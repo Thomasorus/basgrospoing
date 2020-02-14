@@ -1,18 +1,18 @@
 [submodule "basgrospoing/kirby"]
-	path = basgrospoing/kirby
+	path = www/kirby
 	url = https://github.com/getkirby/kirby
 [submodule "basgrospoing/site/plugins/kirby3-feed"]
-	path = basgrospoing/site/plugins/kirby3-feed
+	path = www/site/plugins/kirby3-feed
 	url = https://github.com/bnomei/kirby3-feed.git
 [submodule "basgrospoing/site/plugins/kirby-embed"]
-	path = basgrospoing/site/plugins/embed
+	path = www/site/plugins/embed
 	url = https://github.com/sylvainjule/kirby-embed.git
 [submodule "basgrospoing/site/plugins/kirby-builder"]
-	path = basgrospoing/site/plugins/kirby-builder
+	path = www/site/plugins/kirby-builder
 	url = https://github.com/TimOetting/kirby-builder.git
 [submodule "basgrospoing/content"]
-	path = basgrospoing/content
+	path = www/content
 	url = git@gitlab.com:Thomasorus/bgp-content-v3.git
 [submodule "basgrospoing/site/plugins/meta-tags"]
-	path = basgrospoing/site/plugins/meta-tags
+	path = www/site/plugins/meta-tags
 	url = https://github.com/pedroborges/kirby-meta-tags.git
