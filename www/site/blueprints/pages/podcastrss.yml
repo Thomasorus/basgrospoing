@@ -7,48 +7,49 @@ fields:
     type: headline
   title:
     label: Title
-    type:  text
+    type: text
   Description:
     label: Description
-    type:  textarea
+    type: textarea
   itunes:
     label: iTunes specific Information
     type: headline
   Language:
     label: Language
-    type:  text
+    type: text
     width: 1/4
   Itunesauthor:
     label: iTunes Author
-    type:  text
+    type: text
     width: 1/4
   Itunesowner:
     label: iTunes Owner
-    type:  text
+    type: text
     width: 1/4
   Itunesemail:
     label: iTunes E-Mail
-    type:  email
+    type: email
     width: 1/4
   line:
     type: line
   Itunesimage:
     label: iTunes Cover
-    type:  files
+    type: files
     width: 1/2
+    query: page.images
   Itunessubtitle:
     label: iTunes subtitle
-    type:  text
+    type: text
     width: 1/2
   line2:
     type: line
   Ituneskeywords:
     label: iTunes keywords
-    type:  tags
+    type: tags
     width: 1/2
   Itunescategories:
     label: iTunes categories
-    type:  tags
+    type: tags
     width: 1/2
   Itunesblock:
     label: Block on iTunes
@@ -84,7 +85,7 @@ fields:
     label: Downloads
     type: structure
     readonly: true
-    fields: 
+    fields:
       timestamp:
         label: Year and month
         type: text
