@@ -31,8 +31,8 @@ Icon
 
 # Content files
 # ---------------
-/basgrospoing/files
-/basgrospoing/files/*
+# /basgrospoing/files
+# /basgrospoing/files/*
 
 # Kirby master
 # /basgrospoing/kirby
