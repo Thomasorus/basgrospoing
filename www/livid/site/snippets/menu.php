@@ -1,5 +1,5 @@
       <?php // fetch all categories
-$categories = $pages->children()->visible()->pluck('Category', ',', true);
+$categories = $pages->children()->listed()->pluck('Category', ',', true);
 ?>
 
   <?php foreach($categories as $cat): ?>

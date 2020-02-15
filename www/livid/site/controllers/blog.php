@@ -6,12 +6,12 @@ return function($site, $pages, $page) {
   $perpage  = $page->perpage()->int();
   
   $articles = $site->find('blog')->children()
-                   ->visible()
+                   ->listed()
                    ->flip()
                    ->paginate(($perpage >= 1)? $perpage : 10);
 
 $allArticles = $site->find('blog')->children()
-                   ->visible()
+                   ->listed()
                    ->flip();
                    
 

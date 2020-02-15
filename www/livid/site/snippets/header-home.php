@@ -23,7 +23,7 @@
     <nav role="banner">
 
  <ul>
-    <?php foreach($pages->visible() as $item): ?>
+    <?php foreach($pages->listed() as $item): ?>
     <li>
       <a href="<?= $item->url() ?>"><?= $item->title()->html() ?></a>
     </li>

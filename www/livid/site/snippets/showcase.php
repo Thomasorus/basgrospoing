@@ -1,6 +1,6 @@
 <?php
 
-$projects = page('projects')->children()->visible();
+$projects = page('projects')->children()->listed();
 
 /*
 
