@@ -21,7 +21,7 @@ if($page->hasNextListed() || $page->hasPrevListed()): ?>
   <nav class="pagination <?= !@$flip ?: ' flip' ?> wrap cf">
 
     <?php if($page->hasPrevListed()): ?>
-      <a class="pagination-item <?= $directionPrev ?>" href="<?= $page->prevVisible()->url() ?>" rel="prev" title="<?= $page->prevVisible()->title()->html() ?>">
+      <a class="pagination-item <?= $directionPrev ?>" href="<?= $page->PrevListed()->url() ?>" rel="prev" title="<?= $page->PrevListed()->title()->html() ?>">
         <?= (new Asset("assets/images/arrow-{$directionPrev}.svg"))->content() ?>
       </a>
     <?php else: ?>
@@ -31,7 +31,7 @@ if($page->hasNextListed() || $page->hasPrevListed()): ?>
     <?php endif ?>
 
     <?php if($page->hasNextListed()): ?>
-      <a class="pagination-item <?= $directionNext ?>" href="<?= $page->nextVisible()->url() ?>" rel="next" title="<?= $page->nextVisible()->title()->html() ?>">
+      <a class="pagination-item <?= $directionNext ?>" href="<?= $page->nextListed()->url() ?>" rel="next" title="<?= $page->nextListed()->title()->html() ?>">
         <?= (new Asset("assets/images/arrow-{$directionNext}.svg"))->content() ?>
       </a>
     <?php else: ?>
