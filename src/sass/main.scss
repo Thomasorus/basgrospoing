@@ -1,28 +1,28 @@
 /* autoprefixer grid: autoplace */
 // Main file has all the stylistic classes
 @import "./partials/_fonts";
-@import "./../../basgrospoing/site/snippets/patterns/atoms/global/animations/_animations";
-@import "./../../basgrospoing/site/snippets/patterns/atoms/images/bg-img/_bg-img";
-@import "./../../basgrospoing/site/snippets/patterns/molecules/article-footer/_article-footer";
-@import "./../../basgrospoing/site/snippets/patterns/molecules/patreon/_patreon";
-@import "./../../basgrospoing/site/snippets/patterns/organisms/fighterround/_fighterround";
-@import "./../../basgrospoing/site/snippets/patterns/atoms/images/whitebg/_whitebg";
-@import "./../../basgrospoing/site/snippets/patterns/atoms/images/greenbg/_greenbg";
-@import "./../../basgrospoing/site/snippets/patterns/atoms/images/pinkbg/_pinkbg";
-@import "./../../basgrospoing/site/snippets/patterns/atoms/images/blackbg/_blackbg";
-@import "./../../basgrospoing/site/snippets/patterns/molecules/card/_card";
-@import "./../../basgrospoing/site/snippets/patterns/organisms/podcastcard/_podcastcard";
-@import "./../../basgrospoing/site/snippets/patterns/organisms/articlecard/_articlecard";
-@import "./../../basgrospoing/site/snippets/patterns/molecules/roundcard/_roundcard";
-@import "./../../basgrospoing/site/snippets/patterns/organisms/othercard/_othercard";
-@import "./../../basgrospoing/site/snippets/patterns/organisms/punchlinecard/_punchlinecard";
-@import "./../../basgrospoing/site/snippets/patterns/organisms/herofull/_herofull";
-@import "./../../basgrospoing/site/snippets/patterns/organisms/podcastschrono/_podcastschrono";
-@import "./../../basgrospoing/site/snippets/patterns/organisms/articleschrono/_articleschrono";
-@import "./../../basgrospoing/site/snippets/patterns/templates/article/_article";
-@import "./../../basgrospoing/site/snippets/patterns/templates/opinion/_opinion";
-@import "./../../basgrospoing/site/snippets/patterns/templates/magazine/_magazine";
-@import "./../../basgrospoing/site/snippets/patterns/templates/podcast/_podcast";
+@import "./../../www/site/snippets/patterns/atoms/global/animations/_animations";
+@import "./../../www/site/snippets/patterns/atoms/images/bg-img/_bg-img";
+@import "./../../www/site/snippets/patterns/molecules/article-footer/_article-footer";
+@import "./../../www/site/snippets/patterns/molecules/patreon/_patreon";
+@import "./../../www/site/snippets/patterns/organisms/fighterround/_fighterround";
+@import "./../../www/site/snippets/patterns/atoms/images/whitebg/_whitebg";
+@import "./../../www/site/snippets/patterns/atoms/images/greenbg/_greenbg";
+@import "./../../www/site/snippets/patterns/atoms/images/pinkbg/_pinkbg";
+@import "./../../www/site/snippets/patterns/atoms/images/blackbg/_blackbg";
+@import "./../../www/site/snippets/patterns/molecules/card/_card";
+@import "./../../www/site/snippets/patterns/organisms/podcastcard/_podcastcard";
+@import "./../../www/site/snippets/patterns/organisms/articlecard/_articlecard";
+@import "./../../www/site/snippets/patterns/molecules/roundcard/_roundcard";
+@import "./../../www/site/snippets/patterns/organisms/othercard/_othercard";
+@import "./../../www/site/snippets/patterns/organisms/punchlinecard/_punchlinecard";
+@import "./../../www/site/snippets/patterns/organisms/herofull/_herofull";
+@import "./../../www/site/snippets/patterns/organisms/podcastschrono/_podcastschrono";
+@import "./../../www/site/snippets/patterns/organisms/articleschrono/_articleschrono";
+@import "./../../www/site/snippets/patterns/templates/article/_article";
+@import "./../../www/site/snippets/patterns/templates/opinion/_opinion";
+@import "./../../www/site/snippets/patterns/templates/magazine/_magazine";
+@import "./../../www/site/snippets/patterns/templates/podcast/_podcast";
 
 .invert span {
   border-bottom: 3px solid white;
