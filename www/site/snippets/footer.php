@@ -36,6 +36,11 @@
             </div>
             <div class="footer-list">
                 <ul>
+                 <li>
+                        <a href="https://basgrospoing.fr/<?php echo $kirby->language(); ?>/carte-des-assos-bagarre-francophones">
+                            Trouver des joueurs
+                        </a>
+                    </li>
                     <li>
                         <a href="https://basgrospoing.fr/<?php echo $kirby->language(); ?>/sponsors">
                             Sponsors
