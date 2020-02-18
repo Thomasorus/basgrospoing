@@ -1,11 +1,8 @@
 {
-	"folders": [
-		{
-			"path": "."
-		},
-		{
-			"path": "\\\\wsl$\\Ubuntu\\home\\thomas\\bgp-content-v3"
-		}
-	],
-	"settings": {}
+  "folders": [
+    {
+      "path": "."
+    }
+  ],
+  "settings": {}
 }
