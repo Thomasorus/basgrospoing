@@ -3,7 +3,7 @@
     <div id="timer"></div>
 
 
-    <?php if(site()->language()->code() == "fr"): ?>
+    <?php if($kirby->language() == "fr"): ?>
         <a class="timer_coin"href="http://patreon.com/basgrospoing">Insert coin!</a>
     <?php else: ?>
     <form action="https://www.paypal.com/cgi-bin/webscr" method="post" class="">
