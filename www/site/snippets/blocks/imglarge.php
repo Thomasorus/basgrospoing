@@ -8,9 +8,8 @@
 			<img 
 				class="lazy" 
 				src="<?=$data->imagelarge()->toFile()->thumb([
-				'width'   => 100,
+				'width'   => 200,
 				'quality' => 20,
-				'crop' => true,
 				'blur' => true,
 				])->url();  ?>"
 				data-src="<?=$data->imagelarge()->toFile()->srcset([400]); ?>" 
