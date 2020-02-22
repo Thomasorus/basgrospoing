@@ -48,7 +48,7 @@ tabs:
                 query: page.images
               figcaption:
                 label: Texte sous l'image (optionnel)
-                type: text
+                type: textarea
           fullimage:
             name: Image pleine largeur
             preview:
@@ -76,7 +76,7 @@ tabs:
                 query: page.images
               figcaption:
                 label: Texte sous l'image (optionnel)
-                type: text
+                type: textarea
               textcol:
                 label: Texte à droite
                 type: textarea
@@ -93,7 +93,7 @@ tabs:
                 query: page.images
               figcaption:
                 label: Texte sous l'image (optionnel)
-                type: text
+                type: textarea
               textcol:
                 label: Texte à gauche
                 type: textarea
@@ -125,7 +125,7 @@ tabs:
             fields:
               text:
                 label: Tweet text
-                type: text
+                type: textarea
               date:
                 label: Tweet date
                 type: date
@@ -170,7 +170,7 @@ tabs:
                 type: toggle
               figcaption:
                 label: Texte sous la vidéo (optionnel)
-                type: text
+                type: textarea
 
   # images tab
   images:
