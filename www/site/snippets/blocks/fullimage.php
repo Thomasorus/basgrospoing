@@ -3,7 +3,7 @@
 <?php if($data->fullimage()): ?>
 <img 
     class="lazy" 
-    src="<?=$data->imagelarge()->toFile()->thumb([
+    src="<?=$data->fullimage()->toFile()->thumb([
         'width'   => 300,
         'quality' => 20,
         'blur' => true,
