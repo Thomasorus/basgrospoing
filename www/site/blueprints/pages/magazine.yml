@@ -1,4 +1,4 @@
-title: Article
+title: Magazine
 options:
   changeTemplate:
     - article
@@ -140,6 +140,36 @@ tabs:
                 type: url
               context:
                 label: Tweet context (if needed)
+                type: text
+          video:
+            name: Vidéo
+            preview:
+              snippet: blocks/video
+              css: /assets/css/main.css
+            fields:
+              video:
+                label: Vidéo
+                type: files
+                multiple: false
+                query: page.videos
+              loop:
+                label: Loop
+                width: 1/6
+                type: toggle
+              autoplay:
+                label: Autoplay
+                width: 1/6
+                type: toggle
+              mute:
+                label: Mute
+                width: 1/6
+                type: toggle
+              controls:
+                label: Controls
+                width: 1/6
+                type: toggle
+              figcaption:
+                label: Texte sous la vidéo (optionnel)
                 type: text
 
   # images tab
