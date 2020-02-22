@@ -1,6 +1,6 @@
 <div class="magazine-container--large">
 	<div class="magazine__tweet">
-		<?php echo $data->text() ?>
+		<?php echo $data->text()->kirbytextinline() ?>
 		<div class="magazine__tweet-meta">
 			— <?php echo $data->author() ?> (@<?php echo $data->authorId() ?>) <a href="	<?php echo $data->link() ?>">
 			<?php echo $data->date("d/m/Y") ?>

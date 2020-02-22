@@ -14,7 +14,7 @@
 		<?php if ($data->figcaption()->isNotEmpty()): ?>
 			<figcaption class="magazine__sub-image-citation">
 				<small>
-					<?= $data->figcaption() ?>
+					<?= $data->figcaption()->kirbytextinline() ?>
 				</small>
 			</figcaption>
 		<?php endif ?>
