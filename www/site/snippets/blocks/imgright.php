@@ -9,7 +9,7 @@
 					'blur' => true,
 					])->url();  ?>"
 				data-src="<?=$data->imageright()->toFile()->srcset([350]); ?>"
-				data-srcset="<?=$data->imageright()->toFile()->srcset([350, 540]); ?>"
+				data-srcset="<?=$data->imageright()->toFile()->srcset([350, 540]); ?>" />
 		<?php endif ?>
 		<?php if ($data->figcaption()->isNotEmpty()): ?>
 			<figcaption class="magazine__sub-image-citation">
@@ -20,6 +20,6 @@
 		<?php endif ?>
 	</figure>
 	<div class="magazine__text">
-       <p> <?php echo $data->textcol()->kirbytext() ?></p>
+       <?php echo $data->textcol()->kirbytext() ?>
 	</div>
 </div>
