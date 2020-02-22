@@ -9,7 +9,7 @@
 					'blur' => true,
 					])->url();  ?>"
 				data-src="<?=$data->imageleft()->toFile()->srcset([350]); ?>"
-				data-srcset="<?=$data->imageleft()->toFile()->srcset([350, 540]); ?>
+				data-srcset="<?=$data->imageleft()->toFile()->srcset([350, 540]); ?>"
 		<?php endif ?>
 		<?php if ($data->figcaption()->isNotEmpty()): ?>
 			<figcaption class="magazine__sub-image-citation">
