@@ -99,19 +99,21 @@ return [
                   ['href' => url('/assets/images/icons/favicon-32x32.png'), 'sizes' => '32x32', 'type' =>'image/png'],
                   ['href' => url('/assets/images/icons/favicon-96x96.png'), 'sizes' => '96x96', 'type' =>'image/png'],
               ],
-              'canonical' => !$page->canonical()->empty() ? $page->canonical() : $page->url(),
+              'canonical' => page()->Canonical()->isNotEmpty() ? $page->Canonical() : $page->url(),
               'alternate' => function () {
-                  $locales = [];
-                  foreach (kirby() ->languages() as $language) {
-                      if ($language->code() == kirby()->language()) continue;
+                  if(page()->isTranslated() == 'true') { 
+                    $locales = [];
+                    foreach (kirby() ->languages() as $language) {
+                        if ($language->code() == kirby()->language()) continue;
 
-                      $locales[] = [
-                          'hreflang' => $language->code(),
-                          'href' => page()->url($language->code())
-                      ];
+                        $locales[] = [
+                            'hreflang' => $language->code(),
+                            'href' => page()->url($language->code())
+                        ];
+                    }
+
+                    return $locales;
                   }
-
-                  return $locales;
               }
           ],
           'og' => [ 
@@ -165,8 +167,10 @@ return [
                   ['href' => url('/assets/images/icons/favicon-32x32.png'), 'sizes' => '32x32', 'type' =>'image/png'],
                   ['href' => url('/assets/images/icons/favicon-96x96.png'), 'sizes' => '96x96', 'type' =>'image/png'],
               ],
-              'canonical' => !$page->canonical()->empty() ? $page->canonical() : $page->url(),
+              'canonical' => page()->Canonical()->isNotEmpty() ? $page->Canonical() : $page->url(),
               'alternate' => function () {
+                if(page()->isTranslated() == 'true') { 
+
                   $locales = [];
                   foreach (kirby() ->languages() as $language) {
                       if ($language->code() == kirby()->language()) continue;
@@ -178,6 +182,7 @@ return [
                   }
 
                   return $locales;
+                }
               }
           ],
           'og' => [ 
@@ -236,8 +241,10 @@ return [
                   ['href' => url('/assets/images/icons/favicon-32x32.png'), 'sizes' => '32x32', 'type' =>'image/png'],
                   ['href' => url('/assets/images/icons/favicon-96x96.png'), 'sizes' => '96x96', 'type' =>'image/png'],
               ],
-              'canonical' => !$page->canonical()->empty() ? $page->canonical() : $page->url(),
+              'canonical' => page()->Canonical()->isNotEmpty() ? $page->Canonical() : $page->url(),
               'alternate' => function () {
+                if(page()->isTranslated() == 'true') { 
+
                   $locales = [];
                   foreach (kirby() ->languages() as $language) {
                       if ($language->code() == kirby()->language()) continue;
@@ -250,6 +257,7 @@ return [
 
                   return $locales;
               }
+            }
           ],
           'og' => [ 
               'type' => 'article',
@@ -307,8 +315,10 @@ return [
                   ['href' => url('/assets/images/icons/favicon-32x32.png'), 'sizes' => '32x32', 'type' =>'image/png'],
                   ['href' => url('/assets/images/icons/favicon-96x96.png'), 'sizes' => '96x96', 'type' =>'image/png'],
               ],
-              'canonical' => !$page->canonical()->empty() ? $page->canonical() : $page->url(),
+              'canonical' => page()->Canonical()->isNotEmpty() ? $page->Canonical() : $page->url(),
               'alternate' => function () {
+                if(page()->isTranslated() == 'true') { 
+
                   $locales = [];
                   foreach (kirby() ->languages() as $language) {
                       if ($language->code() == kirby()->language()) continue;
@@ -321,6 +331,7 @@ return [
 
                   return $locales;
               }
+            }
           ],
           'og' => [ 
               'type' => 'article',
@@ -378,8 +389,10 @@ return [
                   ['href' => url('/assets/images/icons/favicon-32x32.png'), 'sizes' => '32x32', 'type' =>'image/png'],
                   ['href' => url('/assets/images/icons/favicon-96x96.png'), 'sizes' => '96x96', 'type' =>'image/png'],
               ],
-              'canonical' => !$page->canonical()->empty() ? $page->canonical() : $page->url(),
+              'canonical' => page()->Canonical()->isNotEmpty() ? $page->Canonical() : $page->url(),
               'alternate' => function () {
+                if(page()->isTranslated() == 'true') { 
+
                   $locales = [];
                   foreach (kirby() ->languages() as $language) {
                       if ($language->code() == kirby()->language()) continue;
@@ -392,6 +405,7 @@ return [
 
                   return $locales;
               }
+            }
           ],
           'og' => [ 
               'type' => 'article',
