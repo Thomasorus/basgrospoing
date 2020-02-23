@@ -115,6 +115,15 @@ tabs:
               text:
                 label: text
                 type: textarea
+          patreon:
+            name: Patreon
+            preview:
+              snippet: blocks/patreon
+              css: /assets/css/main.css
+            fields:
+              text:
+                label: text
+                type: textarea
           tweet: # This is a field set. It contains a group of kirby fields. The user can select from these sets to build the content.
             name: Tweet # The name option is used as a label for the buttons to add new fieldsets. It is also used as a label in the header of the fieldset, if the label option is not set explicitly (see next line).
             label: Tweet by {{author}} # Optional. The label option can be used to override the header text of the fieldset. The 'mustache' syntax can be used to include the value of any field of the fieldset.
