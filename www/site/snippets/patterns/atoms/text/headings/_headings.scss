@@ -20,7 +20,7 @@ h6 {
       "Segoe UI Symbol"
     );
   text-transform: uppercase;
-  letter-spacing: -1px;
+  letter-spacing: -2px;
   overflow-wrap: break-word;
   word-wrap: break-word;
   color: var(--bgp-text, #000000);
@@ -87,6 +87,7 @@ h3 {
 h4 {
   font-size: 1.9rem;
   line-height: 1.23;
+  letter-spacing: -1px;
 }
 
 h5 {
