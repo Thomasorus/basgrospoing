@@ -1,39 +1,38 @@
-:root, :root[theme='light'] {
+:root,
+:root[theme="light"] {
+  --bgp-pink: #ff458c;
+  --bgp-green: #1fd316;
+  --bgp-yellow: #efd61d;
+  --bgp-black: #000000;
+  --bgp-white: #ffffff;
+  --bgp-light-grey: #706f6f;
+  --bgp-very-light-grey: #d4d4d4;
+  --bgp-text: #000000;
+  --bgp-background: #ffffff;
 
-    --bgp-pink: #FF458C;
-    --bgp-green: #1FD316;
-    --bgp-yellow: #EFD61D;
-    --bgp-black: #000000;
-    --bgp-white: #FFFFFF;
-    --bgp-light-grey: #706F6F;
-    --bgp-very-light-grey: #d4d4d4;
-    --bgp-text: #000000;
-    --bgp-background: #FFFFFF;
+  --bgp-green-alpha: rgba(31, 211, 22, 0.7);
+  --bgp-pink-alpha: rgba(255, 69, 140, 0.8);
+  --bgp-yellow-alpha: rgba(239, 214, 29, 0.7);
+  --bgp-hero-bg: #000000;
 
-    --bgp-green-alpha: rgba(31, 211, 22, 0.7);
-    --bgp-pink-alpha: rgba(255, 69, 140, 0.8);
-    --bgp-yellow-alpha: rgba(239, 214, 29, 0.7);
-    --bgp-hero-bg: #000000;
-
-    --filter: invert(0%);
+  --filter: invert(0%);
 }
 
-:root[theme='dark'] {
+:root[theme="dark"] {
+  --bgp-pink: #ff458c;
+  --bgp-green: #1fd316;
+  --bgp-yellow: #333333;
+  --bgp-black: #000000;
+  --bgp-white: #ffffff;
+  --bgp-light-grey: #706f6f;
+  --bgp-very-light-grey: #111111;
+  --bgp-text: #ffffff;
+  --bgp-background: #222222;
+  --bgp-hero-bg: #222222;
 
-    --bgp-pink: #FF458C;
-    --bgp-green: #1FD316;
-    --bgp-yellow: #222222;
-    --bgp-black: #000000;
-    --bgp-white: #FFFFFF;
-    --bgp-light-grey: #706F6F;
-    --bgp-very-light-grey: #111111;
-    --bgp-text: #FFFFFF;
-    --bgp-background: #222222;
-    --bgp-hero-bg: #222222;
+  --bgp-green-alpha: rgba(31, 211, 22, 0.7);
+  --bgp-pink-alpha: rgba(255, 69, 140, 0.8);
+  --bgp-yellow-alpha: rgba(239, 214, 29, 0.7);
 
-    --bgp-green-alpha: rgba(31, 211, 22, 0.7);
-    --bgp-pink-alpha: rgba(255, 69, 140, 0.8);
-    --bgp-yellow-alpha: rgba(239, 214, 29, 0.7);
-
-    --filter: invert(100%);
+  --filter: invert(100%);
 }
