@@ -5,9 +5,10 @@ return [
     'languages.detect' => true,
     'debug' => true,
     'cache' => [
-    'pages' => [
-      'active' => false
-    ]
+        'type' => 'memcached',
+        'pages' => [
+            'active' => true
+        ]
     ],
     'thumbs' => [
         'driver' => 'gd',
