@@ -253,24 +253,29 @@
     z-index: 9;
     text-shadow: 4px 4px 0px var(--bgp-pink, #ff458c);
     margin: 0 auto 0 auto;
+
+    @media (max-width: 550px) {
+      font-size: 3rem;
+      letter-spacing: -2px;
+    }
   }
 
-  .magazine__citation:after {
-    content: "";
-    position: absolute;
-    height: 65vh;
-    top: 40px;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-    background-image: url("assets/images/star-white.svg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: bottom;
-    z-index: -1;
-    overflow: hidden;
-  }
+  // .magazine__citation:after {
+  //   content: "";
+  //   position: absolute;
+  //   height: 65vh;
+  //   top: 40px;
+  //   bottom: 0;
+  //   left: 0;
+  //   right: 0;
+  //   margin: auto;
+  //   background-image: url("assets/images/star-white.svg");
+  //   background-size: contain;
+  //   background-repeat: no-repeat;
+  //   background-position: bottom;
+  //   z-index: -1;
+  //   overflow: hidden;
+  // }
 }
 
 .magazine__date {
