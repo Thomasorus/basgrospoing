@@ -171,6 +171,9 @@ tabs:
               figcaption:
                 label: Texte sous la vidéo (optionnel)
                 type: textarea
+      credits:
+        label: Remerciements
+        type: textarea
 
   # images tab
   images:
