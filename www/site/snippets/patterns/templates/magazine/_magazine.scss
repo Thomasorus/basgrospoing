@@ -288,6 +288,10 @@
   text-align: center;
   max-width: var(--article-width, 690px);
   margin: auto;
+
+  p {
+    line-height: 1 !important;
+  }
 }
 
 .magazine__splitted {
