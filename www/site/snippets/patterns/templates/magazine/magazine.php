@@ -44,7 +44,6 @@
                     ?>
                 <?php snippet('patterns/molecules/article-footer/article-footer'); ?>
 
-                <?php snippet('patterns/molecules/patreon/patreon');?>
 
             </div>
 
