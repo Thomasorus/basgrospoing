@@ -5,7 +5,7 @@ tabs:
     fields:
       name:
         label: Nom
-        type:  text
+        type: text
       bio:
         label: Biographie
         type: textarea
@@ -22,11 +22,14 @@ tabs:
         label: Photo
         type: files
         multiple: false
-        query: page.images 
+        query: page.images
       kofi:
         label: Has a Ko-fi page?
+        type: toggle
+      kofiurl:
+        label: Ko-fi url
         type: url
-      isFrench: 
+      isFrench:
         label: French ?
         type: toggle
         default: false
@@ -38,10 +41,7 @@ tabs:
         label: Retraité ?
         type: toggle
         default: false
-
-
-    
-   # seo tab
+    # seo tab
   seo:
     label: Seo
     icon: globe
@@ -50,7 +50,7 @@ tabs:
     fields:
       seo: fields/seo
 
-   # social tab
+    # social tab
   social:
     label: Réseaux sociaux
     icon: twitter

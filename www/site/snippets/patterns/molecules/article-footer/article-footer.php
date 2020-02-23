@@ -32,13 +32,13 @@
   </div>
   <?php endif ?>
 </div>
- <?php if($fighter->kofi() && $fighter->membre() == "false" && $fighter->isFrench() == "false"  && $kirby->language() == "en"): ?>
+ <?php if($fighter->kofi() == "true" && $fighter->membre() == "false"  && $kirby->language() == "en"): ?>
 <div class="article__kofi">
   <div class="article__kofi-author">
     <p>
       <?= t('kofi') ?>
     </p>
-    <a href="<?= $fighter->kofi(); ?>">
+    <a href="<?= $fighter->kofiurl(); ?>">
       <svg id="Calque_1" data-name="Calque 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1057.09 391.19">
         <defs>
           <style>
