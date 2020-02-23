@@ -1,6 +1,5 @@
 
 <div class="magazine-container--large">
-<?= $data->text(); ?>
 	<figure>
 	
 		<?php if ($data->imagelarge()->isNotEmpty()): ?>
