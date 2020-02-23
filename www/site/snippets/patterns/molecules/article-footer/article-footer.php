@@ -14,7 +14,7 @@
       <?php echo $fighter->title() ?>
     </h4>
     <p><small>
-        <?= $fighter->shortbio(); ?></small></p>
+        <?= $fighter->shortbio()->kirbytextinline(); ?></small></p>
     <?php else: ?>
     <h4>
       <?php echo $page->author() ?>
