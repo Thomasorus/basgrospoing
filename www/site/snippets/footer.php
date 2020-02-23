@@ -76,7 +76,6 @@
 </div>
 
 <script>
-        console.log('gonna lazy imgs')
 
     document.addEventListener("DOMContentLoaded", function() {
   var lazyImages = [].slice.call(document.querySelectorAll("img.lazy"));
@@ -105,7 +104,6 @@
 </script>
 
 <script>
-    console.log('gonna lazy load')
     document.addEventListener("DOMContentLoaded", function() {
   var lazyVideos = [].slice.call(document.querySelectorAll("video.lazy"));
 
@@ -185,6 +183,35 @@ var isInViewport = function (elem) {
     );
 };
 
+</script>
+
+<script>
+  var lastScrollTop = 0;
+  var mag;
+  if (document.querySelector("#magazine")) {
+    window.addEventListener("scroll", function () {
+      var st = window.pageYOffset || document.documentElement.scrollTop;
+      if (st > lastScrollTop) {
+        var header = document.getElementsByTagName("header")[0];
+        header.classList.add("header-mag");
+      } else {
+        var header = document.getElementsByTagName("header")[0];
+        header.classList.remove("header-mag");
+      }
+      lastScrollTop = st;
+    }, false);
+  }
+
+  window.addEventListener('scroll', function (e) {
+    var s = (window.pageYOffset !== undefined) ? window.pageYOffset : (document.documentElement || document.body.parentNode ||
+      document.body).scrollTop;
+    var body = document.body;
+    var html = document.documentElement;
+    var d = Math.max(body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight);
+    var c = window.innerHeight;
+    var position = (s / (d - c)) * 100;
+    document.getElementById('Progress-bar').setAttribute('style', 'width: ' + position + '%');
+  });
 </script>
 
 </body>

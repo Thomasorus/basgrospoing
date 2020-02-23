@@ -82,31 +82,3 @@
 </nav>
 
 
-<script>
-  var lastScrollTop = 0;
-  var mag;
-  if (document.getElementById("magazine")) {
-    window.addEventListener("scroll", function () {
-      var st = window.pageYOffset || document.documentElement.scrollTop;
-      if (st > lastScrollTop) {
-        var header = document.getElementsByTagName("header")[0];
-        header.classList.add("header-mag");
-      } else {
-        var header = document.getElementsByTagName("header")[0];
-        header.classList.remove("header-mag");
-      }
-      lastScrollTop = st;
-    }, false);
-  }
-
-  window.addEventListener('scroll', function (e) {
-    var s = (window.pageYOffset !== undefined) ? window.pageYOffset : (document.documentElement || document.body.parentNode ||
-      document.body).scrollTop;
-    var body = document.body;
-    var html = document.documentElement;
-    var d = Math.max(body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight);
-    var c = window.innerHeight;
-    var position = (s / (d - c)) * 100;
-    document.getElementById('Progress-bar').setAttribute('style', 'width: ' + position + '%');
-  });
-</script>
