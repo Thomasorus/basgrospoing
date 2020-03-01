@@ -1,0 +1,7 @@
+type: pages
+headline: Rounds
+info: "{{ page.date.toDate('d.m.Y') }}"
+template:
+  - round
+empty: Pas de rounds
+sortBy: date desc
