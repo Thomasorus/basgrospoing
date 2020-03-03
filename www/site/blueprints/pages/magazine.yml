@@ -25,6 +25,15 @@ tabs:
       introtext:
         label: Texte d'introduction
         type: text
+      citation:
+        label: Punchline
+        type: textarea
+        help: Citation qui apparait sur le listing des rounds et la home
+        width: 2/3
+      citationAuhor:
+        label: Auteur de la punchline
+        type: text
+        width: 1/3
       text:
         label: Page Builder
         type: builder
