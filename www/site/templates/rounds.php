@@ -20,14 +20,14 @@
         ->listed()
         ->filterBy('date', '<=', $roundDateStart)
         ->filterBy('date', '>=', $roundDateEnd)
-        ->filterBy('category', '==', 'magazine');
+        ->filterBy('category', '==', 'Magazine');
       
         $others1 = page('articles')
           ->children()
           ->listed()
           ->filterBy('date', '<=', $roundDateStart)
           ->filterBy('date', '>=', $roundDateEnd)
-          ->filterBy('category', '!=', 'magazine')
+          ->filterBy('category', '!=', 'Magazine')
           ->filterBy('category', '!=', "Le podcast")
           ->sortBy('date', 'desc');
              		
@@ -36,9 +36,9 @@
           ->listed()
           ->filterBy('date', '<=', $roundDateStart)
           ->filterBy('date', '>=', $roundDateEnd)
-          ->filterBy('category', '!=', 'magazine')
+          ->filterBy('category', '!=', 'Magazine')
           ->filterBy('category', '!=', "Le podcast")
-->sortBy('date', 'desc');
+            ->sortBy('date', 'desc');
           
 	
 $others = new Pages(array($others1, $others2));
