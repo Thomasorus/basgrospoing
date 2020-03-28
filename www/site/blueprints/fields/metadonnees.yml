@@ -36,8 +36,12 @@ columns:
         type: tags
         width: 1/2
         help: Les catégories indiquent le type de contenu que l'on va lire, par exemple interview, test, guide de jeu...
+        options: query
+        query: page.siblings.pluck("category", ",", true)
       tags:
         label: Tags
         type: tags
         width: 1/2
         help: Les tags indiquent le sujet de l'article qu'on va lire, par exemple les jeux, les personnes, les consoles...
+        options: query
+        query: page.siblings.pluck("tags", ",", true)
