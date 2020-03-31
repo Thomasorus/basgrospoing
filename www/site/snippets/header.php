@@ -90,7 +90,7 @@
 
 
   <!-- Matomo -->
-  <!-- <script type="text/javascript">
+  <script type="text/javascript">
     var _paq = _paq || [];
     /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
     _paq.push(['trackPageView']);
@@ -108,7 +108,7 @@
       g.src = u + 'piwik.js';
       s.parentNode.insertBefore(g, s);
     })();
-  </script> -->
+  </script> 
   <!-- End Matomo Code -->
 </head>
 
