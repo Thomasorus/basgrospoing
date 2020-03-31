@@ -95,7 +95,8 @@
 						if($audio->duration()->empty()) {
 							$path				= $audio->root();
 							$mixinfo			= $getID3->analyze($path);
-							// $duration			= $mixinfo['playtime_string'];
+							 $duration			= $mixinfo['playtime_string'];
+                            
 							list($mins , $secs)	= explode(':' , $duration);
 
 							$hours = 0;
