@@ -4,6 +4,8 @@
 Icon
 .DS_Store
 ._.DS_Store
+/logs
+/www/podcasts
 
 # Dev folders
 # ---------------
