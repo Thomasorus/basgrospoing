@@ -67,7 +67,8 @@ Icon
 
 /www/site/sessions/*
 !/www/site/sessions/index.html
-
+/www/livid/site/sessions/*
+!/www/site/sessions/index.html
 # License
 # ---------------
 /www/site/config/.license
