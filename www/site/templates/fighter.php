@@ -9,9 +9,6 @@ $articles = $pages->find('/articles')->children()->listed()->filterBy('author', 
 
   <h1><?php echo $page->name()->html() ?></h1>
 
-  <figure>
-    <img src="<?php echo $page->photo()->toFile()->url() ?>">
-  </figure>
 
 <?php if($articles->count() > 0): ?>
   <h2>Articles</h2>
