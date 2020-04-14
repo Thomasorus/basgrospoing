@@ -16,3 +16,9 @@
 [submodule "basgrospoing/site/plugins/meta-tags"]
 	path = www/site/plugins/meta-tags
 	url = https://github.com/pedroborges/kirby-meta-tags.git
+[submodule "www/site/plugins/retour-for-kirby"]
+	path = www/site/plugins/retour-for-kirby
+	url = https://github.com/distantnative/retour-for-kirby.git
+[submodule "www/site/plugins/sitemapper"]
+	path = www/site/plugins/sitemapper
+	url = https://gitlab.com/cre8ivclick/sitemapper.git
