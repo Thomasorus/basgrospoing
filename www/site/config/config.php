@@ -7,7 +7,7 @@ return [
     'cache' => [
         'type' => 'memcached',
         'pages' => [
-            'active' => false
+            'active' => true
         ]
     ],
     'thumbs' => [
