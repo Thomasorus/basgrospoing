@@ -11,7 +11,7 @@ return [
         ]
     ],
     'thumbs' => [
-        'driver' => 'gd',
+        'driver' => 'im',
         'autoOrient' => true,
         'quality' => '80',
         'interlace' => true
