@@ -52,7 +52,7 @@ return function($kirby, $site, $pages, $page) {
     $heromag = page('articles')
       ->children()
       ->listed()
-      ->filterBy('famille', '==', 'magazine')
+      ->filterBy('category', '==', 'Magazine')
       ->sortBy(function ($page) {
         return $page->date()->toDate();
       }, 'desc')
@@ -62,7 +62,7 @@ return function($kirby, $site, $pages, $page) {
       $heromag = page('articles')
       ->children()
       ->listed()
-      ->filterBy('famille', '==', 'magazine')
+      ->filterBy('category', '==', 'Magazine')
       ->sortBy(function ($page) {
         return $page->date()->toDate();
       }, 'desc')
