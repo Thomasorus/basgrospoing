@@ -33,7 +33,7 @@
 
 
             <div class="article__content">
-                <em><?= $page->introtext() ?></em>
+                <em><?= $page->introtext()->kirbytextinline() ?></em>
                 <div class="article__fight">
                     <svg xmlns="http://www.w3.org/2000/svg" id="Calque_1" viewBox="0 0 89.5 59.9">
                         <style>
