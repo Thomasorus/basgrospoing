@@ -18,3 +18,9 @@ fields:
     help: Verticale uniquement, grande
     multiple: false
     query: page.images
+  archiveimage:
+    label: Image rectangulaire pour les archives
+    type: files
+    help: 313 x 300 pixels minimum
+    multiple: false
+    query: page.images
