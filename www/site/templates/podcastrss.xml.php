@@ -97,15 +97,15 @@
 							$mixinfo			= $getID3->analyze($path);
 							 $duration			= $mixinfo['playtime_string'];
                             
-							list($mins , $secs)	= explode(':' , $duration);
+							// list($hours, $mins , $secs)	= explode(':' , $duration);
 
-							$hours = 0;
-							if($mins > 60) {
-								$hours	= intval($mins / 60);
-								$mins	= $mins - $hours*60;
-							}
+							// $hours = 0;
+							// if($mins > 60) {
+							// 	$hours	= intval($mins / 60);
+							// 	$mins	= $mins - $hours*60;
+							// }
 
-							$duration = sprintf("%02d:%02d:%02d" , $hours , $mins , $secs);
+							// $duration = sprintf("%02d:%02d:%02d" , $hours , $mins , $secs);
 
 							// Update file info, so we don't have to determine the duration again
 							$audio->update(array(
