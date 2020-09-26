@@ -2,7 +2,7 @@
   <a href="<?php  echo $punchline->url(); ?>">
       
     <div class="card_star">
-        <img src="/assets/images/star-yellow.svg" alt="">
+        <img loading="lazy" src="/assets/images/star-yellow.svg" alt="">
         <h2>
         <?php echo t('punchline') ?>
         </h2>

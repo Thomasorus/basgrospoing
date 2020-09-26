@@ -2,7 +2,7 @@
 <div class="fighter-round__photo">
 <a href="<?php echo $fighter->url() ?>">
 <figure>
-<img src="<?php echo $fighter->photo()->toFile()->url()?>" alt="<?php echo $fighter->name() ?>  ">
+<img loading="lazy"  src="<?php echo $fighter->photo()->toFile()->url()?>" alt="<?php echo $fighter->name() ?>  ">
 </figure>
 </a>
 </div>

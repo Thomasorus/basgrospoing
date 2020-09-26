@@ -11,7 +11,7 @@
             $image = $podcastChrono->ChronoimageOld();
           }
          ?>
-        <img srcset="<?= $image->srcset([
+        <img loading="lazy" srcset="<?= $image->srcset([
                     '1920w' => [
                       'width' => 150,
                       'height' => 150,

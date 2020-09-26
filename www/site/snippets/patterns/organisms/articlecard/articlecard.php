@@ -3,7 +3,7 @@
     <div class="card__img white-bg random-bg">
     <?php  if($magazine->magazineimage()->isNotEmpty()): ?>
         <div class="bg-lazy">
-          <img srcset="<?= $magazine->magazineimage()->toFile()->srcset([
+          <img loading="lazy" srcset="<?= $magazine->magazineimage()->toFile()->srcset([
                   '420w' => [
                       'width' => 410,
                       'height' => 430,
@@ -33,7 +33,7 @@
         </div>
         <?php else: ?>
         <div class="bg-lazy">
-          <img src="<?php echo $magazine->archiveimage()->toFile(); ?>" alt="">
+          <img loading="lazy" src="<?php echo $magazine->archiveimage()->toFile(); ?>" alt="">
         </div>
         <?php endif ?>
         <span class="title-scroll" data-title="<?php  echo $magazine->title();  ?>"></span>

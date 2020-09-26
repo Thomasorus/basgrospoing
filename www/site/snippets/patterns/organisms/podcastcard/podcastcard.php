@@ -2,7 +2,7 @@
   <a href="<?php  echo $podcast->url(); ?>">
     <div class="card__img white-bg--tall random-bg">
       <?php if($podcast->Podcastimage()->isNotEmpty()): ?>
-      <div class="bg-lazy">
+      <div loading="lazy" class="bg-lazy">
             <img srcset="<?= $podcast->podcastimage()->toFile()->srcset([
                '420w' => [
                 'width' => 410,
@@ -33,7 +33,7 @@
       </div>
       <?php else: ?>
       <div class="bg-lazy">
-                  <img src="<?php echo $podcast->podcastimageold() ?>" alt="">
+                  <img loading="lazy" src="<?php echo $podcast->podcastimageold() ?>" alt="">
 
       </div>
       <?php endif?>

@@ -7,7 +7,7 @@
       <a href="<?php  echo $articleChrono->url(); ?>">
         <div class="card-circle__img">
             <div class="card-circle__border"></div>
-            <img src="<?php  echo $articleChrono->url(); ?>/<?php  echo $articleChrono->chronoimage(); ?>" alt="<?php  echo $articleChrono->title(); ?>">
+            <img loading="lazy"  src="<?php  echo $articleChrono->url(); ?>/<?php  echo $articleChrono->chronoimage(); ?>" alt="<?php  echo $articleChrono->title(); ?>">
         </div>
         <div class="card-circle__title">
             <h3 class="underline-m--green"><?php  echo $articleChrono->title(); ?></h3>

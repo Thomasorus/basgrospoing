@@ -11,7 +11,7 @@
                 <div class="bg-lazy">
                     <?php 
                         if($podcast->Podcastposter()->toFile()): ?>
-                       <img srcset="<?= $podcast->podcastimage()->toFile()->srcset([
+                       <img loading="lazy"  srcset="<?= $podcast->podcastimage()->toFile()->srcset([
                             '420w' => [
                                 'width' => 410,
                                 'height' => 430,

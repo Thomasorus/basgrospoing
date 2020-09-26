@@ -1,7 +1,7 @@
 <div class="magazine__full-img white-bg">
 
 <?php if($data->fullimage()): ?>
-<img 
+<img loading="lazy" 
     class="lazy" 
     src="<?=$data->fullimage()->toFile()->thumb([
         'width'   => 300,

@@ -1,6 +1,6 @@
         <article id="magazine">
             <div class="magazine__head white-bg">
-                <img aria-hidden="true" srcset="<?= $page->coverimage()->toFile()->srcset([
+                <img loading="lazy"  aria-hidden="true" srcset="<?= $page->coverimage()->toFile()->srcset([
                     '550w' => [
                         'width' => 549,
                         'height' => 976,

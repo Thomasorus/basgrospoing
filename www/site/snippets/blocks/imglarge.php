@@ -4,7 +4,7 @@
 	
 		<?php if ($data->imagelarge()->isNotEmpty()): ?>
 	
-			<img 
+			<img loading="lazy" 
 				class="lazy" 
 				src="<?=$data->imagelarge()->toFile()->thumb([
 				'width'   => 200,

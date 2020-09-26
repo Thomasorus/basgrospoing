@@ -2,7 +2,7 @@
 <ul>
    <li class="menu__logo" >
     <a href="/">
-    <img src="/assets/images/logo-pink.svg" alt="logo" id="logo">
+    <img loading="lazy"  src="/assets/images/logo-pink.svg" alt="logo" id="logo">
     </a>
   </li>
   <?php foreach($pages->listed() as $item): ?>

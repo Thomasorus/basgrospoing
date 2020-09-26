@@ -1,7 +1,7 @@
 <div class="magazine-container">
 	<figure class="magazine__imageright">
 		<?php if ($data->imageright()->isNotEmpty()): ?>
-			<img 
+			<img loading="lazy" 
 				class="lazy" 
 				src="<?=$data->imageright()->toFile()->thumb([
 					'width'   => 175,

@@ -3,7 +3,7 @@
     <div class="card-circle__img">
         <div class="card-circle__border"></div>
     
-              <img
+              <img loading="lazy" 
               srcset="<?= $articlechrono->chronoimage()->toFile()->srcset([
                     '1920w' => [
                       'width' => 150,

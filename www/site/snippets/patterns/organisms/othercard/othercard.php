@@ -4,7 +4,7 @@
           <div class="card__img white-bg random-bg">
               <div class="bg-lazy">
                  
-                  <img
+                  <img loading="lazy" 
               srcset="<?= $other->archiveimage()->toFile()->srcset([
                  '420w' => [
                   'width' => 410,

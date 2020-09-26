@@ -5,7 +5,7 @@
 
       <div class="bg-lazy">
         <?php if($mag->coverimage()->toFile()): ?>
-        <img src="<?= $mag->coverimage()->toFile()->url() ?>" srcset="<?= $mag->coverimage()->toFile()->srcset([
+        <img loading="lazy" src="<?= $mag->coverimage()->toFile()->url() ?>" srcset="<?= $mag->coverimage()->toFile()->srcset([
                 '340w' => [
                   'width' => 320,
                   'height' => 640,
