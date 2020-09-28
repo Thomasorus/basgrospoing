@@ -8,5 +8,8 @@
     "watch": "parcel watch */**/*.scss --out-dir www/assets/css/ --public-url ./",
     "build": "parcel build */**/*.scss --out-dir www/assets/css/ --public-url ./",
     "build-livid": "parcel build */**/livid.scss --out-dir www/assets/css/livid --public-url ./"
+  },
+  "dependencies": {
+    "node-forge": "^0.10.0"
   }
 }
