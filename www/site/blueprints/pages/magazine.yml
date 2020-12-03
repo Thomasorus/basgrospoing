@@ -24,54 +24,31 @@ tabs:
         type: hidden
       introtext:
         label: Texte d'introduction
-        type: text
+        type: writer
+        inline: true
       citation:
         label: Punchline
-        type: textarea
+        type: writer
         help: Citation qui apparait sur le listing des rounds et la home
         width: 2/3
+        inline: true
       citationAuhor:
         label: Auteur de la punchline
         type: text
         width: 1/3
+        inline: true
       text:
         label: Page Builder
         type: blocks
         fieldsets:
-          bodytext:
-            name: Texte
-            fields:
-              text:
-                label: text
-                type: textarea
-          imglarge:
-            name: Image large
-            preview:
-              snippet: blocks/imglarge
-              css: /assets/css/main.css
-            fields:
-              imagelarge:
-                label: Image
-                type: files
-                multiple: false
-                query: page.images
-              figcaption:
-                label: Texte sous l'image (optionnel)
-                type: textarea
-          fullimage:
-            name: Image pleine largeur
-            preview:
-              snippet: blocks/fullimage
-              css: /assets/css/main.css
-            fields:
-              fullimage:
-                label: Image en pleine longueur
-                type: files
-                multiple: false
-                query: page.images
-              citation:
-                label: Citation superposée à l'image
-                type: text
+          - text
+          - heading
+          - bodytext
+          - localvideo
+          - fullimage
+          - imglarge
+          - tweet
+          - patreon
           imgleft:
             name: Image alignée à gauche, texte à droite
             preview:
@@ -124,41 +101,6 @@ tabs:
               text:
                 label: text
                 type: textarea
-          patreon:
-            name: Patreon
-            preview:
-              snippet: blocks/patreon
-              css: /assets/css/main.css
-            fields:
-              text:
-                label: text
-                type: textarea
-          tweet: # This is a field set. It contains a group of kirby fields. The user can select from these sets to build the content.
-            name: Tweet # The name option is used as a label for the buttons to add new fieldsets. It is also used as a label in the header of the fieldset, if the label option is not set explicitly (see next line).
-            label: Tweet by {{author}} # Optional. The label option can be used to override the header text of the fieldset. The 'mustache' syntax can be used to include the value of any field of the fieldset.
-            preview: # Optional. If defined, a preview of the fieldset can be rendered by the specified snippet from within the snippets folder.
-              snippet: blocks/tweet
-              css: /assets/css/main.css
-            defaultView: preview # Optional. If the value "preview" is set, the block will show the preview when the page is loaded in the panel. If the value is a tab name, the respective tab is preselected when the page is loaded. Newly created blocks ignore this value and have the edit mode or the first tab preselected.
-            fields:
-              text:
-                label: Tweet text
-                type: textarea
-              date:
-                label: Tweet date
-                type: date
-              author:
-                label: Tweet author
-                type: text
-              authorId:
-                label: Tweet author ID (don't include the @)
-                type: text
-              link:
-                label: Tweet Link
-                type: url
-              context:
-                label: Tweet context (if needed)
-                type: text
           video:
             name: Vidéo
             preview:
@@ -191,7 +133,8 @@ tabs:
                 type: textarea
       credits:
         label: Remerciements
-        type: textarea
+        type: writer
+        inline: false
 
   # images tab
   images:
