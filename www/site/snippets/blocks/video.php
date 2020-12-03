@@ -1,23 +1,23 @@
 
 <div class="magazine-container--large">
 	<figure>
-		<?php if ($data->video()->isNotEmpty()): ?>
+		<?php if ($block->video()->isNotEmpty()): ?>
 			<video class="magazine-container__video lazy"
 				<?php 
-				if($data->autoplay() == "true") { echo "autoplay='true' playsinline='true'";}
-				if($data->loop() == "true") { echo "loop='true'";}
-				if($data->mute() == "true") { echo "mute='true'";}
-				if($data->controls() == "true") { echo "controls='true'";}
+				if($block->autoplay() == "true") { echo "autoplay='true' playsinline='true'";}
+				if($block->loop() == "true") { echo "loop='true'";}
+				if($block->mute() == "true") { echo "mute='true'";}
+				if($block->controls() == "true") { echo "controls='true'";}
 
 				?>
 				>
-				<source data-src="<?=$data->video()->toFile(); ?>">
+				<source data-src="<?=$block->video()->toFile(); ?>">
 			</video>
 		<?php endif ?>
-		<?php if ($data->figcaption()->isNotEmpty()): ?>
+		<?php if ($block->figcaption()->isNotEmpty()): ?>
 			<figcaption class="magazine__sub-image-citation">
 				<small>
-					<?= $data->figcaption()->kirbytextinline() ?>
+					<?= $block->figcaption()->kirbytextinline() ?>
 				</small>
 			</figcaption>
 		<?php endif ?>

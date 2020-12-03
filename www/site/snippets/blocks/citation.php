@@ -1,6 +1,6 @@
 <div class="magazine-container--large">
 	<div class="magazine__citation">
-	<?php echo $data->text() ?>
+	<?php echo $block->text() ?>
 	
 	</div>
 	<span class="magazine__citation-star"></span>

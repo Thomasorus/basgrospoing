@@ -1,6 +1,6 @@
 <div class="magazine-container">
 <div class="video">
-<?php if($embed = $data->embed()->toEmbed()) {
+<?php if($embed = $block->embed()->toEmbed()) {
     echo $embed->code();
 } 
 ?>
