@@ -28,7 +28,8 @@
   <?php if($page->credits()): ?>
   <div class="article__credits">
     <p><small>
-        <?php echo $page->credits()->kirbytextinline() ?></small></p>
+        <?php echo $page->credits() ?>
+    </small></p>
   </div>
   <?php endif ?>
 </div>
