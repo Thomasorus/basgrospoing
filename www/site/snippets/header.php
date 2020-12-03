@@ -37,11 +37,11 @@
 
 
 <!-- COUPURE -->
-  <link rel="manifest" href="/assets/pwa/manifest.json">
-  <link rel="preload" href="/assets/css/base.css?v=1.0.12" as="style">
-  <link rel="preload" href="/assets/css/main.css?v=1.0.12" as="style">
-  <link rel="stylesheet" href="/assets/css/base.css?v=1.0.12">
-  <link rel="stylesheet" href="/assets/css/main.css?v=1.0.12">
+  <!-- <link rel="preload" href="/assets/css/base.css?v=1.0.12" as="style"> -->
+  <!-- <link rel="preload" href="/assets/css/main.css?v=1.0.12" as="style"> -->
+  <!-- <link rel="stylesheet" href="/assets/css/base.css?v=1.0.12"> -->
+  <!-- <link rel="stylesheet" href="/assets/css/main.css?v=1.0.12"> -->
+  <link rel="stylesheet" href="/assets/css/syles.css">
   <link rel=“preload” href="/assets/fonts/FuturaStd-ExtraBoldOblique.woff2" as=“font” type="font/woff2" crossorigin="anonymous">
   <link rel=“preload” href="/assets/fonts/FuturaStd-ExtraBold.woff2" as=“font” type="font/woff2" crossorigin="anonymous">
   <link rel=“preload” href="/assets/fonts/BauerBodoniStd-Italic.woff2" as=“font” type="font/woff2" crossorigin="anonymous">
