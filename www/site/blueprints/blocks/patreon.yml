@@ -1,0 +1,7 @@
+
+name: Patreon
+fields:
+    text:
+        label: text
+        type: writer
+        inline: true
