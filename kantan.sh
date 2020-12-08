@@ -11,7 +11,7 @@ KEY="CTRL+F5"
  # The browser you use (currently only firefox is supported):
 BROWSER="firefox" 
  # The folder or file you want to watch:
-LOCATION="./www/site/"
+LOCATION="./www"
 # The server type you want to use (use the ones provided or create your own):
 SERVER_TYPE="php" 
 # The folder you want to serve with the server
