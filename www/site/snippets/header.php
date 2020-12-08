@@ -1,6 +1,5 @@
 ﻿<!doctype html>
 <html prefix="og: http://ogp.me/ns#" lang="<?= site()->language()->code()?>">
-
 <head>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -22,34 +21,22 @@
       echo $page->introtext()->excerpt($chars = 240, $strip = true, $rep = '…');
     } else {
       echo $page->text()->excerpt($chars = 240, $strip = true, $rep = '…');
-
     }
     
     ?>">
   <?php echo $page->metaTags() ?>
-
-
-
-
-
-
-
-
 
 <!-- COUPURE -->
   <!-- <link rel="preload" href="/assets/css/base.css?v=1.0.12" as="style"> -->
   <!-- <link rel="preload" href="/assets/css/main.css?v=1.0.12" as="style"> -->
   <!-- <link rel="stylesheet" href="/assets/css/base.css?v=1.0.12"> -->
   <!-- <link rel="stylesheet" href="/assets/css/main.css?v=1.0.12"> -->
-  <link rel="stylesheet" href="/assets/css/syles.css">
+  <link rel="stylesheet" href="/assets/css/styles.css">
   <link rel=“preload” href="/assets/fonts/FuturaStd-ExtraBoldOblique.woff2" as=“font” type="font/woff2" crossorigin="anonymous">
   <link rel=“preload” href="/assets/fonts/FuturaStd-ExtraBold.woff2" as=“font” type="font/woff2" crossorigin="anonymous">
   <link rel=“preload” href="/assets/fonts/BauerBodoniStd-Italic.woff2" as=“font” type="font/woff2" crossorigin="anonymous">
   <link rel=“preload” href="/assets/fonts/FuturaStd-LightOblique.woff2" as=“font” crossorigin="anonymous">
   <link rel=“preload” href="/assets/fonts/FuturaStd-Light.woff2" as=“font” type="font/woff2" crossorigin="anonymous">
-
-
-
 
   <!-- Theme switcher -->
   <script>
@@ -81,38 +68,14 @@
         document.documentElement.setAttribute('theme', 'dark');
         localStorage.setItem("theme", "dark");
       }
-
     }
     (function () {
       setThemeFromCookie()
     })();
   </script>
-
-
-  <!-- Matomo -->
-  <script type="text/javascript">
-    var _paq = _paq || [];
-    /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
-    _paq.push(['trackPageView']);
-    _paq.push(['enableLinkTracking']);
-    (function () {
-      var u = "//basgrospoing.fr/analytics/";
-      _paq.push(['setTrackerUrl', u + 'piwik.php']);
-      _paq.push(['setSiteId', '1']);
-      var d = document,
-        g = d.createElement('script'),
-        s = d.getElementsByTagName('script')[0];
-      g.type = 'text/javascript';
-      g.async = true;
-      g.defer = true;
-      g.src = u + 'piwik.js';
-      s.parentNode.insertBefore(g, s);
-    })();
-  </script> 
-  <!-- End Matomo Code -->
 </head>
+<body class="font-futuraLight p-0 m-0 text-base">
+  <header class="text-body container max-w-full fixed h-20 pt-0 futuraExtraBoldOblique text-bgpBlack font-futuraExtraBoldOblique uppercase sm:pt-14 transition-all duration-500">
 
-<body>
-  <header>
     <?php snippet('menu') ?>
   </header>
