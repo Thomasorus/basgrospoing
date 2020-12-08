@@ -1,1 +1,0 @@
-./server.sh | find . -type f -printf "%T@ %p\n" | sort -nr | cut -d\  -f2- | grep -v "www/site/**/*.php" | entr -r ./build.sh
