@@ -1,3 +1,68 @@
+
+@font-face {
+	font-family: 'FuturaStd-ExtraBold';
+	src: url('./../fonts/FuturaStd-ExtraBold.woff2') format('woff2'),
+		url('./../fonts/FuturaStd-ExtraBold.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'FuturaStd-ExtraBoldOblique';
+	src: url('./../fonts/FuturaStd-ExtraBoldOblique.woff2') format('woff2'),
+		url('./../fonts/FuturaStd-ExtraBoldOblique.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'FuturaStd-Light';
+	src: url('./../fonts/FuturaStd-Light.woff2') format('woff2'),
+		url('./../fonts/FuturaStd-Light.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'BauerBodoniStd-Italic';
+	src: url('./../fonts/BauerBodoniStd-Italic.woff2') format('woff2'),
+		url('./../fonts/BauerBodoniStd-Italic.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'FuturaStd-LightOblique';
+	src: url('./../fonts/FuturaStd-LightOblique.woff2') format('woff2'),
+		url('./../fonts/FuturaStd-LightOblique.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'FuturaStd-Medium';
+	src: url('./../fonts/FuturaStd-Medium.woff2') format('woff2'),
+		url('./../fonts/FuturaStd-Medium.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'FuturaStd-MediumOblique';
+	src: url('./../fonts/FuturaStd-MediumOblique.woff2') format('woff2'),
+		url('./../fonts/FuturaStd-MediumOblique.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
