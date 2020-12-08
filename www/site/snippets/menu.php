@@ -1,6 +1,6 @@
 <nav class="max-w-full h-8 bg-bgpGreen shadow-lg"
   id="<?php if($page->famille() == " magazine") { echo $page->famille(); } ?>">
-  <div class="m-auto max-w-article">
+  <div class="m-auto max-w-site">
     <ul class="flex h-8 justify-around items-center p-0 max-w-article futuraExtraBoldOblique text-bgpWithe">
       <?php if($kirby->language() == "fr") : ?>
       <li class="order-3 transition-all duration-500 transform hover:-rotate-6 hover:scale-110" id="logo">

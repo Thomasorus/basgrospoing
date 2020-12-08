@@ -75,7 +75,7 @@
   </script>
 </head>
 <body class="font-futuraLight p-0 m-0 text-base">
-  <header class="text-body container max-w-full fixed h-20 pt-0 futuraExtraBoldOblique text-bgpBlack font-futuraExtraBoldOblique uppercase sm:pt-14 transition-all duration-500">
+  <header class="text-body container max-w-full fixed top-0 h-20 pt-0 futuraExtraBoldOblique text-bgpBlack font-futuraExtraBoldOblique uppercase sm:pt-14 transition-all duration-500">
 
     <?php snippet('menu') ?>
   </header>

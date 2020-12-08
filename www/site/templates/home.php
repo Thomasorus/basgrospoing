@@ -1,55 +1,43 @@
 <?php 
 snippet('header');
 ?>
-<main>
-
-
-
-<?php  if($lang == "en" ): ?>
-    <section>
-        <?php 
-        snippet('patterns/molecules/sectionhead/sectionhead', ['title' => "Last post"]);?>
-        <div class="magazine-grid">
-
+<main class="m-auto xs:mt-14">
+    <?php  if($lang == "en" ): ?>
+        <section class="max-w-site w-full m-auto pt-16 pb-16">
             <?php 
-        if(!empty($englishMain)) {
-            snippet('patterns/organisms/articlecard/articlecard', ["magazine" => $englishMain]);
+            snippet('patterns/molecules/sectionhead/sectionhead', ['title' => "Last post"]);?>
+            <div class="magazine-grid">
+                <?php 
+                    if(!empty($englishMain)) {
+                        snippet('patterns/organisms/articlecard/articlecard', ["magazine" => $englishMain]);
 
-            if($englishMain->famille() === "magazine") {
-                snippet('patterns/organisms/punchlinecard/punchlinecard', ["punchline" => $englishMain, "class" => ""]);    
-            }
-        }
-        snippet('patterns/organisms/othercard/othercard', ["other" => $englishSecond]);
-            
-        
-    ?>
-        </div>
-    </section>
+                        if($englishMain->famille() === "magazine") {
+                            snippet('patterns/organisms/punchlinecard/punchlinecard', ["punchline" => $englishMain, "class" => ""]);    
+                        }
+                    }
+                snippet('patterns/organisms/othercard/othercard', ["other" => $englishSecond]);?>
+            </div>
+        </section>
     <?php endif ?>
-
-
 
     <?php  if($lang == "fr" ): ?>
-    <section>
-
-        <?php 
-                    
-        snippet('patterns/molecules/sectionhead/sectionhead', ['title' => "Nouveau"]);?>
-        <div class="magazine-grid">
-            <?php 
-                if($lastArticle != null && $lastPodcast != null) {
-                    snippet('patterns/organisms/podcastcard/podcastcard', ["podcast" => $lastPodcast]);
-                    snippet('patterns/organisms/articlecard/articlecard', ["magazine" => $lastArticle]);
-                }
-            ?>
-        </div>
-    </section>
+        <section class="max-w-site w-full m-auto pt-16 pb-16">
+            <?php            
+            snippet('patterns/molecules/sectionhead/sectionhead', ['title' => "Nouveau"]);?>
+            <div class="magazine-grid">
+                <?php 
+                    if($lastArticle != null && $lastPodcast != null) {
+                        snippet('patterns/organisms/podcastcard/podcastcard', ["podcast" => $lastPodcast]);
+                        snippet('patterns/organisms/articlecard/articlecard', ["magazine" => $lastArticle]);
+                    }
+                ?>
+            </div>
+        </section>
     <?php endif ?>
-
-    <?php  if($lang != "en") {
-
-snippet('patterns/organisms/herofull/herofull', ["mag" => $heromag]);
-    }
+    <?php  
+        if($lang != "en") {
+            snippet('patterns/organisms/herofull/herofull', ["mag" => $heromag]);
+        }
     ?>
 
     <!--Derniers podcasts-->
