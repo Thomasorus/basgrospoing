@@ -1,4 +1,3 @@
-
 @font-face {
 	font-family: 'FuturaStd-ExtraBold';
 	src: url('./../fonts/FuturaStd-ExtraBold.woff2') format('woff2'),
@@ -66,3 +65,25 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.magazine-grid {
+	max-width: var(--site-width, 980px);
+	margin: 0 var(--bgp-gap, 0.7%) 25px var(--bgp-gap, 0.7%);
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr;
+	grid-template-areas: "magazine magazine punchline";
+	grid-gap: 6px var(--bgp-gap, 0.7%);
+}
+
+.card--article {
+	grid-area: magazine;
+}
+
+@media (max-width: 710px) {
+	.magazine-grid {
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr;
+		grid-template-areas: "magazine";
+	}
+}

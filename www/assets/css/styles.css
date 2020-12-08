@@ -8236,6 +8236,10 @@ video {
   max-width: 65ch;
 }
 
+.max-w-site {
+  max-width: 62rem;
+}
+
 .max-w-screen-xs {
   max-width: 540px;
 }
@@ -20409,6 +20413,28 @@ video {
           animation: shake .82s cubic-bezier(.36,.07,.19,.97) both;
 }
 
+.magazine-grid {
+  max-width: var(--site-width, 980px);
+  margin: 0 var(--bgp-gap, 0.7%) 25px var(--bgp-gap, 0.7%);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "magazine magazine punchline";
+  grid-gap: 6px var(--bgp-gap, 0.7%);
+}
+
+.card--article {
+  grid-area: magazine;
+}
+
+@media (max-width: 710px) {
+  .magazine-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "magazine";
+  }
+}
+
 @media (min-width: 540px) {
   .xs\:container {
     width: 100%;
@@ -28007,6 +28033,10 @@ video {
 
   .xs\:max-w-prose {
     max-width: 65ch;
+  }
+
+  .xs\:max-w-site {
+    max-width: 62rem;
   }
 
   .xs\:max-w-screen-xs {
@@ -47668,6 +47698,10 @@ video {
     max-width: 65ch;
   }
 
+  .sm\:max-w-site {
+    max-width: 62rem;
+  }
+
   .sm\:max-w-screen-xs {
     max-width: 540px;
   }
@@ -67325,6 +67359,10 @@ video {
 
   .md\:max-w-prose {
     max-width: 65ch;
+  }
+
+  .md\:max-w-site {
+    max-width: 62rem;
   }
 
   .md\:max-w-screen-xs {
@@ -86986,6 +87024,10 @@ video {
     max-width: 65ch;
   }
 
+  .lg\:max-w-site {
+    max-width: 62rem;
+  }
+
   .lg\:max-w-screen-xs {
     max-width: 540px;
   }
@@ -106645,6 +106687,10 @@ video {
     max-width: 65ch;
   }
 
+  .xl\:max-w-site {
+    max-width: 62rem;
+  }
+
   .xl\:max-w-screen-xs {
     max-width: 540px;
   }
@@ -126302,6 +126348,10 @@ video {
 
   .\32xl\:max-w-prose {
     max-width: 65ch;
+  }
+
+  .\32xl\:max-w-site {
+    max-width: 62rem;
   }
 
   .\32xl\:max-w-screen-xs {
