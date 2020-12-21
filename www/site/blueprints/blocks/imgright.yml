@@ -1,0 +1,13 @@
+name: imgright
+fields:
+  imageright:
+    label: Image à droite
+    type: files
+    multiple: false
+    query: page.images
+  figcaption:
+    label: Texte sous l'image (optionnel)
+    type: writer
+  textcol:
+    label: Texte à gauche
+    type: writer
