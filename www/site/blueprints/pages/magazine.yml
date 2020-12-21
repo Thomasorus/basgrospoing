@@ -49,40 +49,8 @@ tabs:
           - imglarge
           - tweet
           - patreon
-          imgleft:
-            name: Image alignée à gauche, texte à droite
-            preview:
-              snippet: blocks/imgleft
-              css: /assets/css/main.css
-            fields:
-              imageleft:
-                label: Image gauche
-                type: files
-                multiple: false
-                query: page.images
-              figcaption:
-                label: Texte sous l'image (optionnel)
-                type: textarea
-              textcol:
-                label: Texte à droite
-                type: textarea
-          imgright:
-            name: Image alignée à droite, texte à gauche
-            preview:
-              snippet: blocks/imgright
-              css: /assets/css/main.css
-            fields:
-              imageright:
-                label: Image à droite
-                type: files
-                multiple: false
-                query: page.images
-              figcaption:
-                label: Texte sous l'image (optionnel)
-                type: textarea
-              textcol:
-                label: Texte à gauche
-                type: textarea
+          - imgright
+          - imgleft
           embed:
             name: Youtube, Vimeo, etc...
             preview:
