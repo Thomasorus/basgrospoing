@@ -1,0 +1,10 @@
+name: Image large
+fields:
+    imagelarge:
+        label: Image
+        type: files
+        multiple: false
+        query: page.images
+    figcaption:
+        label: Texte sous l'image (optionnel)
+        type: textarea

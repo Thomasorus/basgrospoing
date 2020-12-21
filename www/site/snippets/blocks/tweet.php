@@ -1,14 +1,14 @@
 <div class="magazine-container--large">
 	<div class="magazine__tweet">
-		<?php echo $data->text()->kirbytextinline() ?>
+		<?php echo $block->text()->kirbytextinline() ?>
 		<div class="magazine__tweet-meta">
-			— <?php echo $data->author() ?> (@<?php echo $data->authorId() ?>) <a href="	<?php echo $data->link() ?>">
-			<?php echo $data->date("d/m/Y") ?>
+			— <?php echo $block->author() ?> (@<?php echo $block->authorId() ?>) <a href="	<?php echo $block->link() ?>">
+			<?php echo $block->date("d/m/Y") ?>
 			</a>
 	</div>
-	<?php if($data->context()): ?>
+	<?php if($block->context()): ?>
 		<small class="magazine__tweet-context">
-			<?php echo $data->context() ?>
+			<?php echo $block->context() ?>
 		</small>
 	<?php endif ?>
 </div>

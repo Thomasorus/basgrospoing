@@ -1,0 +1,23 @@
+name: Tweet
+label: Tweet by {{author}} 
+fields:
+  text:
+    label: Tweet text
+    type: writer
+    inline: true
+  date:
+    label: Tweet date
+    type: date
+  author:
+    label: Tweet author
+    type: text
+  authorId:
+    label: Tweet author ID (don't include the @)
+    type: text
+  link:
+    label: Tweet Link
+    type: url
+  context:
+    label: Tweet context (if needed)
+    type: writer
+    inline: true

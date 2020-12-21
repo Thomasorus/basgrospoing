@@ -1,0 +1,10 @@
+name: Image pleine largeur
+fields:
+  fullimage:
+    label: Image en pleine longueur
+    type: files
+    multiple: false
+    query: page.images
+  citation:
+    label: Citation superposée à l'image
+    type: text

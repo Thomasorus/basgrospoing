@@ -1,0 +1,5 @@
+name: bodytext
+icon: text
+fields:
+  text:
+    type: textarea

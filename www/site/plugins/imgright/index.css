@@ -1,0 +1,31 @@
+
+
+.imgright {
+    overflow: auto;
+}
+
+.imgright-img {
+    width: 100%;
+    height:auto;
+    float: right;
+    margin-left: 20px;
+    max-width: 50%;
+}
+
+.imgright-figcaption {
+    width: 100%;
+    height:auto;
+    float: right;
+    margin-left: 20px;
+    max-width: 50%;
+}
+
+.textleft {
+    margin: auto;
+    font-size: 1rem;
+    line-height: 1.5em;
+}
+
+.textleft a {
+    text-decoration: underline;
+}

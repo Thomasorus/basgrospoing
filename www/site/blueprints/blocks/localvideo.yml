@@ -1,0 +1,17 @@
+name: Vidéo locale
+icon: video
+fields:
+  video:
+    label: Vidéo
+    type: files
+    multiple: false
+    query: page.videos
+    width: 5/6
+  autoplay:
+    label: Autoplay
+    width: 1/6
+    type: toggle
+  figcaption:
+    label: Texte sous la vidéo (optionnel)
+    type: writer
+    inline: true

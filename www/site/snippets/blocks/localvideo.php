@@ -4,11 +4,8 @@
 		<?php if ($block->video()->isNotEmpty()): ?>
 			<video class="magazine-container__video lazy"
 				<?php 
-				if($block->autoplay() == "true") { echo "autoplay='true' playsinline='true'";}
-				if($block->loop() == "true") { echo "loop='true'";}
-				if($block->mute() == "true") { echo "mute='true'";}
-				if($block->controls() == "true") { echo "controls='true'";}
-
+					if($block->autoplay() == "true") { echo "autoplay playsinline loop mute";}
+					else { echo "controls='true'"; }
 				?>
 				>
 				<source data-src="<?=$block->video()->toFile(); ?>">
