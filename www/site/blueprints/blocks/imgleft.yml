@@ -1,0 +1,13 @@
+name: imgleft
+fields:
+  imageleft:
+    label: Image à gauche
+    type: files
+    multiple: false
+    query: page.images
+  figcaption:
+    label: Texte sous l'image (optionnel)
+    type: writer
+  textcol:
+    label: Texte à droite
+    type: writer
