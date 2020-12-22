@@ -18,7 +18,7 @@
         <div class="card-circle__text">
         <i>
         <?php  
-          if($articlechrono->introtext()->empty()) {
+          if($articlechrono->introtext()->isEmpty()) {
             echo $articlechrono->text()->excerpt($chars = 120, $strip = true, $rep = '…');
           }
           else {
