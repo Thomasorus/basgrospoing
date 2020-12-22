@@ -92,7 +92,7 @@
 
 						// check if length information is already written to meta-file
 						// if not, write the information
-						if($audio->duration()->empty()) {
+						if($audio->duration()->isEmpty()) {
 							$path				= $audio->root();
 							$mixinfo			= $getID3->analyze($path);
 							 $duration			= $mixinfo['playtime_string'];
