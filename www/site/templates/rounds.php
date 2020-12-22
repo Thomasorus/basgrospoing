@@ -1,25 +1,32 @@
 <?php snippet('header') ?>
 
 <main>
-    <?php foreach($rounds as $round):
-       $roundDateStart = $round->limitDate();
-       $roundDateEnd = $round->date();
-       $items = $page->children()->filter(function ($child) {
-        return $child->date()->toDate() < time();
-      });
+    <?php 
+    foreach($rounds as $round):
 
-        $historique = page('podcasts')
-        ->children()
-        ->listed()
-        ->filterBy('date', '<=', $roundDateStart)
-        ->filterBy('date', '>=', $roundDateEnd)
-        ->filterBy('category', '==', "Le podcast");
+       $roundDateStart = $round->date()->toDate();
+       $roundDateEnd = $round->limitDate()->toDate();
+
+        $historique = pages(['podcasts'])
+            ->children()
+            ->listed()
+            ->filterBy('category', 'Le podcast')
+            ->filter(function ($page) use ($roundDateStart) {
+                return $page->date()->toDate() >= $roundDateStart;
+            })
+            ->filter(function ($page) use ($roundDateEnd) {
+            return $page->date()->toDate() <= $roundDateEnd;
+            });
 
         $magazines = page('articles')
         ->children()
         ->listed()
-        ->filterBy('date', '<=', $roundDateStart)
-        ->filterBy('date', '>=', $roundDateEnd)
+        ->filter(function ($page) use ($roundDateStart) {
+            return $page->date()->toDate() >= $roundDateStart;
+        })
+        ->filter(function ($page) use ($roundDateEnd) {
+        return $page->date()->toDate() <= $roundDateEnd;
+        })
         ->filterBy('category', '==', 'Magazine');
       
         $others1 = page('articles')
@@ -27,27 +34,38 @@
           ->listed()
           ->filterBy('date', '<=', $roundDateStart)
           ->filterBy('date', '>=', $roundDateEnd)
-          ->filterBy('category', '!=', 'Magazine')
-          ->filterBy('category', '!=', "Le podcast")
+          ->filter(function ($page) use ($roundDateStart) {
+            return $page->date()->toDate() >= $roundDateStart;
+        })
+        ->filter(function ($page) use ($roundDateEnd) {
+        return $page->date()->toDate() <= $roundDateEnd;
+        })
           ->sortBy('date', 'desc');
              		
 		 $others2 = page('podcasts')
           ->children()
           ->listed()
-          ->filterBy('date', '<=', $roundDateStart)
-          ->filterBy('date', '>=', $roundDateEnd)
+          ->filter(function ($page) use ($roundDateStart) {
+            return $page->date()->toDate() >= $roundDateStart;
+        })
+        ->filter(function ($page) use ($roundDateEnd) {
+        return $page->date()->toDate() <= $roundDateEnd;
+        })
           ->filterBy('category', '!=', 'Magazine')
           ->filterBy('category', '!=', "Le podcast")
             ->sortBy('date', 'desc');
           
 	
-$others = new Pages(array($others1, $others2));
+        $others = new Pages(array($others1, $others2));
 
-?>
+       
+        ?>
 
     <section>
         <!--Header Round-->
-        <?php snippet('patterns/molecules/sectionhead/sectionhead', ['title' => $round]); ?>
+        <?php 
+        snippet('patterns/molecules/sectionhead/sectionhead', ['title' => $round]); 
+        ?>
 
         
         <!--Podcast-->
