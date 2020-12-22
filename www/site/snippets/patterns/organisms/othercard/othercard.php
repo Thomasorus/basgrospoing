@@ -32,12 +32,13 @@
               </div>
               <div class="card__text">
               <i>
-              <?php  if($other->introtext()->empty()) {
+              <?php  if($other->introtext()->isEmpty()) {
                 echo $other->text()->excerpt(130, $strip = true, $rep = '…');
-              }
-              else {
-                echo $other->introtext()->excerpt(130, $strip = true, $rep = '…');                
-              }?>
+                }
+                else {
+                  echo $other->introtext()->excerpt(130, $strip = true, $rep = '…');                
+                }
+              ?>
               </i>
           </div>
           <h3><?php  echo $other->category(); ?></h3>
