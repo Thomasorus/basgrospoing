@@ -10,7 +10,7 @@ panel.plugin('bgp/localvideo', {
           return this.content.video[0].url
         },
         figcaption () {
-          if (this.content.figcaption.length === 0) {
+          if (this.content.figcaption != null) {
             return false
           }
 
