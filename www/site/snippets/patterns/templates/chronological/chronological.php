@@ -1,14 +1,11 @@
-<div class="section-colored">
+<div class="<?php echo $color; ?>">
   <section>
     <?php snippet('patterns/molecules/chronohead/chronohead',  ['name' => $header]);?>
-
     <div class="chrono-grid">
-
-      <?php foreach($articleschrono as $articlechrono) {
-                        snippet('patterns/organisms/articleschrono/articleschrono', ['articlechrono' => $articlechrono]);
+      <?php foreach($entries as $entry) {
+          snippet('patterns/organisms/articleschrono/articleschrono', ['articlechrono' => $entry]);
         }?>
     </div>
-    <?php snippet('patterns/molecules/chronofooter/chronofooter', ['name' => $footer]); ?>
-
+    <?php snippet('patterns/molecules/chronofooter/chronofooter', ['name' => $footer, 'link' => $link]); ?>
   </section>
 </div>
