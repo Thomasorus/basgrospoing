@@ -7,6 +7,7 @@ return array (
   'locale' => 'en_US',
   'name' => 'English',
   'translations' => [
+    'nouveau' => 'Last post',
     'soutenez' => 'About us',
     'punchline' => 'The Punchline',
     'last' => 'Last',

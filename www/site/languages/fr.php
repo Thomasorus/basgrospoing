@@ -7,6 +7,7 @@ return array (
   'locale' => 'fr_FR',
   'name' => 'Français',
   'translations' => [
+    'nouveau' => 'Nouveau',
     'soutenez' => 'Soutenez BGP',
     'punchline' => 'La punchline',
     'last' => 'Derniers',
