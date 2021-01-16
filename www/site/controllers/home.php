@@ -1,15 +1,20 @@
 <?php
 
 return function($kirby, $site, $pages, $page) {
-    $lang = $kirby->language();    
-
-    $lastRound = page('rounds')
+    $lang = $kirby->language();  
+    
+    if($lang == "fr") {
+      $lastRound = page('rounds')
       ->children()
       ->sortBy('limitDate', 'desc')
       ->listed()
       ->limit(1);
 
-    $lastArticle = page('articles')
+      $round = $lastRound->first();
+      $roundDateStart = $round->limitDate();
+      $roundDateEnd = $round->date();
+
+      $lastArticle = page('articles')
       ->children()
       ->sortBy(function ($page) {
         return $page->date()->toDate();
@@ -17,21 +22,16 @@ return function($kirby, $site, $pages, $page) {
       ->listed()
       ->first();
 
-    $lastPodcast = page('podcasts')
+      $lastPodcast = page('podcasts')
       ->children()
       ->sortBy(function ($page) {
         return $page->date()->toDate();
       }, 'desc')
       ->listed()
       ->first();
-      
-    $round = $lastRound->first();
-    $roundDateStart = $round->limitDate();
-    $roundDateEnd = $round->date();
-  
-    $perpage  = $page->perpage()->int();
 
-    $podcastsChrono = page('podcasts')
+
+      $podcastsChrono = page('podcasts')
       ->children()
       ->listed()
       ->sortBy(function ($page) {
@@ -49,8 +49,8 @@ return function($kirby, $site, $pages, $page) {
       ->filter(function ($child) {
         return $child->translation(kirby()->language()->code())->exists();
       })
-      ->slice(1);
-      // ->limit(4);
+      ->slice(1)
+      ->limit(4);
 
     $heromag = page('articles')
       ->children()
@@ -114,30 +114,8 @@ return function($kirby, $site, $pages, $page) {
       $others = new Pages(array($others1, $others2));
 
 
-    
-      $englishMain = page('articles')
-      ->children()
-      ->listed()
-      ->sortBy(function ($page) {
-        return $page->date()->toDate();
-      }, 'desc')
-      ->filterBy('isTranslated', 'true')
-      ->filterBy('Currentlang', 'en')
-      ->first();
 
-      // $englishSecond = page('articles')
-      // ->children()
-      // ->listed()
-      // ->sortBy(function ($page) {
-      //   return $page->date()->toDate();
-      // }, 'desc')
-      // ->filterBy('isTranslated', 'true')
-      // ->filterBy('Currentlang', 'en')
-      // ->slice(1)
-      // ->first();
-      
 
-		   
       return [
         'lastArticle' => $lastArticle,
         'lastPodcast' => $lastPodcast,
@@ -149,10 +127,40 @@ return function($kirby, $site, $pages, $page) {
         'podcastsChrono' => $podcastsChrono,
         'articleschrono' => $articleschrono,
         'lang' => $lang,
-        'englishMain' => $englishMain,
-        // 'englishSecond' => $englishSecond
       ];
 
+    }
+
+    if($lang == "en") {
+  
+      $englishMain = page('articles')
+      ->children()
+      ->listed()
+      ->sortBy(function ($page) {
+        return $page->date()->toDate();
+      }, 'desc')
+      ->filterBy('isTranslated', 'true')
+      ->filterBy('Currentlang', 'en')
+      ->first();
+      
+      $articleschrono = page('articles')
+      ->children()
+      ->listed()
+      ->sortBy(function ($page) {
+        return $page->date()->toDate();
+      }, 'desc')
+      ->filter(function ($child) {
+        return $child->translation(kirby()->language()->code())->exists();
+      })
+      ->slice(1);
+
+		   
+      return [
+        'articleschrono' => $articleschrono,
+        'lang' => $lang,
+        'englishMain' => $englishMain,
+      ];
+    }
 };
 
 
