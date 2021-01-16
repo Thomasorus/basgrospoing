@@ -17,8 +17,6 @@
 @import "./../../www/site/snippets/patterns/organisms/othercard/_othercard";
 @import "./../../www/site/snippets/patterns/organisms/punchlinecard/_punchlinecard";
 @import "./../../www/site/snippets/patterns/organisms/herofull/_herofull";
-@import "./../../www/site/snippets/patterns/organisms/podcastschrono/_podcastschrono";
-@import "./../../www/site/snippets/patterns/organisms/articleschrono/_articleschrono";
 @import "./../../www/site/snippets/patterns/templates/article/_article";
 @import "./../../www/site/snippets/patterns/templates/opinion/_opinion";
 @import "./../../www/site/snippets/patterns/templates/magazine/_magazine";
@@ -55,7 +53,7 @@ img.cover {
   height: 0;
   overflow: hidden;
 
-  > iframe {
+  >iframe {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -71,6 +69,7 @@ img.cover {
   a {
     box-shadow: none;
   }
+
   a:hover {
     box-shadow: none;
     background: none;
@@ -81,6 +80,7 @@ img.cover {
     width: 200px;
     display: block;
     margin: auto;
+
     svg {
       width: 100%;
       height: 50px;
