@@ -25,7 +25,7 @@
                       'crop' => 'center'
                     ],
                       '1920w' => [
-                        'width' => 640,
+                        'width' => 960,
                         'height' => 430,
                         'crop' => 'center'
                     ]
