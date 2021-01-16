@@ -46,8 +46,11 @@ return function($kirby, $site, $pages, $page) {
       ->sortBy(function ($page) {
         return $page->date()->toDate();
       }, 'desc')
-      ->slice(1)
-      ->limit(4);
+      ->filter(function ($child) {
+        return $child->translation(kirby()->language()->code())->exists();
+      })
+      ->slice(1);
+      // ->limit(4);
 
     $heromag = page('articles')
       ->children()
@@ -122,16 +125,16 @@ return function($kirby, $site, $pages, $page) {
       ->filterBy('Currentlang', 'en')
       ->first();
 
-      $englishSecond = page('articles')
-      ->children()
-      ->listed()
-      ->sortBy(function ($page) {
-        return $page->date()->toDate();
-      }, 'desc')
-      ->filterBy('isTranslated', 'true')
-      ->filterBy('Currentlang', 'en')
-      ->slice(1)
-      ->first();
+      // $englishSecond = page('articles')
+      // ->children()
+      // ->listed()
+      // ->sortBy(function ($page) {
+      //   return $page->date()->toDate();
+      // }, 'desc')
+      // ->filterBy('isTranslated', 'true')
+      // ->filterBy('Currentlang', 'en')
+      // ->slice(1)
+      // ->first();
       
 
 		   
@@ -147,7 +150,7 @@ return function($kirby, $site, $pages, $page) {
         'articleschrono' => $articleschrono,
         'lang' => $lang,
         'englishMain' => $englishMain,
-        'englishSecond' => $englishSecond
+        // 'englishSecond' => $englishSecond
       ];
 
 };
