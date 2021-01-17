@@ -7,35 +7,54 @@
 // Learn more about controllers at:
 // https://getkirby.com/docs/developer-guide/advanced/controllers
 
-return function($site, $pages, $page) {
-      $perpage  = $page->perpage()->int();
-     
-        $categories = page('podcasts')
-        ->children()
-        ->listed()
-        ->sortBy('date', 'desc')
-        ->pluck('Category', ',', true);
-        
-        $podcasts = page('podcasts')
-          ->children()
-          ->listed()
-          ->sortBy('date', 'desc')
-          ->paginate(($perpage >= 1)? $perpage : 12);
+return function($kirby, $page) {
+  $perpage  = $page->perpage()->int();
+  $lang = $kirby->language();
 
-         $pageTitle = "Podcasts";
+  $categories = page('podcasts')
+  ->children()
+  ->listed()
+  ->filter(function ($child) {
+  return $child->date()->toDate() < time();
+  })
+  ->filter(function ($child) {
+    return $child->translation(kirby()->language()->code())->exists();
+  })
+  ->sortBy('date', 'desc')
+  ->pluck('Category', ',', true);
 
-         $allPodcasts = page('podcasts')
-         ->children()
-         ->listed()
-         ->sortBy('date', 'desc');
- 
-         if($category = param('cat')) {
-          $podcasts = $allPodcasts->filterBy('Category', urldecode($category), ',')->paginate(12);;
-        }
+  $podcasts = page('podcasts')
+  ->children()
+  ->listed()
+  ->filter(function ($child) {
+    return $child->date()->toDate() < time();
+  })
+  ->filter(function ($child) {
+    return $child->translation(kirby()->language()->code())->exists();
+  })
+  ->sortBy('date', 'desc')
+  ->paginate(($perpage >= 1)? $perpage : 12);
 
-        if($category = param('tag')) {
-          $articles = $articles->filterBy('tags', $tag, ',');
-        }
+  $pageTitle = "Podcasts";
+
+  $allPodcasts = page('podcasts')
+  ->children()
+  ->listed()
+  ->filter(function ($child) {
+  return $child->date()->toDate() < time();
+  })
+  ->filter(function ($child) {
+  return $child->translation(kirby()->language()->code())->exists();
+  })
+  ->sortBy('date', 'desc');
+
+  if($category = param('cat')) {
+  $podcasts = $allPodcasts->filterBy('Category', urldecode($category), ',')->paginate(12);;
+  }
+
+  if($category = param('tag')) {
+  $articles = $articles->filterBy('tags', $tag, ',');
+  }
 
   return [
     'categories'   => $categories,
