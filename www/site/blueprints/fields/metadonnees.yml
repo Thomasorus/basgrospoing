@@ -9,7 +9,8 @@ columns:
         icon: calendar
         label: Date initiale de publication
         type: date
-        width: 1/3
+        width: 3/3
+        time: true
       modified:
         icon: calendar
         label: Modifié le
