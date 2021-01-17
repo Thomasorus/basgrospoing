@@ -7,30 +7,39 @@ return function($kirby) {
 
     $lastArticle = page('articles')
     ->children()
+    ->listed()
+    ->filter(function ($child) {
+      return $child->date()->toDate() < time();
+    })
     ->sortBy(function ($page) {
       return $page->date()->toDate();
     }, 'desc')
     ->filter(function ($child) {
       return $child->translation(kirby()->language()->code())->exists();
     })
-    ->listed()
     ->first();
 
     $lastPodcast = page('podcasts')
     ->children()
+    ->listed()
+    ->filter(function ($child) {
+      return $child->date()->toDate() < time();
+    })
     ->sortBy(function ($page) {
       return $page->date()->toDate();
     }, 'desc')
     ->filter(function ($child) {
       return $child->translation(kirby()->language()->code())->exists();
     })
-    ->listed()
     ->first();
 
 
     $podcastsChrono = page('podcasts')
     ->children()
     ->listed()
+    ->filter(function ($child) {
+      return $child->date()->toDate() < time();
+    })
     ->sortBy(function ($page) {
       return $page->date()->toDate();
     }, 'desc')
@@ -43,6 +52,9 @@ return function($kirby) {
     $articleschrono = page('articles')
       ->children()
       ->listed()
+      ->filter(function ($child) {
+        return $child->date()->toDate() < time();
+      })
       ->sortBy(function ($page) {
         return $page->date()->toDate();
       }, 'desc')
@@ -56,6 +68,9 @@ return function($kirby) {
       ->children()
       ->listed()
       ->filter(function ($child) {
+        return $child->date()->toDate() < time();
+      })
+      ->filter(function ($child) {
         return $child->translation(kirby()->language()->code())->exists();
       })
       ->filterBy('category', '==', 'Magazine')
@@ -68,6 +83,9 @@ return function($kirby) {
       $heromag = page('articles')
       ->children()
       ->listed()
+      ->filter(function ($child) {
+        return $child->date()->toDate() < time();
+      })
       ->filter(function ($child) {
         return $child->translation(kirby()->language()->code())->exists();
       })
@@ -96,6 +114,9 @@ return function($kirby) {
     ->children()
     ->listed()
     ->filter(function ($child) {
+      return $child->date()->toDate() < time();
+    })
+    ->filter(function ($child) {
       return $child->translation(kirby()->language()->code())->exists();
     })
     ->sortBy(function ($page) {
@@ -108,6 +129,9 @@ return function($kirby) {
     $articleschrono = page('articles')
     ->children()
     ->listed()
+    ->filter(function ($child) {
+      return $child->date()->toDate() < time();
+    })
     ->filter(function ($child) {
       return $child->translation(kirby()->language()->code())->exists();
     })
