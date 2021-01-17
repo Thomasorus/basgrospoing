@@ -16,16 +16,16 @@ return [
         'quality' => '80',
         'interlace' => true
     ],
-    'hooks' => [
-        //This hook creates a currentLang invisible field in each page
-        //In the blueprint, it's used to create a true/false translated field
-        'page.create:after' => function ($page) {
-            foreach (kirby()->languages() as $lang) {
-              $code = $lang->code();
-              $page->update([ 'currentLang' => $code ], $code);
-           }
-        },
-      ],
+    // 'hooks' => [
+    //     //This hook creates a currentLang invisible field in each page
+    //     //In the blueprint, it's used to create a true/false translated field
+    //     'page.create:after' => function ($page) {
+    //         foreach (kirby()->languages() as $lang) {
+    //           $code = $lang->code();
+    //           $page->update([ 'currentLang' => $code ], $code);
+    //        }
+    //     },
+    //   ],
     'cre8ivclick.sitemapper.pageFilter' => function($p){
     // filtering code goes here:
     if($p->isListed()) {
