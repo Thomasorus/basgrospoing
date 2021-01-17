@@ -8,15 +8,6 @@ tabs:
     preset: page
     pages: false
     fields:
-      isTranslated:
-        label: Traduction faite ?
-        type: toggle
-        width: 1/4
-        when:
-          currentLang: en
-      currentLang:
-        label: Current lang
-        type: hidden
       introtext:
         label: Texte d'introduction
         type: textarea
@@ -43,7 +34,7 @@ tabs:
       seo: fields/seo
 
   # meta tabs
-  metas: fields/metadonnees
+  metas: fields/metadonnees-article
 
   # social tab
   social:
