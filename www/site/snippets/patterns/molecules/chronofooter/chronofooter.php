@@ -1,7 +1,7 @@
 <div class="chronofooter">
     <div class="chronofooter__bar"></div>
     <div class="chronofooter__text">
-            <a href="<?php echo $kirby->language()->code() ?>/<?php echo $link ?>">
+            <a href="<?php echo $link ?>">
             <h3><?php 
                 if($name == 'articles') {
                     echo t('more articles') ;
