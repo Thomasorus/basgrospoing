@@ -1,6 +1,8 @@
 type: pages
 headline: Podcasts
 info: "{{ page.date.toDate('d.m.Y') }}"
-template: podcast
-empty: Pas d'articles
+template: 
+  - podcast
+  - podcastrss
+empty: Pas de podcasts
 sortBy: date desc
