@@ -1,7 +1,7 @@
 <?php
 return function($page, $kirby) {
   $perpage  = $page->perpage()->int();
-  $lang =$kirby->language();
+  $lang = $kirby->language();
 
   $articles = page('articles')
     ->children()
@@ -9,8 +9,12 @@ return function($page, $kirby) {
     ->filter(function ($child) {
       return $child->date()->toDate() < time();
     })
-    ->filter(function ($child) {
-      return $child->translation(kirby()->language()->code())->exists();
+    ->filter(function ($child) use($lang) {
+      if($lang == 'en') {
+        return $child->translation(kirby()->language()->code())->exists() && $child->isTranslated() == 'true';
+      } else {
+        return $child->translation(kirby()->language()->code())->exists();
+      }
     })
     ->sortBy('date', 'desc', 'time', 'asc')
     ->paginate(($perpage >= 1)? $perpage : 12);

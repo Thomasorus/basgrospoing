@@ -123,7 +123,6 @@ return function($kirby) {
       return $page->date()->toDate();
     }, 'desc')
     ->filterBy('isTranslated', 'true')
-    ->filterBy('Currentlang', 'en')
     ->first();
     
     $articleschrono = page('articles')
@@ -135,12 +134,13 @@ return function($kirby) {
     ->filter(function ($child) {
       return $child->translation(kirby()->language()->code())->exists();
     })
-    ->sortBy(function ($page) {
-      return $page->date()->toDate();
-    }, 'desc')
     ->filter(function ($child) {
       return $child->translation(kirby()->language()->code())->exists();
     })
+    ->filterBy('isTranslated', 'true')
+    ->sortBy(function ($page) {
+      return $page->date()->toDate();
+    }, 'desc')
     ->slice(1);
 
     return [
