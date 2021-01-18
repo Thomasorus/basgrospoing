@@ -1,8 +1,5 @@
 <?php snippet('header') ?>
 <main>
-
-    <?php 
-    foreach($rounds as $round): ?>
         <section>
             <!--Header Round-->
             <?php  snippet('patterns/molecules/sectionhead/sectionhead', ['title' => $round]); 
@@ -57,10 +54,8 @@
                     }
                 ?>
             </div>
-            <?php snippet('patterns/molecules/chronofooter/chronofooter', ["name" => "round", "link" => $round->url()]); ?>
 
         </section>
-    <?php endforeach; ?>
 </main>
 
 <?php snippet('footer') ?>
