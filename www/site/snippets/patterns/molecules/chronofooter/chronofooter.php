@@ -7,6 +7,8 @@
                     echo t('more articles') ;
                 } else if($name == "podcasts") {
                     echo t('more podcasts');
+                } else {
+                    echo t('see');
                 }
             ?></h3>
         </a>
