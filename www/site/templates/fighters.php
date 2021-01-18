@@ -5,17 +5,16 @@
 
 <section>
 <div class="fighters-title">
-<h1>Fighters</h1>
-
+    <h1>
+        <?php echo $page->title(); ?>
+    </h1>
 </div>
-<div class="fighters">
-
-<?php foreach($page->children()->listed() as $fighter){
-pattern('organisms/fighterround', ["fighter" => $fighter]);
-
-}
-?>
-</div>
+    <div class="fighters">
+        <?php foreach($page->children()->listed() as $fighter){
+            snippet('patterns/organisms/fighterround/fighterround', ["fighter" => $fighter]);
+        }
+    ?>
+    </div>
 </section>
 </main>
 
