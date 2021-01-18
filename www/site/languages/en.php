@@ -14,6 +14,7 @@ return array (
     'more' => 'more',
     'more podcasts' => 'more podcasts',
     'more articles' => 'more articles',
+    'see' => 'See more',
     'rss site' => 'Website RSS',
     'rss podcasts' => 'Podcasts RSS',
     'help' => 'Help BGP grow!',

@@ -14,6 +14,7 @@ return array (
     'more' => '+ d\'',
     'more podcasts' => '+ de podcasts',
     'more articles' => '+ d\'articles',
+    'see' => 'Voir plus',
     'rss site' => 'Flux RSS du site',
     'rss podcasts' => 'Flux RSS des podcasts',
     'help' => 'Aidez BGP à se développer !',
