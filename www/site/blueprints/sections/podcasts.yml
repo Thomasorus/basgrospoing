@@ -1,8 +1,13 @@
 type: pages
 headline: Podcasts
+parent: kirby.page("podcasts")
 info: "{{ page.date.toDate('d.m.Y') }}"
+layout: cards
 template: 
   - podcast
   - podcastrss
 empty: Pas de podcasts
 sortBy: date desc
+image:
+  cover: true
+  ratio: 3/2

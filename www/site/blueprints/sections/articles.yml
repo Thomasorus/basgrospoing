@@ -1,6 +1,6 @@
 type: pages
 headline: Articles
-info: "{{ page.date.toDate('d.m.Y') }}"
+parent: kirby.page("articles")
 template: 
   - article
   - opinion
