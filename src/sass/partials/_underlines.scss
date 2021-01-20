@@ -1,0 +1,23 @@
+.underline-xl {
+    text-decoration: underline;
+    text-decoration-thickness: var(--underline-height-xl);
+    text-underline-offset: var(--underline-height-xl);
+}
+
+.underline-md {
+    text-decoration: underline;
+    text-decoration-thickness: var(--underline-height-md);
+    text-underline-offset: var(--underline-height-md);
+}
+
+.underline-sm {
+    text-decoration: underline;
+    text-decoration-thickness: var(--underline-height-sm);
+    text-underline-offset: var(--underline-height-sm);
+}
+
+.underline-xs {
+    text-decoration: underline;
+    text-decoration-thickness: var(--underline-height-xs);
+    text-underline-offset: var(--underline-height-xs);
+}

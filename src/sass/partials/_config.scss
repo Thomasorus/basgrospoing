@@ -1,9 +1,38 @@
 :root {
-  --site-width: 980px;
-  --article-width: 690px;
-  --podcast-width: 580px;
-  --article-width-large: 790px;
-  --bgp-gap: 0.7%;
-  --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI","Roboto", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  --bgp-pink: #ff458c;
+  --bgp-green: #1fd316;
+  --bgp-yellow: #efd61d;
+  --bgp-black: #000000;
+  --bgp-white: #ffffff;
 
+  --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  // --font-futura: Futura;
+  // --font-futura-light: Futura-light;
+  // --font-futura-light-italic: 
+  // --font-futura-bold: ;
+  // --font-futura-bold-italic: Futura-bold-oblique;
+
+  --underline-height-xl: 9px;
+  --underline-height-md: 6px;
+  --underline-height-sm: 3px;
+  --underline-height-xs: 1px;
+
+  --text-shadow-height-sm: 4px;
+  --text-shadow-height-xs: 2px;
+
+  --filter-grey: grayscale(100%) contrast(1);
+
+  --font-weight-xl: 900;
+
+  --menu-height: 34px;
+
+  --main-container: 95ch;
+
+  --breakpoint-sm: 640px;
+
+  --margin-xs: 3px;
+  --margin-sm: 6px;
+
+  --animation-shake: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+  --transform-rotate-scale: rotate(-5deg) scale(1.1);
 }
