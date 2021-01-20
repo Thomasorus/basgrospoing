@@ -37,11 +37,8 @@
 
 
 <!-- COUPURE -->
-  <link rel="manifest" href="/assets/pwa/manifest.json">
   <link rel="preload" href="/assets/css/base.css?v=1.0.12" as="style">
-  <link rel="preload" href="/assets/css/main.css?v=1.0.12" as="style">
   <link rel="stylesheet" href="/assets/css/base.css?v=1.0.12">
-  <link rel="stylesheet" href="/assets/css/main.css?v=1.0.12">
   <link rel=“preload” href="/assets/fonts/FuturaStd-ExtraBoldOblique.woff2" as=“font” type="font/woff2" crossorigin="anonymous">
   <link rel=“preload” href="/assets/fonts/FuturaStd-ExtraBold.woff2" as=“font” type="font/woff2" crossorigin="anonymous">
   <link rel=“preload” href="/assets/fonts/BauerBodoniStd-Italic.woff2" as=“font” type="font/woff2" crossorigin="anonymous">
@@ -87,29 +84,6 @@
       setThemeFromCookie()
     })();
   </script>
-
-
-  <!-- Matomo -->
-  <script type="text/javascript">
-    var _paq = _paq || [];
-    /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
-    _paq.push(['trackPageView']);
-    _paq.push(['enableLinkTracking']);
-    (function () {
-      var u = "//basgrospoing.fr/analytics/";
-      _paq.push(['setTrackerUrl', u + 'piwik.php']);
-      _paq.push(['setSiteId', '1']);
-      var d = document,
-        g = d.createElement('script'),
-        s = d.getElementsByTagName('script')[0];
-      g.type = 'text/javascript';
-      g.async = true;
-      g.defer = true;
-      g.src = u + 'piwik.js';
-      s.parentNode.insertBefore(g, s);
-    })();
-  </script> 
-  <!-- End Matomo Code -->
 </head>
 
 <body>
