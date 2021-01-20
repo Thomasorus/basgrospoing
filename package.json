@@ -5,8 +5,8 @@
     "sass": "^1.22.4"
   },
   "scripts": {
-    "watch": "parcel watch */**/*.scss --out-dir www/assets/css/ --public-url ./",
-    "build": "parcel build */**/*.scss --out-dir www/assets/css/ --public-url ./",
+    "watch": "parcel watch */**/base.scss --out-dir www/assets/css/ --public-url ./",
+    "build": "parcel build */**/base.scss --out-dir www/assets/css/ --public-url ./",
     "build-livid": "parcel build */**/livid.scss --out-dir www/assets/css/livid --public-url ./"
   },
   "dependencies": {
