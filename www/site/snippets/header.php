@@ -86,7 +86,7 @@
   </script>
 </head>
 
-<body>
+<body class="body-flow">
   <header>
     <?php snippet('menu') ?>
   </header>
