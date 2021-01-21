@@ -1,12 +1,12 @@
 <nav class="top-menu | menu-container height-100" aria-label="Main menu">
-    <ul role="list" class="margin-auto padding-0 flex flex-space-around flex-align-center main-container height-100">
+    <ul role="list" class="margin-auto padding-0 box-flex flex-space-around flex-align-center main-container height-100">
       <?php if($kirby->language() == "fr") : ?>
       <?php $count = 0; foreach($pages->listed() as $item): ?>
         <?php $count ++; if($count == 3): ?>
           <li class="logo transition-025">
-            <a class="color-white text-uppercase text-decoration-none font-futura-bold-italic"
+            <a class="color-white text-transform-uppercase text-decoration-none font-futura-bold-italic"
               href="/<?php echo $kirby->language() ?>/">
-              <svg id="dc5f4843-b314-49e4-b515-5e5ac37aa99b" height="80px" width="auto" data-name="Calque 1"
+              <svg id="dc5f4843-b314-49e4-b515-5e5ac37aa99b" height="80px" width="140" data-name="Calque 1"
                 xmlns="http://www.w3.org/2000/svg" viewBox="0 0 507.79 313.31">
                 <defs>
                   <style>
@@ -107,16 +107,16 @@
             </a>
           </li>
           <li>
-            <a class="color-white text-uppercase text-decoration-none font-futura-bold-italic" href="<?= $item->url() ?>">
-              <span>
+            <a class="color-white text-transform-uppercase text-decoration-none font-futura-bold-italic" href="<?= $item->url() ?>">
+              <span class="d-hide">
                 <?= $item->title()->html() ?></span>
               <i class="<?php echo $item->title()->html()->lower();?>"></i>
             </a>
           </li>
         <?php elseif($count != 3): ?>
           <li>
-            <a class="color-white text-uppercase text-decoration-none font-futura-bold-italic" href="<?= $item->url() ?>">
-              <span>
+            <a class="color-white text-transform-uppercase text-decoration-none font-futura-bold-italic" href="<?= $item->url() ?>">
+              <span class="d-hide">
                 <?= $item->title()->html() ?></span>
               <i class="<?php echo $item->title()->html()->lower();?>"></i>
             </a>
@@ -124,9 +124,9 @@
         <?php endif ?>
       <?php endforeach; ?>
         <li>
-          <a class="color-white text-uppercase text-decoration-none font-futura-bold-italic"
+          <a class="color-white text-transform-uppercase text-decoration-none font-futura-bold-italic"
             href="<?php echo t('about') ?>" target="_blank" rel="noopener">
-            <span>
+            <span class="d-hide">
               <?php echo t('soutenez') ?>
             </span>
             <i class="help"></i>
@@ -138,8 +138,8 @@
         <?php foreach($pages->listed() as $item): ?>
         <?php if($item->title() == "Articles"): ?>
           <li>
-            <a class="color-white text-uppercase text-decoration-none font-futura-bold-italic" href="<?= $item->url() ?>">
-              <span>
+            <a class="color-white text-transform-uppercase text-decoration-none font-futura-bold-italic" href="<?= $item->url() ?>">
+              <span class="d-hide">
                 <?= $item->title()->html() ?></span>
               <i class="<?php echo $item->title()->html()->lower();?>"></i>
             </a>
@@ -157,7 +157,7 @@
       <li <?=r($item->isOpen(), "id='active'") ?>>
         <a class="color-black text-uppercase text-decoration-none font-futura-bold-italic"
           href="<?php echo t('about') ?>" target="_blank" rel="noopener">
-          <span>
+          <span class="d-hide">
             <?php echo t('soutenez') ?>
           </span>
           <i class="help"></i>
