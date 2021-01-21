@@ -1,15 +1,11 @@
 {
-  "devDependencies": {
-    "cssnano": "^4.1.10",
-    "parcel-bundler": "^1.12.4",
-    "sass": "^1.22.4"
+  "dependencies": {
+    "gorko": "^0.2.3",
+    "parcel-bundler": "^1.12.4"
   },
   "scripts": {
     "watch": "parcel watch */**/base.scss --out-dir www/assets/css/ --public-url ./",
     "build": "parcel build */**/base.scss --out-dir www/assets/css/ --public-url ./",
     "build-livid": "parcel build */**/livid.scss --out-dir www/assets/css/livid --public-url ./"
-  },
-  "dependencies": {
-    "node-forge": "^0.10.0"
   }
 }
