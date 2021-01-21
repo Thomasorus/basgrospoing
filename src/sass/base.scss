@@ -1,20 +1,35 @@
-@import "./partials/config";
-@import "./partials/fonts";
-@import "./partials/reset";
+//Config file for gorko
+@import "./config/config";
 
+//Gorko importer for design tokens
+@import "./../../node_modules/gorko/gorko";
+
+// Reset file
+@import "./config/reset";
+@import "./config/fonts";
+
+//Global styles
 
 body {
-    font-family: var(--font-family-sans-serif);
+    font-family: var(--sans-serif);
 }
 
 header {
-    position: fixed;
+    position: sticky;
+    top: 0;
     width: 100%;
 }
 
 
-// Utility classes
-@import "./partials/tokens";
 
-//Block classes
-@import "./partials/menu";
+
+// Utilities
+@import "./utilities/flows";
+@import "./utilities/text-shadows";
+@import "./utilities/underlines";
+@import "./utilities/various-text";
+@import "./utilities/animations";
+
+//Blocks
+@import "./blocks/menu";
+@import "./blocks/section-head";
