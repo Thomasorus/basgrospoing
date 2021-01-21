@@ -1,5 +1,7 @@
 .section-head {
 
+    display: flex;
+
     &__full-line {
         display: flex;
         align-items: end;
@@ -7,14 +9,13 @@
     }
 
     &__line {
-
-        height: 16px;
         width: 100%;
-        background: var(--bgp-text, #000000);
+        @include apply-utility('height', 's0');
+        @include apply-utility('bg', 'black');
     }
 
     h2 {
-        font-size: 2.3rem;
+        @include apply-utility('text', 's2');
         line-height: 0.6;
     }
 }

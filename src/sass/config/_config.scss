@@ -1,0 +1,206 @@
+/// BASE SIZE
+/// All calculations are based on this. It’s recommended that
+/// you keep it at 1rem because that is the root font size. You
+/// can set it to whatever you like and whatever unit you like.
+///
+$gorko-base-size: 1rem;
+
+/// CUSTOM PROPERTIES
+
+:root {
+    --bgp-pink: #ff458c;
+    --bgp-green: #1fd316;
+    --bgp-yellow: #efd61d;
+    --bgp-black: #000000;
+    --bgp-white: #ffffff;
+
+    --underline-height-xl: 9px;
+    --underline-height-md: 6px;
+    --underline-height-sm: 3px;
+    --underline-height-xs: 1px;
+
+    --text-shadow-height-sm: 4px;
+    --text-shadow-height-xs: 2px;
+
+    --sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    --futura: "Futura";
+    --futura-italic: "Futura Italic";
+    --futura-light: "Futura Light";
+    --futura-light-italic: "Futura Light Italic";
+    --futura-bold: "Futura Bold";
+    --futura-bold-italic: "Futura Bold Italic";
+    --bauer-bodoni-italic: "Bauer Bodoni Italic";
+
+    --ratio: 1.5;
+    --s-5: calc(var(--s-4) / var(--ratio));
+    --s-4: calc(var(--s-3) / var(--ratio));
+    --s-3: calc(var(--s-2) / var(--ratio));
+    --s-2: calc(var(--s-1) / var(--ratio));
+    --s-1: calc(var(--s0) / var(--ratio));
+    --s0: 1rem;
+    --s1: calc(var(--s0) * var(--ratio));
+    --s2: calc(var(--s1) * var(--ratio));
+    --s3: calc(var(--s2) * var(--ratio));
+    --s4: calc(var(--s3) * var(--ratio));
+    --s5: calc(var(--s4) * var(--ratio));
+
+    --animation-shake: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+    --transform-rotate-scale: rotate(-5deg) scale(1.1);
+}
+
+/// SIZE SCALE
+/// This is a Major Third scale that powers all the utilities that
+/// it is relevant for (font-size, margin, padding). All items are
+/// calculated off the base size, so change that and cascade across
+/// your whole project.
+///
+$gorko-size-scale: ('0': '0',
+    '100': '100%',
+    'auto': 'auto',
+    's-5': var(--s-5),
+    's-4': var(--s-4),
+    's-3': var(--s-3),
+    's-2': var(--s-2),
+    's-1': var(--s-1),
+    's0': var(--s0),
+    's1': var(--s1),
+    's2': var(--s2),
+    's3': var(--s3),
+    's4': var(--s4),
+    's5': var(--s5));
+
+/// COLORS
+/// Colors are shared between backgrounds and text by default.
+/// You can also use them to power borders, fills or shadows, for example.
+///
+$gorko-colors: ('pink': var(--bgp-pink),
+    'green': var(--bgp-green),
+    'yellow': var(--bgp-yellow),
+    'black': var(--bgp-black),
+    'white': var(--bgp-white));
+
+
+$gorko-underline-scale: ('xl': var(--underline-height-xl),
+    'md': var(--underline-height-md),
+    'sm': var(--underline-height-md),
+    'xs': var(--underline-height-md));
+
+$gorko-fonts: ('sans-serif': var(--sans-serif),
+    'futura': var(--futura),
+    'futura-italic': var(--futura-italic),
+    'futura-light': var(--futura-light),
+    'futura-light-italic': var(--futura-light-italic),
+    'futura-bold': var(--futura-bold),
+    'futura-bold-italic': var(--futura-bold-italic),
+    'bauer-bodoni-italic': var(--bauer-bodoni-italic));
+
+
+
+/// CORE CONFIG
+/// This powers everything from utility class generation to breakpoints
+/// to enabling/disabling pre-built components/utilities.
+///
+$gorko-config: ('--variables': ('color': $gorko-colors,
+        'size': $gorko-size-scale, 'fonts': $gorko-fonts),
+    'bg': ('items': $gorko-colors,
+        'output': 'standard',
+        'property': 'background',
+        'use-css-variable': 'color'
+    ),
+    'color': ('items': $gorko-colors,
+        'output': 'standard',
+        'property': 'color'
+    ),
+    'underline': ('items': $gorko-colors,
+        'output': 'standard',
+        'property': 'text-decoration-color'
+    ),
+    'd': ('items': ('block': 'block',
+            'flex': 'flex',
+            'grid': 'grid',
+            'inline': 'inline',
+            'hide': 'none',
+            'show': 'inherit'
+        ),
+        'output': 'responsive',
+        'property': 'display'
+    ),
+    'position': ('items': ('relative': 'relative',
+            'absolute': 'absolute',
+            'fixed': 'fixed'
+        ),
+        'output': 'responsive',
+        'property': 'display'
+    ),
+    'margin': ('items': $gorko-size-scale,
+        'output': 'standard',
+        'property': 'margin'
+    ),
+    'margin-right': ('items': $gorko-size-scale,
+        'output': 'standard',
+        'property': 'margin-right'
+    ),
+    'margin-bottom': ('items': $gorko-size-scale,
+        'output': 'standard',
+        'property': 'margin-bottom'
+    ),
+    'margin-left': ('items': $gorko-size-scale,
+        'output': 'standard',
+        'property': 'margin-left'
+    ),
+    'margin-top': ('items': $gorko-size-scale,
+        'output': 'standard',
+        'property': 'padding-top'
+    ),
+    'padding': ('items': $gorko-size-scale,
+        'output': 'standard',
+        'property': 'padding'
+    ),
+    'padding-right': ('items': $gorko-size-scale,
+        'output': 'standard',
+        'property': 'padding-right'
+    ),
+    'padding-bottom': ('items': $gorko-size-scale,
+        'output': 'standard',
+        'property': 'padding-bottom'
+    ),
+    'padding-left': ('items': $gorko-size-scale,
+        'output': 'standard',
+        'property': 'padding-left'
+    ),
+    // 'stack': ('items': ('300': 0,
+    //         '400': 10,
+    //         '500': 20,
+    //         '600': 30,
+    //         '700': 40),
+    //     'output': 'standard',
+    //     'property': 'z-index'
+    // ),
+    'font': ('items': ($gorko-fonts),
+        'output': 'standard',
+        'property': 'font-family'
+    ),
+    'text': ('items': ($gorko-size-scale),
+        'output': 'responsive',
+        'property': 'font-size'
+    ),
+    'weight': ('items': ('light': '300',
+            'regular': '400',
+            'bold': '700',
+            'extrabold': '900'
+        ),
+        'output': 'standard',
+        'property': 'font-weight'
+    ),
+    'height': ('items': ($gorko-size-scale),
+        'output': 'responsive',
+        'property': 'height'
+    ),
+    'width': ('items': ($gorko-size-scale),
+        'output': 'responsive',
+        'property': 'width'
+    ),
+    'breakpoints': ('sm': '(min-width: 36em)',
+        'md': '(min-width: 48em)',
+        'lg': '(min-width: 62em)'
+    ));

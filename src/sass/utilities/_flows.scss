@@ -1,0 +1,3 @@
+.body-flow>*+* {
+    @include apply-utility('margin-top', 's1');
+}

@@ -1,0 +1,25 @@
+// text shadow tokens
+
+.text-shadow-pink-sm {
+    text-shadow: var(--text-shadow-height-sm) var(--text-shadow-height-sm) 0px var(--bgp-pink);
+}
+
+.text-shadow-pink-xs {
+    text-shadow: var(--text-shadow-height-xs) var(--text-shadow-height-xs) 0px var(--bgp-pink);
+}
+
+.text-shadow-green-sm {
+    text-shadow: var(--text-shadow-height-sm) var(--text-shadow-height-sm) 0px var(--bgp-green);
+}
+
+.text-shadow-green-xs {
+    text-shadow: var(--text-shadow-height-xs) var(--text-shadow-height-xs) 0px var(--bgp-green);
+}
+
+.text-shadow-yellow-sm {
+    text-shadow: var(--text-shadow-height-sm) var(--text-shadow-height-sm) 0px var(--bgp-yellow);
+}
+
+.text-shadow-yellow-xs {
+    text-shadow: var(--text-shadow-height-xs) var(--text-shadow-height-xs) 0px var(--bgp-yellow);
+}
