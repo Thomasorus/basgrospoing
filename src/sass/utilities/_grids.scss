@@ -1,0 +1,17 @@
+.new-content-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 460px;
+    grid-gap: var(--s-1);
+}
+
+.new-content-grid>* {
+
+    &:nth-child(odd) {
+        background-color: var(--bgp-green);
+    }
+
+    &:nth-child(even) {
+        background-color: var(--bgp-pink);
+    }
+}

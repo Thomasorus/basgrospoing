@@ -23,3 +23,11 @@
 .text-shadow-yellow-xs {
     text-shadow: var(--text-shadow-height-xs) var(--text-shadow-height-xs) 0px var(--bgp-yellow);
 }
+
+.text-shadow-white-xs {
+    text-shadow: var(--text-shadow-height-xs) var(--text-shadow-height-xs) 0px var(--bgp-white);
+}
+
+.text-shadow-white-sm {
+    text-shadow: var(--text-shadow-height-sm) var(--text-shadow-height-sm) 0px var(--bgp-white);
+}

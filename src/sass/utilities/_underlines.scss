@@ -1,23 +1,147 @@
-.underline-xl {
+// Pink
+.underline-xl-pink {
     text-decoration: underline;
     text-decoration-thickness: var(--underline-height-xl);
     text-underline-offset: var(--underline-height-xl);
+    text-decoration-color: var(--bgp-pink);
+
 }
 
-.underline-md {
+.underline-md-pink {
     text-decoration: underline;
     text-decoration-thickness: var(--underline-height-md);
     text-underline-offset: var(--underline-height-md);
+    text-decoration-color: var(--bgp-pink);
 }
 
-.underline-sm {
+.underline-sm-pink {
     text-decoration: underline;
     text-decoration-thickness: var(--underline-height-sm);
     text-underline-offset: var(--underline-height-sm);
+    text-decoration-color: var(--bgp-pink);
 }
 
-.underline-xs {
+.underline-xs-pink {
     text-decoration: underline;
     text-decoration-thickness: var(--underline-height-xs);
     text-underline-offset: var(--underline-height-xs);
+    text-decoration-color: var(--bgp-pink);
+}
+
+// Green
+.underline-xl-green {
+    text-decoration: underline;
+    text-decoration-thickness: var(--underline-height-xl);
+    text-underline-offset: var(--underline-height-xl);
+    text-decoration-color: var(--bgp-green);
+}
+
+.underline-md-green {
+    text-decoration: underline;
+    text-decoration-thickness: var(--underline-height-md);
+    text-underline-offset: var(--underline-height-md);
+    text-decoration-color: var(--bgp-green);
+}
+
+.underline-sm-green {
+    text-decoration: underline;
+    text-decoration-thickness: var(--underline-height-sm);
+    text-underline-offset: var(--underline-height-sm);
+    text-decoration-color: var(--bgp-green);
+}
+
+.underline-xs-green {
+    text-decoration: underline;
+    text-decoration-thickness: var(--underline-height-xs);
+    text-underline-offset: var(--underline-height-xs);
+    text-decoration-color: var(--bgp-green);
+}
+
+// Yellow
+
+.underline-xl-yellow {
+    text-decoration: underline;
+    text-decoration-thickness: var(--underline-height-xl);
+    text-underline-offset: var(--underline-height-xl);
+    text-decoration-color: var(--bgp-yellow);
+}
+
+.underline-md-yellow {
+    text-decoration: underline;
+    text-decoration-thickness: var(--underline-height-md);
+    text-underline-offset: var(--underline-height-md);
+    text-decoration-color: var(--bgp-yellow);
+}
+
+.underline-sm-yellow {
+    text-decoration: underline;
+    text-decoration-thickness: var(--underline-height-sm);
+    text-underline-offset: var(--underline-height-sm);
+    text-decoration-color: var(--bgp-yellow);
+}
+
+.underline-xs-yellow {
+    text-decoration: underline;
+    text-decoration-thickness: var(--underline-height-xs);
+    text-underline-offset: var(--underline-height-xs);
+    text-decoration-color: var(--bgp-yellow);
+}
+
+// White
+.underline-xl-white {
+    text-decoration: underline;
+    text-decoration-thickness: var(--underline-height-xl);
+    text-underline-offset: var(--underline-height-xl);
+    text-decoration-color: var(--bgp-white);
+}
+
+.underline-md-white {
+    text-decoration: underline;
+    text-decoration-thickness: var(--underline-height-md);
+    text-underline-offset: var(--underline-height-md);
+    text-decoration-color: var(--bgp-white);
+}
+
+.underline-sm-white {
+    text-decoration: underline;
+    text-decoration-thickness: var(--underline-height-sm);
+    text-underline-offset: var(--underline-height-sm);
+    text-decoration-color: var(--bgp-white);
+}
+
+.underline-xs-white {
+    text-decoration: underline;
+    text-decoration-thickness: var(--underline-height-xs);
+    text-underline-offset: var(--underline-height-xs);
+    text-decoration-color: var(--bgp-white);
+}
+
+// Black
+
+.underline-xl-black {
+    text-decoration: underline;
+    text-decoration-thickness: var(--underline-height-xl);
+    text-underline-offset: var(--underline-height-xl);
+    text-decoration-color: var(--bgp-black);
+}
+
+.underline-md-black {
+    text-decoration: underline;
+    text-decoration-thickness: var(--underline-height-md);
+    text-underline-offset: var(--underline-height-md);
+    text-decoration-color: var(--bgp-black);
+}
+
+.underline-sm-black {
+    text-decoration: underline;
+    text-decoration-thickness: var(--underline-height-sm);
+    text-underline-offset: var(--underline-height-sm);
+    text-decoration-color: var(--bgp-black);
+}
+
+.underline-xs-black {
+    text-decoration: underline;
+    text-decoration-thickness: var(--underline-height-xs);
+    text-underline-offset: var(--underline-height-xs);
+    text-decoration-color: var(--bgp-black);
 }

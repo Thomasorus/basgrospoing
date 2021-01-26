@@ -5,3 +5,7 @@
 .text-decoration-none {
     text-decoration: none;
 }
+
+.bg-white-transparent {
+    background: linear-gradient(to top, rgb(255, 255, 255) 0%, rgba(255, 255, 58, 0) 100%);
+}

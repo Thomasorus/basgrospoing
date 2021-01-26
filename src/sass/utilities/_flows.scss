@@ -1,3 +1,43 @@
-.body-flow>*+* {
+.flow-s0>*+* {
+    @include apply-utility('margin-top', 's0');
+}
+
+.flow-s1>*+* {
     @include apply-utility('margin-top', 's1');
+}
+
+.flow-s2>*+* {
+    @include apply-utility('margin-top', 's2');
+}
+
+.flow-s3>*+* {
+    @include apply-utility('margin-top', 's3');
+}
+
+.flow-s4>*+* {
+    @include apply-utility('margin-top', 's4');
+}
+
+.flow-s5>*+* {
+    @include apply-utility('margin-top', 's5');
+}
+
+.flow-s-1>*+* {
+    @include apply-utility('margin-top', 's-1');
+}
+
+.flow-s-2>*+* {
+    @include apply-utility('margin-top', 's-2');
+}
+
+.flow-s-3>*+* {
+    @include apply-utility('margin-top', 's-3');
+}
+
+.flow-s-4>*+* {
+    @include apply-utility('margin-top', 's-4');
+}
+
+.flow-s-5>*+* {
+    @include apply-utility('margin-top', 's-5');
 }

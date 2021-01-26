@@ -24,11 +24,15 @@ header {
 
 
 // Utilities
+@import "./utilities/grids";
+@import "./utilities/flex";
 @import "./utilities/flows";
 @import "./utilities/text-shadows";
 @import "./utilities/underlines";
 @import "./utilities/various-text";
 @import "./utilities/animations";
+@import "./utilities/absolute-links";
+@import "./utilities/images";
 
 //Blocks
 @import "./blocks/menu";
