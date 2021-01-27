@@ -1,21 +1,23 @@
 <?php snippet('header'); ?>
 <main class="flow-s4">
     <!-- Last article and podcast -->
-    <section class="flow-s1 m-width-s40 margin-auto">
+    <section class="[ wrapper ] [ flow-s1 ]">
         <?php 
             $nouveau = t('nouveau');
             snippet('patterns/molecules/sectionhead/sectionhead', ['title' => $nouveau]);
             ?>
                 <!-- If article and podcast, add a special grid -->
                 <?php if(isset($lastPodcast) && isset($lastArticle)): ?>
-                    <div class="new-content-grid">
+                    <div class="grid-2-1">
                 <?php endif; ?>
                 <?php 
                     if(isset($lastArticle)) {
-                        snippet('patterns/organisms/articlecard/articlecard', ["magazine" => $lastArticle]);
+                        $image = $lastArticle->magazineimage();
+                        snippet('patterns/molecules/card/card', ["entry" => $lastArticle, "image" => $image, "srcset" => "magazinecard" ]);
                     }
                     if(isset($lastPodcast)) {
-                        snippet('patterns/organisms/podcastcard/podcastcard', ["podcast" => $lastPodcast]);
+                        $image = $lastPodcast->podcastimage();
+                        snippet('patterns/molecules/card/card', ["entry" => $lastPodcast, "image" => $image, "srcset" => "podcastcard" ]);
                     }
                 ?>
                 <?php if(isset($lastPodcast) && isset($lastArticle)): ?>

@@ -1,47 +1,3 @@
-.top-menu ul {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 34px;
-}
-
-.top-menu .logo {
-    transition: 0.25s;
-}
-
-.top-menu .logo a {
-    display: flex;
-    align-items: center;
-}
-
-.top-menu .logo svg {
-    height: 28px;
-    width: auto !important;
-}
-
-.top-menu ul>* {
-    @include apply-utility('margin', 's0');
-}
-
-.top-menu:after {
-    height: 34px;
-    @include apply-utility('bg', 'green');
-    content: "";
-    position: absolute;
-    top: 50%;
-    transform: translate(0, -50%);
-    width: 100%;
-    z-index: -1;
-}
-
-.top-menu li:not(.logo):hover {
-    animation: var(--animation-shake);
-}
-
-.top-menu .logo:hover {
-    transform: var(--transform-rotate-scale);
-}
-
 .top-menu {
     .rounds {
         content: url("assets/images/rounds.svg");
@@ -60,25 +16,79 @@
     }
 }
 
+.top-menu:after {
+    height: 34px;
+    @include apply-utility('bg', 'green');
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    width: 100%;
+    z-index: -1;
+}
 
-@include media-query('md') {
+.top-menu__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 34px;
+    padding: 0;
+    margin: auto;
+}
 
-    i {
+.top-menu__link {
+    @include apply-utility('color', 'white');
+    text-transform: uppercase;
+    text-decoration: none;
+    @include apply-utility('font', 'futura-bold-italic');
+}
+
+.top-menu__logo {
+    transition: 0.25s;
+}
+
+.top-menu__logo a {
+    display: flex;
+    align-items: center;
+}
+
+.top-menu__logo svg {
+    height: 28px;
+    width: auto !important;
+}
+
+.top-menu__list li:not(.top-menu__logo):hover {
+    animation: var(--animation-shake);
+}
+
+.top-menu__logo:hover {
+    transform: var(--transform-rotate-scale);
+}
+
+.top-menu__text {
+    display: none;
+}
+
+.top-menu__icon {
+    display: block;
+}
+
+@include media-query('sm') {
+
+    .top-menu__icon {
         display: none;
     }
 
-    .top-menu span {
+    .top-menu__text {
         display: block;
     }
 
-    .top-menu .logo svg {
+    .top-menu__logo svg {
         height: initial;
     }
 
 
-    .top-menu ul {
+    .top-menu__list {
         height: var(--menu-height);
     }
-
-
 }

@@ -1,0 +1,40 @@
+.punchline {
+    position: relative;
+}
+
+.punchline__header {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.punchline__title {
+    @include apply-utility('font', 'futura-bold-italic');
+    text-transform: uppercase;
+    transform: translate(0, -50%) rotate(-5deg) scale(1);
+    transition: 0.4s;
+    top: 50%;
+    position: absolute;
+    font-size: var(--s2);
+}
+
+.punchline:hover .punchline__title {
+    transform: translate(0, -50%) rotate(-5deg) scale(1.1);
+    transition: 0.4s;
+}
+
+.punchline__text {
+    @include apply-utility('font', 'bauer-bodoni-italic');
+    font-size: clamp(1rem, 10vw, 1.75rem);
+    line-height: var(--s2);
+    padding: var(--s1);
+    margin: 0;
+}
+
+.punchline__author {
+    @include apply-utility('font', 'futura-bold');
+    text-transform: uppercase;
+    text-align: right;
+    letter-spacing: -1px;
+}

@@ -16,16 +16,35 @@ return [
         'quality' => '80',
         'interlace' => true
     ],
-    // 'hooks' => [
-    //     //This hook creates a currentLang invisible field in each page
-    //     //In the blueprint, it's used to create a true/false translated field
-    //     'page.create:after' => function ($page) {
-    //         foreach (kirby()->languages() as $lang) {
-    //           $code = $lang->code();
-    //           $page->update([ 'currentLang' => $code ], $code);
-    //        }
-    //     },
-    //   ],
+    'thumbs' => [
+        'srcsets' => [
+          'podcastcard' => [
+            '420w' => [ 'width' => 410, 'height' => 430, 'crop' => 'center' ],
+            '613w' => [ 'width' => 600, 'height' => 430, 'crop' => 'center' ],
+            '710w' => [ 'width' => 700, 'height' => 430, 'crop' => 'center' ],
+            '926w' => [ 'width' => 550, 'height' => 530, 'crop' => 'center' ],
+            '1920w' => [ 'width' => 320,'height' => 430, 'crop' => 'center' ]
+          ],
+          'magazinecard' => [
+            '420w' => [ 'width' => 410, 'height' => 430, 'crop' => 'center' ],
+            '613w' => [ 'width' => 600, 'height' => 430, 'crop' => 'center' ],
+            '710w' => [ 'width' => 700, 'height' => 430, 'crop' => 'center' ],
+            '926w' => [ 'width' => 450, 'height' => 430, 'crop' => 'center' ],
+            '1920w' => [ 'width' => 960, 'height' => 430, 'crop' => 'center']
+          ],
+          'hero' => [
+            '340w' => [ 'width' => 320, 'height' => 640, 'crop' => 'center' ],
+            '800w' => [ 'width' => 800, 'height' => 800, 'crop' => 'center' ],
+            '1280w' => [ 'width' => 1280, 'height' => 640, 'crop' => 'center' ],
+            '1920w' => [ 'width' => 1920, 'height' => 768, 'crop' => 'center' ]
+          ],
+          'othercard' => [
+            '420w' => [ 'width' => 410, 'height' => 430, 'crop' => 'center' ],
+            '736w' => [ 'width' => 720, 'height' => 430, 'crop' => 'center' ],
+            '1920w' => [ 'width' => 480, 'height' => 430, 'crop' => 'center' ]
+          ]
+      ]
+    ],
     'cre8ivclick.sitemapper.pageFilter' => function($p){
     // filtering code goes here:
     if($p->isListed()) {

@@ -1,12 +1,11 @@
 <?php snippet('header') ?>
 
 
-<main>
-  <section>
-    <!--Header Round-->
+<main class="flow-s4">
+    <section class="[ wrapper ] [ flow-s1 ]">
     <?php snippet('patterns/molecules/sectionhead/sectionhead', ['title' => $page->title()]); ?>
     <nav class="categories-menu">
-      <ul>
+      <ul role="list">
         <?php foreach($categories as $cat): ?>
         <li class="menu__item">
           <a href="<?php echo url($kirby->language() . '/podcasts/cat:' . $cat)?>">
@@ -18,10 +17,11 @@
       </ul>
     </nav>
 
-    <div class="podcast-grid">
+    <div class="grid-1-1-1 flow-colors">
       <?php 
           foreach($podcasts as $podcast) {
-              snippet('patterns/organisms/podcastcard/podcastcard', ["podcast" => $podcast]);
+            $image = $podcast->podcastimage();
+            snippet('patterns/molecules/card/card', ["entry" => $podcast, "image" => $image, "srcset" => "podcastcard" ]);
           }
       ?>
     </div>

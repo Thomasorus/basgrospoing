@@ -5,28 +5,7 @@
 
       <div class="bg-lazy">
         <?php if($mag->coverimage()->toFile()): ?>
-        <img loading="lazy" src="<?= $mag->coverimage()->toFile()->url() ?>" srcset="<?= $mag->coverimage()->toFile()->srcset([
-                '340w' => [
-                  'width' => 320,
-                  'height' => 640,
-                  'crop' => 'center'
-                ],
-                  '800w' => [
-                      'width' => 800,
-                      'height' => 800,
-                      'crop' => 'center'
-                  ],
-                  '1280w' => [
-                    'width' => 1280,
-                    'height' => 640,
-                    'crop' => 'center'
-                ],
-                  '1920w' => [
-                    'width' => 1920,
-                    'height' => 768,
-                    'crop' => 'center'
-                ]
-            ]) 
+        <img loading="lazy" src="<?= $mag->coverimage()->toFile()->url() ?>" srcset="<?= $mag->coverimage()->toFile()->srcset("hero") 
         ?>" />
 
 

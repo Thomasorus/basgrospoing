@@ -41,3 +41,20 @@
 .flow-s-5>*+* {
     @include apply-utility('margin-top', 's-5');
 }
+
+
+.flow-colors {
+    >*:nth-child(odd) h3 {
+        text-decoration: underline;
+        text-decoration-thickness: var(--underline-height-md);
+        text-underline-offset: var(--underline-height-md);
+        text-decoration-color: var(--bgp-pink);
+    }
+
+    >*:nth-child(even) h3 {
+        text-decoration: underline;
+        text-decoration-thickness: var(--underline-height-md);
+        text-underline-offset: var(--underline-height-md);
+        text-decoration-color: var(--bgp-green);
+    }
+}

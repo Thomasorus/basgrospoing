@@ -43,7 +43,6 @@ $gorko-base-size: 1rem;
     --s3: calc(var(--s2) * var(--ratio));
     --s4: calc(var(--s3) * var(--ratio));
     --s5: calc(var(--s4) * var(--ratio));
-    --s40: calc(var(--s0) * 40 * var(--ratio));
 
     --animation-shake: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
     --transform-rotate-scale: rotate(-5deg) scale(1.1);
@@ -68,8 +67,7 @@ $gorko-size-scale: ('0': '0',
     's2': var(--s2),
     's3': var(--s3),
     's4': var(--s4),
-    's5': var(--s5),
-    's40': var(--s40));
+    's5': var(--s5));
 
 /// COLORS
 /// Colors are shared between backgrounds and text by default.

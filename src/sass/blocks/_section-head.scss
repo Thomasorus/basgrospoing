@@ -1,5 +1,4 @@
 .section-head {
-
     display: flex;
 
     &__full-line {
@@ -9,13 +8,18 @@
     }
 
     &__line {
-        width: 100%;
-        @include apply-utility('height', 's0');
         @include apply-utility('bg', 'black');
+        width: 100%;
+        height: var(--s0);
     }
 
-    h2 {
+    &__title {
         @include apply-utility('text', 's2');
+        @include apply-utility('color', 'black');
+        @include apply-utility('font', 'futura-bold-italic');
+        text-transform: uppercase;
         line-height: 0.6;
+        display: inline;
+        margin-right: var(--s2);
     }
 }
