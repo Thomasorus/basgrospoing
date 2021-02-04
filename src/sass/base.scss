@@ -41,3 +41,20 @@ header {
 @import "./blocks/section-head";
 @import "./blocks/cards";
 @import "./blocks/punchline";
+@import "./blocks/footer";
+
+div>div:only-child {
+    outline: 5px solid green;
+}
+
+div>div>div:only-child {
+    outline: 10px solid yellow;
+}
+
+div>div>div>div:only-child {
+    outline: 15px solid orange;
+}
+
+div>div>div>div>div:only-child {
+    outline: 20px solid red;
+}
