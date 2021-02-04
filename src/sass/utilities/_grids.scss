@@ -45,6 +45,12 @@
     grid-gap: var(--s-1);
 }
 
+.grid-1-1-1-1 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
+    grid-gap: var(--s-1);
+}
+
 @include media-query('md') {
     .grid-2-1 {
         grid-template-columns: minmax(384px, 2fr) minmax(240px, 1fr);
