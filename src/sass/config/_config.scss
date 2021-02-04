@@ -150,7 +150,7 @@ $gorko-config: ('--variables': ('color': $gorko-colors,
     ),
     'margin-top': ('items': $gorko-size-scale,
         'output': 'standard',
-        'property': 'padding-top'
+        'property': 'margin-top'
     ),
     'padding': ('items': $gorko-size-scale,
         'output': 'standard',
@@ -183,6 +183,10 @@ $gorko-config: ('--variables': ('color': $gorko-colors,
     'text': ('items': ($gorko-size-scale),
         'output': 'responsive',
         'property': 'font-size'
+    ),
+    'text-align': ('items': ('center': 'center', 'left': 'left', 'right': 'right'),
+        'output': 'responsive',
+        'property': 'text-align'
     ),
     'line-height': ('items': ($gorko-size-scale),
         'output': 'responsive',
