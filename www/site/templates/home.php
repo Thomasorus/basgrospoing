@@ -1,7 +1,7 @@
 <?php snippet('header'); ?>
 <main class="flow-s4">
     <!-- Last article and podcast -->
-    <section class="[ wrapper ] [ flow-s1 ]">
+    <section class="[ wrapper ] [ flow-s1 flow-colors ]">
         <?php 
             $nouveau = t('nouveau');
             snippet('patterns/molecules/sectionhead/sectionhead', ['title' => $nouveau]);

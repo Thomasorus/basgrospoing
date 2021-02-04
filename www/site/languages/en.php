@@ -31,6 +31,7 @@ return array (
     'patreon1' => 'Enjoyed this article?',
     'patreon2' => 'We could use your help!',
     'patreon3' => 'Consider supporting us on:',
-    'kofi' => 'This article is from a guest author! If you want to support him, buy him a coffee !'
+    'kofi' => 'This article is from a guest author! If you want to support him, buy him a coffee !',
+    'accueil' => 'Accueil',
   ]
 );

@@ -1,5 +1,5 @@
 ﻿<!doctype html>
-<html prefix="og: http://ogp.me/ns#" lang="<?= site()->language()->code()?>">
+<html prefix="og: http://ogp.me/ns#" lang="<?= $kirby->language()->code()?>">
 
 <head>
   <meta charset="utf-8">

@@ -1,6 +1,6 @@
 <div class="section-head">
-    <span class="section-head__full-line">
-        <span class="section-head__line" aria-hidden="true"></span>
+    <span class="section-head__full-line" aria-hidden="true">
+        <span class="section-head__line"></span>
         <svg height="16" width="90" id="78851d7d-8e78-4b60-aaed-7004f7dbc1ee" data-name="Calque 1"
             xmlns="http://www.w3.org/2000/svg">
             <defs>

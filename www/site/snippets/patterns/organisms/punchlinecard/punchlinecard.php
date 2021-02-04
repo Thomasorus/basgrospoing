@@ -19,5 +19,5 @@
     <span><?php  echo $punchline->citation(); ?></span>
     <footer class="punchline__author"><?php  echo $punchline->citationAuhor(); ?></footer>
   </blockquote>
-  <a class="absolute-100" href="<?php  echo $punchline->url(); ?>"></a>
+  <a class="absolute-100" href="<?php  echo $punchline->url(); ?>" aria-label="<?= $punchline->title() ?>"></a>
 </div>

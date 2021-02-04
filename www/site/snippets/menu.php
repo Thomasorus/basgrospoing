@@ -5,7 +5,7 @@
         <?php $count ++; if($count == 3): ?>
           <li class="[ top-menu__logo ] [ transition-025 ]">
             <a class="top-menu__link"
-              href="/<?php echo $kirby->language() ?>/">
+              href="/<?php echo $kirby->language() ?>/" aria-label="<?= t('accueil'); ?>">
               <svg id="dc5f4843-b314-49e4-b515-5e5ac37aa99b" height="80px" width="140" data-name="Calque 1"
                 xmlns="http://www.w3.org/2000/svg" viewBox="0 0 507.79 313.31">
                 <defs>
@@ -107,7 +107,7 @@
             </a>
           </li>
           <li>
-            <a class="top-menu__link" href="<?= $item->url() ?>">
+            <a class="top-menu__link" href="<?= $item->url() ?>" aria-label="<?= $item->title()->html(); ?>">
               <span class="top-menu__text">
                 <?= $item->title()->html() ?></span>
               <i class="top-menu__icon <?php echo $item->title()->html()->lower();?>"></i>
@@ -115,7 +115,7 @@
           </li>
         <?php elseif($count != 3): ?>
           <li>
-            <a class="top-menu__link" href="<?= $item->url() ?>">
+            <a class="top-menu__link" href="<?= $item->url() ?>" aria-label="<?= $item->title()->html(); ?>">
               <span class="top-menu__text">
                 <?= $item->title()->html() ?></span>
               <i class="top-menu__icon <?php echo $item->title()->html()->lower();?>"></i>
@@ -125,7 +125,7 @@
       <?php endforeach; ?>
         <li>
           <a class="top-menu__link"
-            href="<?php echo t('about') ?>" target="_blank" rel="noopener">
+            href="<?php echo t('about') ?>" target="_blank" rel="noopener" aria-label="<?= t('soutenez') ?>">
             <span class="top-menu__text">
               <?php echo t('soutenez') ?>
             </span>

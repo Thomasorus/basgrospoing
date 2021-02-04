@@ -32,5 +32,6 @@ return array (
     'patreon2' => 'Nous avons besoin de votre aide !',
     'patreon3' => 'Soutenez-nous via :',
     'kofi' => 'Cet article a été écrit par un auteur invité ! Si vous souhaitez le supporter, offrez-lui un café !',
+    'accueil' => 'Accueil',
   ]
 );

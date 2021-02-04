@@ -3,14 +3,12 @@
 
     <?php 
     foreach($rounds as $round): ?>
-    <section class="[ wrapper ] [ flow-s1 ]">
+    <section class="[ wrapper ] [ flow-s1 ]" aria-label="<?= $round->title(); ?>">
             <!--Header Round-->
-            <?php  snippet('patterns/molecules/sectionhead/sectionhead', ['title' => $round]); 
-            echo $round->doublelayout;
-            ?>
+            <?php  snippet('patterns/molecules/sectionhead/sectionhead', ['title' => $round]);?>
 
-            <!-- If article and podcast, add a special grid -->
             <?php if($round->doublelayout == true): ?>
+                <!-- If article and podcast, add a special grid -->
                 <div class="grid-2-1 flow-colors">
                 <?php 
                     foreach($round->magazine->data as $page) {
@@ -25,8 +23,9 @@
                 </div>
             <?php endif; ?>
 
-            <!-- Historic or magazine only -->
+           
             <?php if($round->doublelayout == false): ?>
+                 <!-- Historic or magazine only -->
                 <?php  if($round->historique->data != null):?>
                     <div class="grid-1-2 flow-colors">
                         <?php
@@ -51,8 +50,9 @@
                 <?php endif; ?>
             <?php endif; ?>
            
-            <!-- Non magazine or historic -->
+            
             <div class="grid-1-1 flow-colors">
+                <!-- Non magazine or historic -->
                 <?php 
                     foreach($round->others->data as $page) {
                         $image = $page->archiveimage();
